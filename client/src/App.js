@@ -1,14 +1,16 @@
-import './App.css';
-import Fraggy from './components/Fraggy';
-import Mariano from './components/Mariano';
-import Tony from './components/Tony';
+import "./App.css";
+import NavBar from "./components/NavBar";
+import Body from "./components/Body";
+import TextImg from "./components/TextImg";
+
+
 
 function App() {
   return (
     <div className="App">
-      <Fraggy />
-      <Mariano/>
-      <Tony /> 
+      <NavBar />
+      <Body />
+      <TextImg />
     </div>
   );
 }
