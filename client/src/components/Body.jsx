@@ -6,10 +6,10 @@ const Body = () => {
   return (
     <div>
       <div className="UpBodyBox">
-      <img src={marmolnegro} className='MarmolNegro' alt='marmol1'></img>
+        <img src={marmolnegro} className="MarmolNegro" alt="marmol1"></img>
       </div>
       <div className="LowBodyBox">
-        <img src={marmolblanco} className='MarmolBlanco' alt='marmol2'></img>
+        <img src={marmolblanco} className="MarmolBlanco" alt="marmol2"></img>
       </div>
     </div>
   );
