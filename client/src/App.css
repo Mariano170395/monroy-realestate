@@ -41,6 +41,10 @@
   border-color: transparent;
 }
 
+.NavBtn:hover {
+  text-decoration: underline;
+}
+
 .UpBodyBox {
   background-color: black;
   height: 45vh;
@@ -175,30 +179,29 @@
   font-size: 20px;
 }
 
-
 .QuienesNav > button:hover {
   text-decoration: underline;
 }
 
 /*Quienes parte2*/
 
-.QuienesTextBackground{
+.QuienesTextBackground {
   width: 100%;
   height: 90vh;
   position: relative;
   z-index: 1;
 }
 
-.IsotipoQuienes{
+.IsotipoQuienes {
   position: absolute;
   width: 720px;
   height: 770px;
   left: 33%;
   bottom: 5%;
-  z-index: 0; 
+  z-index: 0;
 }
 
-.QuienesWrapper{
+.QuienesWrapper {
   position: absolute;
   width: 100%;
   height: 65vh;
@@ -206,7 +209,7 @@
   z-index: 1;
 }
 
-.QuienesContainer1{
+.QuienesContainer1 {
   position: absolute;
   width: 20%;
   height: 55vh;
@@ -218,7 +221,7 @@
   display: flex;
 }
 
-.QuienesContainer2{
+.QuienesContainer2 {
   position: absolute;
   width: 20%;
   height: 55vh;
@@ -228,7 +231,7 @@
   bottom: 10%;
 }
 
-.QuienesContainer3{
+.QuienesContainer3 {
   position: absolute;
   width: 20%;
   height: 55vh;
@@ -238,7 +241,7 @@
   bottom: 10%;
 }
 
-.QuienesContainer4{
+.QuienesContainer4 {
   position: absolute;
   width: 20%;
   height: 55vh;
@@ -252,10 +255,210 @@
   height: 200vh;
 }
 
-.TextQuienes{
+.TextQuienes {
   position: absolute;
-  color:white;
+  color: white;
   opacity: 100%;
   font-size: 50px;
   z-index: 3;
 }
+
+/*Blog*/
+
+.Blog {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+.BlogMarmol {
+  position: absolute;
+  width: 100%;
+  height: 45vh;
+}
+
+.BlogTextContainer {
+  position: absolute;
+  bottom: 80%;
+  left: 10%;
+  background-color: transparent;
+}
+
+.NumBlog {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5vw;
+  color: white;
+}
+
+.TitleBlog {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3.8vw;
+  border-bottom: white solid 2px;
+}
+
+.Contenedor1 {
+  position: absolute;
+  width: 60vh;
+  height: 55vh;
+  background-color: blue;
+  top: 25%;
+  left: 15%;
+}
+
+.Contenedor2 {
+  position: absolute;
+  width: 60vh;
+  height: 55vh;
+  background-color: red;
+  top: 35%;
+  left: 55%;
+}
+
+.LeerMas1 {
+  position: absolute;
+  width: 30vh;
+  height: 5vh;
+  background-color: transparent;
+  left: 22.5%;
+  top: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.LeerMas2 {
+  position: absolute;
+  width: 30vh;
+  height: 5vh;
+  background-color: transparent;
+  left: 62.5%;
+  top: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Leer {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Leer:hover {
+  text-decoration: underline;
+}
+
+/*Redes*/
+
+.RedesBackground {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.TextRedContainer {
+  position: absolute;
+  bottom: 80%;
+  left: 10%;
+  background-color: transparent;
+}
+
+.NumRed {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5vw;
+  color: black;
+}
+
+.Redes {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3.8vw;
+  border-bottom: black solid 2px;
+}
+
+.RedesIsoCont {
+  position: absolute;
+  width: 55vh;
+  height: 60vh;
+  background-color: transparent;
+  bottom: 10%;
+  left: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.RedesIso {
+  position: absolute;
+  width: 65vh;
+  height: 70vh;
+}
+
+.RedesContainer {
+  position: absolute;
+  width: 80vh;
+  height: 65vh;
+  background-color: transparent;
+  left: 50%;
+  bottom: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.RedesCont {
+  width: 35vh;
+  height: 30vh;
+  background-color: black;
+  border: black solid 3px;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.RedesCont>h5 {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5vw;
+  position: relative;
+  bottom: -35%;
+  left: -17%; 
+}
+
+.RedesCont>img{
+  bottom:20%;
+  position:relative;
+  left: 30%;
+}
+
+.facebooklogo{
+  
+  width: 100px;
+  height: 100px;
+}
+
+.instagramlogo{
+  width: 110px;
+  height: 110px;
+}
+
+ .youtubelogo{
+  width: 130px;
+  height: 90px;
+}
+
+ .tiktoklogo{
+  width: 100px;
+  height: 100px;
+} 

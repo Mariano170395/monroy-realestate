@@ -5,7 +5,7 @@ const QuienesText = () => {
   return (
     <div className="QuienesTextBackground">
       <div>
-          <img src={isotipoblanco} className='IsotipoQuienes'></img>
+          <img src={isotipoblanco} className='IsotipoQuienes' alt="isotipoblanco"></img>
       </div>
       <div className='QuienesWrapper'>
       <div className='QuienesContainer1'>
