@@ -41,9 +41,66 @@
   border-color: transparent;
 }
 
-.NavBtn:hover {
+.NavBtnProp:hover {
   text-decoration: underline;
 }
+
+.HamContainer{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: royalblue;
+  left: 93%;
+  bottom: 90%;
+}
+
+/*Dropdown*/
+
+.DropBtnProp {
+  background-color: transparent;
+  color: white;
+  padding: 0px;
+  font-size: 30px;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+}
+
+.DropProp {
+  position: relative;
+  display: inline-block;
+}
+
+.DropdownSubProp {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 200px;
+  z-index: 4;
+}
+
+.DropdownSubProp a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  font-size: 25px;
+  padding: 35px;
+  text-decoration: none;
+  display: block;
+}
+
+.DropdownSubProp a:hover {
+  text-decoration: underline;
+}
+
+.DropProp:hover .DropdownSubProp {
+  display: block;
+}
+
+.DropProp:hover .DropBtnProp {
+background-color: white;
+color: black;
+}
+
 
 .UpBodyBox {
   background-color: black;
@@ -115,7 +172,6 @@
   bottom: 17.9%;
   left: 59%;
 }
-
 /*Quienes somos*/
 
 .BackgroundQuienes {
@@ -206,50 +262,21 @@
   width: 100%;
   height: 65vh;
   bottom: 12%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   z-index: 1;
 }
 
-.QuienesContainer1 {
-  position: absolute;
+.QuienesContainer{
+  position: relative;
   width: 20%;
   height: 55vh;
-  background-color: black;
+  background-color: gray;
   opacity: 50%;
-  left: 4%;
-  bottom: 10%;
-  z-index: 2;
-  display: flex;
+  border: black 4px solid; 
 }
 
-.QuienesContainer2 {
-  position: absolute;
-  width: 20%;
-  height: 55vh;
-  background-color: black;
-  opacity: 25%;
-  left: 28%;
-  bottom: 10%;
-}
-
-.QuienesContainer3 {
-  position: absolute;
-  width: 20%;
-  height: 55vh;
-  background-color: black;
-  opacity: 25%;
-  left: 52%;
-  bottom: 10%;
-}
-
-.QuienesContainer4 {
-  position: absolute;
-  width: 20%;
-  height: 55vh;
-  background-color: black;
-  opacity: 25%;
-  left: 76%;
-  bottom: 10%;
-}
 .prueba {
   width: 100%;
   height: 200vh;
@@ -302,7 +329,9 @@
   position: absolute;
   width: 60vh;
   height: 55vh;
-  background-color: blue;
+  background-color: gray;
+  opacity: 75%;
+  border: black 5px solid;
   top: 25%;
   left: 15%;
 }
@@ -311,7 +340,9 @@
   position: absolute;
   width: 60vh;
   height: 55vh;
-  background-color: red;
+  background-color: Gray;
+  opacity: 75%;
+  border: black 5px solid;
   top: 35%;
   left: 55%;
 }
@@ -389,7 +420,7 @@
   height: 60vh;
   background-color: transparent;
   bottom: 10%;
-  left: 10%;
+  left: 12%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -398,7 +429,7 @@
 
 .RedesIso {
   position: absolute;
-  width: 65vh;
+  width: 70vh;
   height: 70vh;
 }
 
@@ -432,33 +463,57 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.5vw;
   position: relative;
-  bottom: -35%;
-  left: -17%; 
+  bottom: -50px; 
 }
 
 .RedesCont>img{
-  bottom:20%;
-  position:relative;
-  left: 30%;
+  position: absolute;
 }
 
-.facebooklogo{
-  
-  width: 100px;
-  height: 100px;
+.facebooklogo{ 
+  width: 120px;
+  height: 120px;
+  filter: grayscale(100%);
 }
 
 .instagramlogo{
-  width: 110px;
-  height: 110px;
+  width: 130px;
+  height: 130px;
+  filter: grayscale(100%);
 }
 
  .youtubelogo{
-  width: 130px;
-  height: 90px;
+  width: 150px;
+  height: 110px;
+  filter: grayscale(100%);
 }
 
  .tiktoklogo{
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
+  filter: grayscale(100%);
+} 
+
+.facebooklogo:hover{ 
+  width: 140px;
+  height: 140px;
+  filter: grayscale(0%);
+}
+
+.instagramlogo:hover{
+  width: 150px;
+  height: 150px;
+  filter: grayscale(0%);
+}
+
+.youtubelogo:hover{
+  width: 170px;
+  height: 130px;
+  filter: grayscale(0%);
+}
+
+ .tiktoklogo:hover{
+  width: 140px;
+  height: 140px;
+  filter: grayscale(0%);
 } 

@@ -6,12 +6,48 @@ const NavBar = () => {
   return (
     <div className="Navi-FlexWrap">
       <div className="Navi-FlexLgo">
+        <div className='HamContainer'>
+          
+        </div>
         <img src={logobueno} className="Logo-1" alt="Logo" />
         <div className="Navi-FlexBtn">
-          <button className="NavBtn">PROPIEDADES</button>
-          <button className="NavBtn">CONOCENOS</button>
-          <button className="NavBtn">CONTACTO</button>
-          <button className="NavBtn">ARTICULOS</button>
+
+          <div class="DropProp">
+            <button class="DropBtnProp">PROPIEDADES</button>
+            <div class="DropdownSubProp">
+              <a href="#">Comprar</a>
+              <a href="#">Rentar</a>
+              <a href="#">Oportunidades</a>
+              <a href="#">Vender</a>
+            </div>
+          </div>
+
+          <div class="DropProp">
+            <button class="DropBtnProp">CONÓCENOS</button>
+            <div class="DropdownSubProp">
+              <a href="#">Compra</a>
+              <a href="#">Venta</a>
+              <a href="#">Oportunidades</a>
+            </div>
+          </div>
+
+          <div class="DropProp">
+            <button class="DropBtnProp">CONTACTO</button>
+            <div class="DropdownSubProp">
+              <a href="#">Compra</a>
+              <a href="#">Venta</a>
+              <a href="#">Oportunidades</a>
+            </div>
+          </div>
+
+          <div class="DropProp">
+            <button class="DropBtnProp">BLOG</button>
+            <div class="DropdownSubProp">
+              <a href="#">Compra</a>
+              <a href="#">Venta</a>
+              <a href="#">Oportunidades</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

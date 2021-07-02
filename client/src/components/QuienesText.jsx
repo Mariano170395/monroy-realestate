@@ -8,12 +8,12 @@ const QuienesText = () => {
           <img src={isotipoblanco} className='IsotipoQuienes' alt="isotipoblanco"></img>
       </div>
       <div className='QuienesWrapper'>
-      <div className='QuienesContainer1'>
+      <div className='QuienesContainer'>
           <p className='TextQuienes'>Texto1</p>
       </div>
-      <div className='QuienesContainer2'></div>
-      <div className='QuienesContainer3'></div>
-      <div className='QuienesContainer4'></div>
+      <div className='QuienesContainer'></div>
+      <div className='QuienesContainer'></div>
+      <div className='QuienesContainer'></div>
       </div>
     </div>
   );
