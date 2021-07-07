@@ -1,3 +1,556 @@
+.tend-grid {
+  display: grid;
+  grid-template-rows: 16vmax 7vmax 53vmax 53vmax 40vmax;
+  grid-gap: 0vw;
+}
+.fond {
+  grid-row: 3;
+  width: 98vw;
+}
+.tend {
+  grid-row: 1;
+  z-index: 0;
+}
+.testim {
+  z-index: 0;
+  height: 35vmax;
+  background-image: url("./Fotos/MarmolNegativo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.endBar {
+  background-image: url("./Fotos/Marmol.jpg");
+  height: 30vmax;
+  color: white;
+  text-align: center;
+  font-size: 1.3vmax;
+  z-index: 0;
+}
+.filt {
+  color: white;
+  height: 58vmax;
+  background-image: url("./Fotos/FondoBonito.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+.contact {
+  color: black;
+  height: 55vmax;
+  background-image: url("./Fotos/MarmolNegativo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.fondo1 {
+  height: 53vmax;
+  background-image: url("./Fotos/Marmol.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+.fondo2 {
+  height: 53vmax;
+  background-image: url("./Fotos/MarmolNegativo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+.fondo3 {
+  height: 40vmax;
+  background-image: url("./Fotos/Marmol.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+.titulo-flex {
+  padding-top: 5vmax;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: fit-content;
+  z-index: 2;
+}
+.title {
+  font-size: 3.8vw;
+  font-family: Calibri;
+  font-weight: 400;
+  margin: 0%;
+  padding-left: 4.2vw;
+  padding-right: 4vw;
+}
+.numero {
+  font-size: 1.5vw;
+  font-family: Arial;
+  font-weight: lighter;
+  margin: 0%;
+  padding-left: 4.2vw;
+}
+.linea {
+  color: gold;
+  margin: 0%;
+  margin-top: 0.7vw;
+  margin-bottom: 3.8vw;
+}
+.tendencias-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+.fototendencias1 {
+  filter: grayscale();
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 77vw;
+  height: 43vw;
+  margin-left: 22vw;
+  background-image: url("./Fotos/foto1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  justify-content: center;
+  transition-property: background-size;
+  transition-duration: 1s;
+}
+.fototendencias2 {
+  filter: grayscale();
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 77.3vw;
+  height: 43vw;
+  margin-right: 22vw;
+  background-image: url("./Fotos/foto2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transition-property: background-size;
+  transition-duration: 1s;
+}
+.fototendencias3 {
+  filter: grayscale();
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  width: 77.3vw;
+  height: 43vw;
+  margin-left: 21vw;
+  background-image: url("./Fotos/foto3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transition-property: background-size;
+  transition-duration: 1s;
+}
+.vacioHor {
+  width: 100%;
+  height: 8vw;
+  margin: 0%;
+}
+.infoD {
+  height: 7.5vmax;
+  width: 0%;
+  margin-top: 33vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-family: Helvetica;
+  z-index: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  transition-property: width, opacity;
+  transition-duration: 1s, 1.5s;
+  transition-delay: 0s, 0.5s;
+}
+.logo {
+  height: 7.5vmax;
+  margin-top: 33vw;
+  background-color: gainsboro;
+}
+.fototendencias1:hover > .infoD {
+  width: 85%;
+  opacity: 1;
+}
+.fototendencias1:hover > .infoD > .boton {
+  display: block;
+}
+.fototendencias1:hover > .infoD > .colonia {
+  display: block;
+}
+.fototendencias1:hover > .infoD > .precio {
+  display: block;
+}
+.fototendencias1:hover > .infoD > .info {
+  display: block;
+}
+.fototendencias1:hover {
+  filter: none;
+  background-size: 110%;
+  z-index: 0;
+}
+.boton {
+  display: none;
+  font-size: 0.7vmax;
+  width: 5vmax;
+  height: 4vh;
+  margin-left: -2vmax;
+  margin-right: -4vmax;
+}
+.colonia {
+  display: none;
+  font-size: 3vmax;
+  margin-left: -4vw;
+}
+.precio {
+  display: none;
+  font-size: 2vmax;
+}
+.info {
+  display: none;
+  font-size: 1.5vmax;
+}
+.fototendencias2:hover > .infoD {
+  width: 85%;
+  opacity: 1;
+}
+.fototendencias2:hover > .infoD > .boton {
+  display: block;
+}
+.fototendencias2:hover > .infoD > .colonia {
+  display: block;
+}
+.fototendencias2:hover > .infoD > .precio {
+  display: block;
+}
+.fototendencias2:hover > .infoD > .info {
+  display: block;
+}
+.fototendencias2:hover {
+  filter: none;
+  background-size: 110%;
+  z-index: 0;
+}
+.fototendencias3:hover > .infoD {
+  width: 85%;
+  opacity: 1;
+}
+.fototendencias3:hover > .infoD > .boton {
+  display: block;
+}
+.fototendencias3:hover > .infoD > .colonia {
+  display: block;
+}
+.fototendencias3:hover > .infoD > .precio {
+  display: block;
+}
+.fototendencias3:hover > .infoD > .info {
+  display: block;
+}
+.fototendencias3:hover {
+  filter: none;
+  background-size: 110%;
+  z-index: 0;
+}
+.boton:hover {
+  background-color: gray;
+}
+.filt-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+.filtText {
+  width: 60%;
+  font-family: Helvetica;
+  text-align: center;
+}
+.filt-text1 {
+  margin-top: 3vmax;
+  margin-left: 8vmax;
+  margin-right: 8vmax;
+  font-size: 2.3vmax;
+}
+.filt-text2 {
+  margin-top: 2vmax;
+  font-size: 5vmax;
+}
+.filt-text3 {
+  margin-left: 5vmax;
+  margin-right: 5vmax;
+  font-size: 3.3vmax;
+}
+.contAg {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 2vmax;
+  margin-top: 3vmax;
+  width: 15vmax;
+  height: 6vmax;
+}
+.filtBox {
+  height: 24.5vmax;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 14vmax 14vmax 14vmax 1.79vmax;
+  grid-template-rows: 5vmax 19.5vmax;
+  grid-gap: 0vw;
+}
+.bot-comp {
+  grid-column: 1;
+  height: 70%;
+  width: 80%;
+  align-self: end;
+  justify-self: center;
+  font-size: 1.8vmax;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border: 5px black;
+  background-color: black;
+  color: white;
+}
+.bot-vent {
+  grid-column: 3;
+  height: 70%;
+  width: 80%;
+  align-self: end;
+  justify-self: center;
+  font-size: 1.8vmax;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border: 5px black;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+.bot-rent {
+  grid-column: 2;
+  height: 70%;
+  width: 80%;
+  align-self: end;
+  justify-self: center;
+  font-size: 1.8vmax;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border: 5px black;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+.caja {
+  grid-column: 1/5;
+  grid-row: 2;
+  background-color: black;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: grid;
+  grid-template-columns: 21vmax 21vmax 1.79vmax;
+  grid-template-rows: 4.875vmax 4.875vmax 4.875vmax 4.875vmax;
+}
+.bot-comp:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.bot-rent:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.bot-vent:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.bot-comp:active:after {
+  background-color: black;
+  color: white;
+}
+.bot-rent:active:after {
+  background-color: black;
+  color: white;
+}
+.select {
+  grid-column: 1;
+  grid-row: 2;
+  border-radius: 5px;
+  height: 4vmax;
+  width: 80%;
+  justify-self: center;
+  font-size: 2vmax;
+}
+.busc {
+  grid-column: 1/3;
+  grid-row: 3;
+  height: 3vmax;
+  width: 75%;
+  font-size: 1.5vmax;
+  text-align: center;
+  align-self: flex-end;
+  margin-left: 2vmax;
+}
+.advSer {
+  grid-column: 1;
+  grid-row: 4;
+  font-size: 1.5vmax;
+  text-align: center;
+  align-self: flex-end;
+  margin-bottom: 5%;
+}
+.catConsul {
+  grid-column: 2;
+  grid-row: 4;
+  font-size: 1.5vmax;
+  text-align: center;
+  align-self: flex-end;
+  margin-bottom: 5%;
+}
+.frase {
+  font-family: Helvetica;
+  font-size: 2vmax;
+  text-align: center;
+  width: 50vmax;
+  margin-left: 25%;
+}
+.autor {
+  font-family: Helvetica;
+  font-size: 2vmax;
+  text-align: center;
+  width: 50vmax;
+  margin-left: 25%;
+  margin-top: 4.5vmax;
+}
+.cont-grid {
+  display: grid;
+  grid-template-columns: 44% 12% 44%;
+  grid-template-rows: 10vmax 10vmax 10vmax 5vmax;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+.nombre {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 2.3vmax;
+  margin-bottom: 2vmax;
+}
+.apellidos {
+  grid-column: 3;
+  grid-row: 1;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 2.3vmax;
+  margin-bottom: 2vmax;
+}
+.correo {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 2.3vmax;
+  margin-bottom: 2vmax;
+}
+.telefono {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 2.3vmax;
+  margin-bottom: 2vmax;
+}
+.mensaje {
+  grid-column: 1/4;
+  grid-row: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 2vmax;
+  box-sizing: border-box;
+  resize: none;
+}
+.mensaje:focus,
+.telefono:focus,
+.nombre:focus,
+.apellidos:focus,
+.correo:focus {
+  outline: none;
+}
+.enviar {
+  grid-column: 2;
+  grid-row: 4;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 2vmax;
+}
+.endFlex {
+  display: flex;
+  height: 90%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  font-size: 1.5vmax;
+}
+.endCol1 {
+  width: 31%;
+  margin-left: 2%;
+}
+.endCol2 {
+  width: 33%;
+}
+.endCol3 {
+  width: 34%;
+}
+.endLogo {
+  filter: invert(1);
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+}
+.oficina {
+  font-family: Helvetica;
+  font-size: 1.5vmax;
+  margin-left: 3%;
+  width: 70%;
+}
+.menu {
+  justify-content: center;
+  margin-top: 25%;
+  margin-left: 30%;
+  font-size: 1.5vmax;
+}
+.menu li {
+  margin: 5%;
+}
+.iconos {
+  display: flex;
+  height: 15%;
+  width: 70%;
+  justify-content: space-around;
+  margin-top: 5%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.endTitle {
+  font-size: 2vmax;
+  margin-top: 10%;
+}
+.mail {
+  font-size: 1.3vmax;
+  text-decoration: underline white;
+  margin-top: 3%;
+}
+
+/*CSS Mariano*/
 * {
   margin: 0;
   padding: 0;
@@ -8,17 +561,19 @@
 
 .Navi-FlexWrap {
   display: flex;
-  background-color: steelblue;
-  height: 16.5vh;
+  background-color: black;
+  height: 16.5vmin;
   width: 100%;
-  z-index: 0;
+  position: absolute;
+  z-index: 1;
 }
 
 .Navi-FlexLgo {
+  position: relative;
   display: flex;
   background-color: black;
-  height: 13vh;
-  width: 100%;
+  height: 13vmin;
+  width: 100vw;
   justify-content: center;
 }
 
@@ -26,33 +581,21 @@
   display: flex;
   background-color: black;
   width: 100%;
-  height: 3.5vh;
+  height: 3.5vmin;
   position: absolute;
-  top: 13vh;
+  top: 13vmin;
   justify-content: space-evenly;
   border-bottom: 2px white solid;
 }
 
-.Navi-FlexBtn > button {
-  text-align: center;
-  font-size: 20px;
-  color: white;
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.NavBtnProp:hover {
-  text-decoration: underline;
-}
-
-.HamContainer{
+/* .HamContainer{
   position: absolute;
   width: 60px;
   height: 60px;
   background-color: royalblue;
   left: 93%;
   bottom: 90%;
-}
+}  */
 
 /*Dropdown*/
 
@@ -60,32 +603,35 @@
   background-color: transparent;
   color: white;
   padding: 0px;
-  font-size: 30px;
+  margin: 0vmin;
+  font-size: 3vmin;
   border: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-
+  position: relative;
 }
 
 .DropProp {
   position: relative;
   display: inline-block;
+  z-index: 10;
 }
 
 .DropdownSubProp {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: black;
-  min-width: 200px;
-  z-index: 4;
+  min-width: 2vmin;
+  z-index: 10;
 }
 
 .DropdownSubProp a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
-  font-size: 25px;
-  padding: 35px;
+  font-size: 3vmin;
+  padding: 2vmin;
   text-decoration: none;
   display: block;
+  z-index: 10;
 }
 
 .DropdownSubProp a:hover {
@@ -97,81 +643,76 @@
 }
 
 .DropProp:hover .DropBtnProp {
-background-color: white;
-color: black;
-}
-
-
-.UpBodyBox {
-  background-color: black;
-  height: 45vh;
-  opacity: 100%;
-  justify-content: center;
-}
-
-.LowBodyBox {
   background-color: white;
-  height: 38.5vh;
-  z-index: 2;
-}
-
-.MarmolBlanco {
-  width: 100%;
-  height: 38.5vh;
-  z-index: 1;
-}
-
-.MarmolNegro {
-  width: 100%;
-  height: 45vh;
-  z-index: 2;
-}
-
-.Text-1 {
-  color: white;
-  font-size: 50px;
-}
-
-.Text-2 {
-  color: white;
-  font-size: 70px;
-}
-
-.Text-3 {
-  color: white;
-  font-size: 100px;
-}
-
-.Text-4 {
   color: black;
-  font-size: 90px;
 }
 
-.TextWrapper {
-  display: flex;
-  width: 50%;
-  height: 60vh;
+/*Landing*/
+
+.LandingBody {
+  width: 100%;
+  height: 100vmin;
+  position: relative;
+  background-image: url(./images/fondolanding.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.TextoLanding {
+  width: 80vmin;
+  height: 29.2vmin;
   background-color: transparent;
   position: absolute;
-  bottom: 10%;
-  left: 6%;
-  flex-direction: column;
-  justify-content: flex-start;
+  margin-top: 25vmin;
+  margin-left: 15vmin;
 }
 
-.TextWrapper > h3 {
-  margin: 15px;
-}
-
-.ImgWrapper {
-  display: flex;
-  width: 30%;
-  height: 50vh;
+.TextoLandingAbajo {
+  width: 80vmin;
+  height: 11.2vmin;
   background-color: transparent;
   position: absolute;
-  bottom: 17.9%;
-  left: 59%;
+  margin-top: 57vmin;
+  margin-left: 15vmin;
 }
+
+.Text1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 7vmin;
+  color: white;
+}
+
+.Text2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 8.5vmin;
+  color: white;
+}
+
+.Text3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 11vmin;
+  color: white;
+}
+
+.Text4 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 9vmin;
+  color: black;
+}
+
+.Isotipo {
+  width: 47vmin;
+  height: 52vmin;
+  position: absolute;
+  background-color: transparent;
+  margin-top: 24vmin;
+  margin-left: 113vmin;
+  background: url(./images/isotipo.png);
+  background-position: center;
+  background-size: cover;
+}
+
 /*Quienes somos*/
 
 .BackgroundQuienes {
@@ -180,8 +721,8 @@ color: black;
 }
 
 .TranspQuienes {
-  width: 100%;
-  height: 100vh;
+  width: 98vw;
+  height: 91vmin;
   background-color: #011f35;
   position: absolute;
   z-index: 1;
@@ -189,8 +730,8 @@ color: black;
 }
 
 .ImgQuienes {
-  width: 100%;
-  height: 100vh;
+  width: 98vw;
+  height: 91vmin;
 }
 
 .TextQuieContainer {
@@ -219,10 +760,9 @@ color: black;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  position: absolute;
-  width: 100%;
-  height: 10vh;
-  bottom: 0%;
+  width: 98vw;
+  height: 15vmin;
+  bottom: 0vmin;
   background-color: black;
   opacity: 70%;
   z-index: 4;
@@ -232,7 +772,7 @@ color: black;
   background-color: transparent;
   color: white;
   border: transparent;
-  font-size: 20px;
+  font-size: 3vmin;
 }
 
 .QuienesNav > button:hover {
@@ -242,52 +782,69 @@ color: black;
 /*Quienes parte2*/
 
 .QuienesTextBackground {
-  width: 100%;
-  height: 90vh;
   position: relative;
-  z-index: 1;
-}
-
-.IsotipoQuienes {
-  position: absolute;
-  width: 720px;
-  height: 770px;
-  left: 33%;
-  bottom: 5%;
-  z-index: 0;
-}
-
-.QuienesWrapper {
-  position: absolute;
-  width: 100%;
-  height: 65vh;
-  bottom: 12%;
   display: flex;
+  width: 100%;
+  height: 80vmin;
+  background-color: white;
+  z-index: 0;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.QuienesIsotipo {
+  position: absolute;
+  width: 50vmin;
+  height: 50vmin;
+  background-image: url(./images/isotipoblanco.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 1;
 }
 
-.QuienesContainer{
+.BoxWrapperQuienes {
   position: relative;
-  width: 20%;
-  height: 55vh;
-  background-color: gray;
-  opacity: 50%;
-  border: black 4px solid; 
-}
-
-.prueba {
+  display: flex;
   width: 100%;
-  height: 200vh;
+  height: 80vmin;
+  z-index: 3;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.TextQuienes {
-  position: absolute;
-  color: white;
-  opacity: 100%;
-  font-size: 50px;
-  z-index: 3;
+.Box1 {
+  width: 35vmin;
+  height: 50vmin;
+  border: 1px black solid;
+  background-color: black;
+  opacity: 20%;
+}
+.Box2 {
+  width: 35vmin;
+  height: 50vmin;
+  border: 1px black solid;
+  background-color: black;
+  opacity: 20%;
+}
+.Box3 {
+  width: 35vmin;
+  height: 50vmin;
+  border: 1px black solid;
+  background-color: black;
+  opacity: 20%;
+}
+.Box4 {
+  width: 35vmin;
+  height: 50vmin;
+  border: 1px black solid;
+  background-color: black;
+  opacity: 20%;
 }
 
 /*Blog*/
@@ -295,14 +852,14 @@ color: black;
 .Blog {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 105vmin;
   background-color: white;
 }
 
 .BlogMarmol {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 45vh;
+  height: 45vmin;
 }
 
 .BlogTextContainer {
@@ -325,67 +882,141 @@ color: black;
   border-bottom: white solid 2px;
 }
 
-.Contenedor1 {
-  position: absolute;
-  width: 60vh;
-  height: 55vh;
-  background-color: gray;
-  opacity: 75%;
-  border: black 5px solid;
-  top: 25%;
-  left: 15%;
-}
-
-.Contenedor2 {
-  position: absolute;
-  width: 60vh;
-  height: 55vh;
-  background-color: Gray;
-  opacity: 75%;
-  border: black 5px solid;
-  top: 35%;
-  left: 55%;
-}
-
-.LeerMas1 {
-  position: absolute;
-  width: 30vh;
-  height: 5vh;
+.ContenedorGral {
+  position: relative;
+  width: 100%;
+  height: 100vmin;
   background-color: transparent;
-  left: 22.5%;
-  top: 80%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
 }
 
-.LeerMas2 {
-  position: absolute;
-  width: 30vh;
-  height: 5vh;
+.ContenedorHrz1 {
+  width: 100%;
+  height: 50vmin;
+  display: flex;
+}
+
+.ContenedorHrz2 {
+  width: 100%;
+  height: 50vmin;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.CuadroBlog1 {
+  width: 70vmin;
+  height: 65vmin;
   background-color: transparent;
-  left: 62.5%;
-  top: 90%;
+  position: absolute;
+  margin: 10vmin;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.Leer {
-  color: black;
+.CuadroBlog2 {
+  width: 70vmin;
+  height: 65vmin;
+  background-color: transparent;
+  position: absolute;
+  margin: 10vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.leer1 {
+  width: 70vmin;
+  height: 5vmin;
+  background-color: transparent;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
 }
 
-.Leer:hover {
-  text-decoration: underline;
+.leer2 {
+  width: 70vmin;
+  height: 5vmin;
+  background-color: transparent;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+
+.ContenedorImg1 {
+  position: absolute;
+  width: 100%;
+  height: 60vmin;
+  margin-bottom: 5vmin;
+  border: 2px black solid;
+}
+
+.ContenedorImg2 {
+  position: absolute;
+  width: 100%;
+  height: 60vmin;
+  margin-bottom: 5vmin;
+  border: 2px black solid;
+}
+
+.leer1 {
+  position: absolute;
+  text-align: center;
+}
+
+.leer2 {
+  position: absolute;
+  text-align: center;
+}
+
+.TituloFlex {
+  padding-top: 5vmax;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 2;
+}
+
+.Numero {
+  font-size: 1.5vw;
+  font-family: Arial;
+  font-weight: lighter;
+  margin: 0%;
+  padding-left: 4.2vw;
+  color: white;
+}
+
+.TituloBlog {
+  font-size: 3.8vw;
+  font-family: Calibri;
+  font-weight: 400;
+  margin: 0%;
+  padding-left: 4.2vw;
+  padding-right: 4vw;
+  color: white;
+}
+
+.LineaBlog {
+  color: white;
+  margin: 0%;
+  margin-top: 0.7vw;
+  margin-bottom: 3.8vw;
+}
+
+.BlogMarmol {
+  width: 100vw;
+  height: 50vmin;
+  background: url(./images/marmolnegro.jpg);
 }
 
 /*Redes*/
 
 .RedesBackground {
   position: relative;
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: 100vmin;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
@@ -394,126 +1025,146 @@ color: black;
   );
 }
 
-.TextRedContainer {
-  position: absolute;
-  bottom: 80%;
-  left: 10%;
+.RedesDivision {
+  width: 100vw;
+  height: 70vmin;
   background-color: transparent;
-}
-
-.NumRed {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.5vw;
-  color: black;
-}
-
-.Redes {
-  color: black;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 3.8vw;
-  border-bottom: black solid 2px;
-}
-
-.RedesIsoCont {
   position: absolute;
-  width: 55vh;
-  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10vmin;
+}
+
+.ContenedorIsotipo {
+  width: 60vmin;
+  height: 60vmin;
+  background: url(./images/isotipo.png);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 10vmin;
+  margin-right: 10vmin;
+}
+
+.ContenedorRedes {
+  width: 85vmin;
+  height: 66vmin;
+  margin-bottom: 10vmin;
   background-color: transparent;
-  bottom: 10%;
-  left: 12%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-end;
+  align-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.TituloFlex2 {
+  padding-top: 5vmax;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.RedesIso {
-  position: absolute;
-  width: 70vh;
-  height: 70vh;
-}
-
-.RedesContainer {
-  position: absolute;
-  width: 80vh;
-  height: 65vh;
-  background-color: transparent;
-  left: 50%;
-  bottom: 10%;
-  display: flex;
   flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 2;
+  margin-top: 10vmin;
+}
+
+.NumeroRedes {
+  font-size: 1.5vw;
+  font-family: Arial;
+  font-weight: lighter;
+  margin: 0%;
+  padding-left: 4.2vw;
+  color: black;
+}
+
+.TituloRedes {
+  font-size: 3.8vw;
+  font-family: Calibri;
+  font-weight: 400;
+  margin: 0%;
+  padding-left: 4.2vw;
+  padding-right: 4vw;
+  color: black;
+}
+
+.LineaRedes {
+  color: black;
+  margin: 0%;
+  margin-top: 0.7vw;
+  margin-bottom: 3.8vw;
 }
 
 .RedesCont {
-  width: 35vh;
-  height: 30vh;
+  height: 30vmin;
+  width: 35vmin;
   background-color: black;
-  border: black solid 3px;
-  margin: 5px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-between;
 }
 
-.RedesCont>h5 {
+.RedesSociales {
+  text-decoration: none;
   color: white;
+  margin-bottom: 5vmin;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.5vw;
-  position: relative;
-  bottom: -50px; 
+  font-size: 3vmin;
 }
 
-.RedesCont>img{
-  position: absolute;
-}
-
-.facebooklogo{ 
-  width: 120px;
-  height: 120px;
+.facebooklogo {
+  margin-top:4vmin ;
+  width: 12vmin;
+  height: 12vmin;
   filter: grayscale(100%);
 }
 
-.instagramlogo{
-  width: 130px;
-  height: 130px;
+.instagramlogo {
+  margin-top:4vmin ;
+  width: 13vmin;
+  height: 13vmin;
   filter: grayscale(100%);
 }
 
- .youtubelogo{
-  width: 150px;
-  height: 110px;
+.youtubelogo {
+  margin-top:4vmin ;
+  width: 15vmin;
+  height: 11vmin;
   filter: grayscale(100%);
 }
 
- .tiktoklogo{
-  width: 120px;
-  height: 120px;
+.tiktoklogo {
+  margin-top:4vmin ;
+  width: 12vmin;
+  height: 12vmin;
   filter: grayscale(100%);
-} 
+}
 
-.facebooklogo:hover{ 
-  width: 140px;
-  height: 140px;
+.facebooklogo:hover {
+  width: 14vmin;
+  height: 14vmin;
   filter: grayscale(0%);
 }
 
-.instagramlogo:hover{
-  width: 150px;
-  height: 150px;
+.instagramlogo:hover {
+  width: 15vmin;
+  height: 15vmin;
   filter: grayscale(0%);
 }
 
-.youtubelogo:hover{
-  width: 170px;
-  height: 130px;
+.youtubelogo:hover {
+  width: 17vmin;
+  height: 13vmin;
   filter: grayscale(0%);
 }
 
- .tiktoklogo:hover{
-  width: 140px;
-  height: 140px;
+.tiktoklogo:hover {
+  width: 14vmin;
+  height: 14vmin;
   filter: grayscale(0%);
-} 
+}

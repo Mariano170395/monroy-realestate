@@ -4,18 +4,32 @@ import marmolnegro from "../images/marmolnegro.jpg";
 const Blog = () => {
   return (
     <div className="Blog">
-      <img src={marmolnegro} className="BlogMarmol" alt="Marmol"></img>
-      <div className="BlogTextContainer">
-        <h6 className="NumBlog">05</h6>
-        <h2 className="TitleBlog">Blog</h2>
+      <div className="BlogMarmol">
+      <div className="ContenedorGral">
+        <div className="TituloFlex">
+          <div>
+            <h2 className="Numero">02</h2>
+            <h1 className="TituloBlog">TENDENCIAS</h1>
+            <hr className="LineaBlog"></hr>
+          </div>
+        </div>
+        <div className="ContenedorHrz1">
+          <div className="CuadroBlog1">
+            <div className="ContenedorImg1"></div>
+            <div className="leer1">
+              <h1>Leer Más</h1>
+            </div>
+          </div>
+        </div>
+        <div className="ContenedorHrz2">
+          <div className="CuadroBlog2">
+            <div className="ContenedorImg2"></div>
+            <div className="leer2">
+              <h1>Leer Más</h1>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="Contenedor1"></div>
-      <div className="LeerMas1">
-        <h1 className="Leer">Leer más</h1>
-      </div>
-      <div className="Contenedor2"></div>
-      <div className="LeerMas2">
-        <h1 className="Leer">Leer más</h1>
       </div>
     </div>
   );
