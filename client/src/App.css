@@ -562,17 +562,18 @@
 .Navi-FlexWrap {
   display: flex;
   background-color: black;
-  height: 16.5vmin;
+  height: 100px;
   width: 100%;
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 10;
+  /* margin-top: -100px; */
 }
 
 .Navi-FlexLgo {
   position: relative;
   display: flex;
   background-color: black;
-  height: 13vmin;
+  height: 70px;
   width: 100vw;
   justify-content: center;
 }
@@ -581,9 +582,9 @@
   display: flex;
   background-color: black;
   width: 100%;
-  height: 3.5vmin;
+  height: 30px;
   position: absolute;
-  top: 13vmin;
+  top: 70px;
   justify-content: space-evenly;
   border-bottom: 2px white solid;
 }
@@ -604,7 +605,7 @@
   color: white;
   padding: 0px;
   margin: 0vmin;
-  font-size: 3vmin;
+  font-size: 1.45vmax;
   border: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   position: relative;
@@ -620,15 +621,15 @@
   display: none;
   position: relative;
   background-color: black;
-  min-width: 2vmin;
+  min-width: 1vmin;
   z-index: 10;
 }
 
 .DropdownSubProp a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
-  font-size: 3vmin;
-  padding: 2vmin;
+  font-size: 1.2vmax;
+  padding: 1vmax;
   text-decoration: none;
   display: block;
   z-index: 10;
@@ -651,21 +652,21 @@
 
 .LandingBody {
   width: 100%;
-  height: 100vmin;
-  position: relative;
+  height: 49.5vmax;
   background-image: url(./images/fondolanding.png);
   background-position: center;
   background-repeat: no-repeat;
+  /* margin-top:100px; */
   background-size: cover;
 }
 
 .TextoLanding {
-  width: 80vmin;
-  height: 29.2vmin;
+  width: 37vmax;
+  height: 15vmax;
   background-color: transparent;
   position: absolute;
-  margin-top: 25vmin;
-  margin-left: 15vmin;
+  margin-top: 12.5vmax;
+  margin-left: 7.2vmax;
 }
 
 .TextoLandingAbajo {
@@ -673,41 +674,41 @@
   height: 11.2vmin;
   background-color: transparent;
   position: absolute;
-  margin-top: 57vmin;
-  margin-left: 15vmin;
+  margin-top: 28vmax;
+  margin-left: 7.2vmax;
 }
 
 .Text1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 7vmin;
+  font-size: 3.3vmax;
   color: white;
 }
 
 .Text2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 8.5vmin;
+  font-size: 4.5vmax;
   color: white;
 }
 
 .Text3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 11vmin;
+  font-size: 5.5vmax;
   color: white;
 }
 
 .Text4 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 9vmin;
+  font-size: 4.5vmax;
   color: black;
 }
 
 .Isotipo {
-  width: 47vmin;
-  height: 52vmin;
+  width: 24vmax;
+  height: 25.9vmax;
   position: absolute;
   background-color: transparent;
-  margin-top: 24vmin;
-  margin-left: 113vmin;
+  margin-top: 11.92vmax;
+  margin-left: 57vmax;
   background: url(./images/isotipo.png);
   background-position: center;
   background-size: cover;
@@ -717,12 +718,12 @@
 
 .BackgroundQuienes {
   position: relative;
-  width: 100%;
+  width: 98vw;
 }
 
 .TranspQuienes {
   width: 98vw;
-  height: 91vmin;
+  height: 100%;
   background-color: #011f35;
   position: absolute;
   z-index: 1;
@@ -731,7 +732,7 @@
 
 .ImgQuienes {
   width: 98vw;
-  height: 91vmin;
+  height: 100%;
 }
 
 .TextQuieContainer {
@@ -744,15 +745,15 @@
 .NumQuienes {
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.5vw;
+  font-size: 2vw;
   z-index: 2;
 }
 
 .QuienesSomos {
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 3.8vw;
-  border-bottom: white solid 2px;
+  font-size: 3vw;
+  border-bottom: white solid 0.5vmin;
 }
 
 .QuienesNav {
@@ -772,7 +773,7 @@
   background-color: transparent;
   color: white;
   border: transparent;
-  font-size: 3vmin;
+  font-size: 1.5vmax;
 }
 
 .QuienesNav > button:hover {
@@ -819,28 +820,28 @@
 }
 
 .Box1 {
-  width: 35vmin;
+  width: 22%;
   height: 50vmin;
   border: 1px black solid;
   background-color: black;
   opacity: 20%;
 }
 .Box2 {
-  width: 35vmin;
+  width: 22%;
   height: 50vmin;
   border: 1px black solid;
   background-color: black;
   opacity: 20%;
 }
 .Box3 {
-  width: 35vmin;
+  width: 22%;
   height: 50vmin;
   border: 1px black solid;
   background-color: black;
   opacity: 20%;
 }
 .Box4 {
-  width: 35vmin;
+  width: 22%;
   height: 50vmin;
   border: 1px black solid;
   background-color: black;
@@ -856,6 +857,84 @@
   background-color: white;
 }
 
+.BlogMarmol{
+  width: 100vw;
+  height: 50vmin;
+  background: url(./images/marmolnegro.jpg);
+  background-position:center ;
+  background-repeat: no-repeat ;
+  background-size: cover ;
+}
+
+.Numero {
+  font-size: 1.5vw;
+  font-family: Arial;
+  font-weight: lighter;
+  margin: 0%;
+  padding-left: 4.2vw;
+  color: white;
+}
+
+.TituloBlog {
+  font-size: 3.8vw;
+  font-family: Calibri;
+  font-weight: 400;
+  margin: 0%;
+  padding-left: 4.2vw;
+  padding-right: 4vw;
+  color: white;
+}
+
+.LineaBlog {
+  color: white;
+  margin: 0%;
+  margin-top: 0.7vw;
+  margin-bottom: 3.8vw;
+}
+
+.TituloFlex {
+  padding-top: 5vmax;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 2;
+}
+
+.Numero {
+  font-size: 1.5vw;
+  font-family: Arial;
+  font-weight: lighter;
+  margin: 0%;
+  padding-left: 4.2vw;
+  color: white;
+}
+
+.TituloBlog {
+  font-size: 3.8vw;
+  font-family: Calibri;
+  font-weight: 400;
+  margin: 0%;
+  padding-left: 4.2vw;
+  padding-right: 4vw;
+  color: white;
+}
+
+.LineaBlog {
+  color: white;
+  margin: 0%;
+  margin-top: 0.7vw;
+  margin-bottom: 3.8vw;
+}
+
+.BlogWrapper{
+  width: 50vw;
+  height: 20%;
+  background-color: blue;
+}
+
+/* 
 .BlogMarmol {
   position: relative;
   width: 100%;
@@ -1009,7 +1088,7 @@
   width: 100vw;
   height: 50vmin;
   background: url(./images/marmolnegro.jpg);
-}
+} */
 
 /*Redes*/
 

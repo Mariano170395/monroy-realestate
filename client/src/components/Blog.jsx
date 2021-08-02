@@ -5,11 +5,27 @@ const Blog = () => {
   return (
     <div className="Blog">
       <div className="BlogMarmol">
+        <div className="TituloFlex">
+          <div>
+            <div>
+              <h2 className="Numero">05</h2>
+              <h1 className="TituloBlog">BLOG</h1>
+              <hr className="LineaBlog"></hr>
+            </div>
+          </div>
+          </div>
+          <div className="BlogWrapper">
+          
+          </div>
+        </div>
+      
+
+      {/* <div className="BlogMarmol">
       <div className="ContenedorGral">
         <div className="TituloFlex">
           <div>
-            <h2 className="Numero">02</h2>
-            <h1 className="TituloBlog">TENDENCIAS</h1>
+            <h2 className="Numero">05</h2>
+            <h1 className="TituloBlog">BLOG</h1>
             <hr className="LineaBlog"></hr>
           </div>
         </div>
@@ -30,7 +46,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      </div>
+      </div> */}
     </div>
   );
 };
