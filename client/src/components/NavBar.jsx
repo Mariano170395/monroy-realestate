@@ -31,11 +31,6 @@ const NavBar = () => {
 
           <div class="DropProp">
             <Link class="DropBtnProp" to="/contacto">CONTACTO</Link>
-            <div class="DropdownSubProp">
-              <a href="#">Compra</a>
-              <a href="#">Venta</a>
-              <a href="#">Oportunidades</a>
-            </div>
           </div>
 
           <div class="DropProp">

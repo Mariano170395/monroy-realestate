@@ -20,8 +20,8 @@ const Redes = () => {
       <div className="RedesDivision">
         <div className="ContenedorIsotipo"></div>
         <div className="ContenedorRedes">
-          <div className="RedesCont"><img src={facebook} className='facebooklogo' alt='facebook'></img><a href="#" className="RedesSociales">Monroy Real Estate</a></div>
-          <div className="RedesCont"><img src={instagram} className='instagramlogo' alt=''></img><a href="#" className="RedesSociales">Monroy Real Estate</a></div>
+          <div className="RedesCont"><img src={facebook} className='facebooklogo' alt='facebook'></img><a href="https://www.facebook.com/monroyrealestate/" className="RedesSociales">Monroy Real Estate</a></div>
+          <div className="RedesCont"><img src={instagram} className='instagramlogo' alt=''></img><a href="https://www.instagram.com/monroy.realestate/" className="RedesSociales">Monroy Real Estate</a></div>
           <div className="RedesCont"><img src={youtube} className='youtubelogo' alt=''></img><a href="#" className="RedesSociales">Monroy Real Estate</a></div>
           <div className="RedesCont"><img src={tiktok} className='tiktoklogo' alt=''></img><a href="#" className="RedesSociales">Monroy Real Estate</a></div>
         </div>

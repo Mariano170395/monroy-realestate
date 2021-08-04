@@ -52,6 +52,7 @@
   background-size: cover;
   background-position: center;
   z-index: -2;
+  width: 100vw;
 }
 .fondo2 {
   height: 53vmax;
@@ -60,6 +61,7 @@
   background-size: cover;
   background-position: center;
   z-index: -2;
+  width: 100vw;
 }
 .fondo3 {
   height: 40vmax;
@@ -68,6 +70,7 @@
   background-size: cover;
   background-position: center;
   z-index: -2;
+  width: 100vw;
 }
 .titulo-flex {
   padding-top: 5vmax;
@@ -109,7 +112,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 77vw;
+  width: 78vw;
   height: 43vw;
   margin-left: 22vw;
   background-image: url("./Fotos/foto1.jpg");
@@ -125,7 +128,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 77.3vw;
+  width: 78vw;
   height: 43vw;
   margin-right: 22vw;
   background-image: url("./Fotos/foto2.jpg");
@@ -140,7 +143,7 @@
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  width: 77.3vw;
+  width: 78.5vw;
   height: 43vw;
   margin-left: 21vw;
   background-image: url("./Fotos/foto3.jpg");
@@ -276,16 +279,16 @@
   margin-top: 3vmax;
   margin-left: 8vmax;
   margin-right: 8vmax;
-  font-size: 2.3vmax;
+  font-size: 2.3vw;
 }
 .filt-text2 {
   margin-top: 2vmax;
-  font-size: 5vmax;
+  font-size: 5vw;
 }
 .filt-text3 {
   margin-left: 5vmax;
   margin-right: 5vmax;
-  font-size: 3.3vmax;
+  font-size: 3.3vw;
 }
 .contAg {
   background-color: rgba(0, 0, 0, 0.7);
@@ -708,7 +711,8 @@
   position: absolute;
   background-color: transparent;
   margin-top: 11.92vmax;
-  margin-left: 57vmax;
+  padding: 10vmin;
+  margin-left: 60%;
   background: url(./images/isotipo.png);
   background-position: center;
   background-size: cover;
@@ -722,7 +726,7 @@
 }
 
 .TranspQuienes {
-  width: 98vw;
+  width: 100vw;
   height: 100%;
   background-color: #011f35;
   position: absolute;
@@ -731,7 +735,7 @@
 }
 
 .ImgQuienes {
-  width: 98vw;
+  width: 100vw;
   height: 100%;
 }
 
@@ -753,7 +757,7 @@
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 3vw;
-  border-bottom: white solid 0.5vmin;
+  border-bottom: white solid 2px;
 }
 
 .QuienesNav {
@@ -761,9 +765,9 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 98vw;
-  height: 15vmin;
-  bottom: 0vmin;
+  width: 100vw;
+  height: 15%;
+  bottom: 0.1vmin;
   background-color: black;
   opacity: 70%;
   z-index: 4;
@@ -853,9 +857,20 @@
 .Blog {
   position: relative;
   width: 100%;
-  height: 105vmin;
+  height: 100vmin;
   background-color: white;
+  
 }
+
+ .BlogBack{
+  width: 100%;
+  height: 50vmin;
+  background-image: url(./images/marmolnegro.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+} 
 
 .BlogMarmol{
   width: 100vw;
@@ -929,10 +944,32 @@
 }
 
 .BlogWrapper{
-  width: 50vw;
-  height: 20%;
-  background-color: blue;
+ width: 100vw;
+ height: 60vmin;
+ background-color: white;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ align-content: center;
+ justify-content: space-around;
+ align-items: center;
 }
+
+.EntradaBlog{
+  width: 60vmin;
+  height: 50vmin;
+  background-color: blue;
+  border: black solid 1px;
+}
+
+.EntradaBlog2{
+  width: 60vmin;
+  height: 50vmin;
+  background-color: blue;
+  border: black solid 1px;
+}
+
+
 
 /* 
 .BlogMarmol {
@@ -1246,4 +1283,34 @@
   width: 14vmin;
   height: 14vmin;
   filter: grayscale(0%);
+}
+
+/*Media Queries*/
+
+@media  screen and (min-width: 768px) and (max-width: 1024px) {
+  .ContenedorIsotipo{
+    display: none;
+  }
+
+  .EntradaBlog2{
+    display: none;
+  }
+
+  .Blog{
+    height: 75vmin;
+  }
+
+  .tend-grid{
+    grid-template-rows: 16vmax 7vmax 53vmax 53vmax 25vmax; 
+  }
+
+  .fondo3 {
+    height: 25vmax;
+  }
+}
+
+/*Galeria*/
+
+.Galeria{
+  padding:50px;
 }

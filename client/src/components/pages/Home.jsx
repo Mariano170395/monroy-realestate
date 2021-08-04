@@ -13,6 +13,7 @@ import BodyQuienes from "../BodyQuienes";
 import QuienesText from "../QuienesText";
 import Blog from "../Blog";
 import Redes from "../Redes";
+import Galeria from "../Galeria.jsx";
 
 const Home = () => {
   return (
@@ -27,17 +28,18 @@ const Home = () => {
         <Tendencias />
       </div>
       {/*Mariano*/}
-      {/* <BodyQuienes /> */}
+      <BodyQuienes /> 
       <QuienesText />
       {/*Tony*/}
       <Filtro />
       <Testimonios />
       {/*Mariano*/}
       <Blog />
-      <Redes />
+       <Redes /> 
       {/*Tony*/}
       <Contacto />
       <EndBar />
+      <Galeria/>
     </div>
   );
 };
