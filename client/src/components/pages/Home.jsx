@@ -21,25 +21,25 @@ const Home = () => {
       {/*Mariano*/}
       {/* <NavBar /> */}
       <Body />
-      {/* <TextImg /> */}
+      {/* <TextImg />
       {/*Tony*/}
       <div className="tend-grid">
         <Fondo />
         <Tendencias />
       </div>
       {/*Mariano*/}
-      <BodyQuienes /> 
-      <QuienesText />
+       <BodyQuienes />  
+       <QuienesText />
       {/*Tony*/}
       <Filtro />
-      <Testimonios />
+      {/* <Testimonios />
       {/*Mariano*/}
-      <Blog />
+       <Blog /> 
        <Redes /> 
       {/*Tony*/}
-      <Contacto />
-      <EndBar />
-      <Galeria/>
+       <Contacto /> 
+       <EndBar />
+      
     </div>
   );
 };

@@ -859,26 +859,24 @@
   width: 100%;
   height: 100vmin;
   background-color: white;
-  
 }
 
- .BlogBack{
+.BlogBack {
   width: 100%;
   height: 50vmin;
   background-image: url(./images/marmolnegro.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
-} 
-
-.BlogMarmol{
+.BlogMarmol {
   width: 100vw;
   height: 50vmin;
   background: url(./images/marmolnegro.jpg);
-  background-position:center ;
-  background-repeat: no-repeat ;
-  background-size: cover ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Numero {
@@ -943,33 +941,31 @@
   margin-bottom: 3.8vw;
 }
 
-.BlogWrapper{
- width: 100vw;
- height: 60vmin;
- background-color: white;
- display: flex;
- flex-direction: row;
- flex-wrap: nowrap;
- align-content: center;
- justify-content: space-around;
- align-items: center;
+.BlogWrapper {
+  width: 100vw;
+  height: 60vmin;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.EntradaBlog{
+.EntradaBlog {
   width: 60vmin;
   height: 50vmin;
   background-color: blue;
   border: black solid 1px;
 }
 
-.EntradaBlog2{
+.EntradaBlog2 {
   width: 60vmin;
   height: 50vmin;
   background-color: blue;
   border: black solid 1px;
 }
-
-
 
 /* 
 .BlogMarmol {
@@ -1234,28 +1230,28 @@
 }
 
 .facebooklogo {
-  margin-top:4vmin ;
+  margin-top: 4vmin;
   width: 12vmin;
   height: 12vmin;
   filter: grayscale(100%);
 }
 
 .instagramlogo {
-  margin-top:4vmin ;
+  margin-top: 4vmin;
   width: 13vmin;
   height: 13vmin;
   filter: grayscale(100%);
 }
 
 .youtubelogo {
-  margin-top:4vmin ;
+  margin-top: 4vmin;
   width: 15vmin;
   height: 11vmin;
   filter: grayscale(100%);
 }
 
 .tiktoklogo {
-  margin-top:4vmin ;
+  margin-top: 4vmin;
   width: 12vmin;
   height: 12vmin;
   filter: grayscale(100%);
@@ -1287,30 +1283,470 @@
 
 /*Media Queries*/
 
-@media  screen and (min-width: 768px) and (max-width: 1024px) {
-  .ContenedorIsotipo{
-    display: none;
+/*Ipad Pro*/
+@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  /*Tendencias*/
+  .colonia {
+    font-size: 20px;
   }
 
-  .EntradaBlog2{
-    display: none;
+  .precio {
+    font-size: 20px;
   }
 
-  .Blog{
+  .info {
+    font-size: 14.5px;
+  }
+
+  .boton {
+    font-size: 16px;
+  }
+
+  .boton {
+    width: 6vmax;
+    height: 5vh;
+  }
+
+  .tend-grid {
+    grid-template-rows: 16vmax 7vmax 53vmax 53vmax 35vmax;
+  }
+
+  .fondo3 {
+    height: 35vmax;
+  }
+
+  /*Podemos ayudar*/
+  .filt {
+    height: 50vmax;
+  }
+
+  .filt-text1 {
+    margin-top: 2vmax;
+    margin-left: 4vmax;
+    margin-right: 4vmax;
+    font-size: 2.5vw;
+  }
+
+  .filt-text2 {
+    margin-top: 1vmax;
+    font-size: 42px;
+  }
+
+  .filt-text3 {
+    margin-left: 5vmax;
+    margin-right: 5vmax;
+    font-size: 25px;
+    margin-top: 1vmin;
+  }
+
+  .contAg {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 2vmax;
+    margin-top: 3vmax;
+    width: 15vmax;
+    height: 6vmax;
+  }
+
+  /*Testimonio*/
+
+  .frase {
+    font-family: Helvetica;
+    font-size: 2vmax;
+    text-align: center;
+    width: 50vmax;
+    margin: 0% 25%;
+  }
+
+  /*Blog*/
+  .Blog {
     height: 75vmin;
   }
 
-  .tend-grid{
-    grid-template-rows: 16vmax 7vmax 53vmax 53vmax 25vmax; 
+  .EntradaBlog2 {
+    display: none;
+  }
+
+  /*Nuestras Redes*/
+  .ContenedorIsotipo {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  /*Tendencias*/
+  .colonia {
+    font-size: 20px;
+  }
+
+  .precio {
+    font-size: 20px;
+  }
+
+  .info {
+    font-size: 14.5px;
+  }
+
+  .boton {
+    font-size: 16px;
+  }
+
+  .boton {
+    width: 6vmax;
+    height: 5vh;
+  }
+
+  .tend-grid {
+    grid-template-rows: 16vmax 7vmax 53vmax 53vmax 10vmax;
+  }
+
+  .fondo3 {
+    height: 10vmax;
+  }
+
+  /*Podemos ayudar*/
+  .filt {
+    height: 50vmax;
+  }
+
+  .filt-text1 {
+    margin-top: 2vmax;
+    margin-left: 4vmax;
+    margin-right: 4vmax;
+    font-size: 2.5vw;
+  }
+
+  .filt-text2 {
+    margin-top: 1vmax;
+    font-size: 42px;
+  }
+
+  .filt-text3 {
+    margin-left: 5vmax;
+    margin-right: 5vmax;
+    font-size: 25px;
+    margin-top: 1vmin;
+  }
+
+  .contAg {
+    width: 15vmax;
+    height: 6vmax;
+  }
+
+  /*Testimonio*/
+
+  .frase {
+    font-family: Helvetica;
+    font-size: 2vmax;
+    text-align: center;
+    width: 50vmax;
+    margin: 2% 17%;
+  }
+  .autor {
+    margin-left: 17%;
+  }
+
+  /*Blog*/
+  .Blog {
+    height: 75vmin;
+  }
+
+  .EntradaBlog2 {
+    display: none;
+  }
+
+  /*Nuestras Redes*/
+  .ContenedorIsotipo {
+    display: none;
+  }
+}
+
+/*Ipad*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  /*Tendencias*/
+  .colonia {
+    font-size: 20px;
+  }
+
+  .precio {
+    font-size: 20px;
+  }
+
+  .info {
+    font-size: 14.5px;
+  }
+
+  .boton {
+    font-size: 16px;
+  }
+
+  .boton {
+    width: 6vmax;
+    height: 5vh;
+  }
+
+  .tend-grid {
+    grid-template-rows: 16vmax 7vmax 53vmax 53vmax 15vmax;
+  }
+
+  .fondo3 {
+    height: 15vmax;
+  }
+
+  /*Podemos ayudar*/
+  .filt {
+    height: 50vmax;
+  }
+
+  .filt-text1 {
+    margin-top: 2vmax;
+    margin-left: 4vmax;
+    margin-right: 4vmax;
+    font-size: 2.5vw;
+  }
+
+  .filt-text2 {
+    margin-top: 1vmax;
+    font-size: 42px;
+  }
+
+  .filt-text3 {
+    margin-left: 5vmax;
+    margin-right: 5vmax;
+    font-size: 25px;
+    margin-top: 1vmin;
+  }
+
+  .contAg {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 2vmax;
+    margin-top: 3vmax;
+    width: 15vmax;
+    height: 6vmax;
+  }
+
+  /*Testimonio*/
+
+  .frase {
+    font-family: Helvetica;
+    font-size: 2vmax;
+    text-align: center;
+    width: 50vmax;
+    margin: 0% 17%;
+  }
+  .autor {
+    margin-left: 17%;
+  }
+
+  /*Blog*/
+  .Blog {
+    height: 75vmin;
+  }
+
+  .EntradaBlog2 {
+    display: none;
+  }
+
+  /*Nuestras Redes*/
+  .ContenedorIsotipo {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  /*Tendencias*/
+  .colonia {
+    font-size: 20px;
+  }
+
+  .precio {
+    font-size: 20px;
+  }
+
+  .info {
+    font-size: 14.5px;
+  }
+
+  .boton {
+    font-size: 16px;
+  }
+
+  .boton {
+    width: 6vmax;
+    height: 5vh;
+  }
+
+  .tend-grid {
+    grid-template-rows: 16vmax 7vmax 53vmax 53vmax 35vmax;
+  }
+
+  .fondo3 {
+    height: 35vmax;
+  }
+
+  /*Podemos ayudar*/
+  .filt {
+    height: 50vmax;
+  }
+
+  .filt-text1 {
+    margin-top: 2vmax;
+    margin-left: 4vmax;
+    margin-right: 4vmax;
+    font-size: 2.5vw;
+  }
+
+  .filt-text2 {
+    margin-top: 1vmax;
+    font-size: 42px;
+  }
+
+  .filt-text3 {
+    margin-left: 5vmax;
+    margin-right: 5vmax;
+    font-size: 25px;
+    margin-top: 1vmin;
+  }
+
+  .contAg {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 2vmax;
+    margin-top: 3vmax;
+    width: 15vmax;
+    height: 6vmax;
+  }
+
+  /*Testimonio*/
+
+  .frase {
+    font-family: Helvetica;
+    font-size: 2vmax;
+    text-align: center;
+    width: 50vmax;
+    margin: 0% 24%;
+  }
+  .autor {
+    margin-left: 24%;
+  }
+
+  /*Blog*/
+  .Blog {
+    height: 75vmin;
+  }
+
+  .EntradaBlog2 {
+    display: none;
+  }
+
+  /*Nuestras Redes*/
+  .ContenedorIsotipo {
+    display: none;
+  }
+}
+
+/*Iphone X*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  /*Home*/
+  .Isotipo {
+    display: none;
+  }
+
+  .LandingBody {
+    height: 67vmax;
+  }
+  .TextoLanding {
+    margin-top: 21.5vmax;
+  }
+  .TextoLandingAbajo {
+    margin-top: 37vmax;
+  }
+
+  /*Tendencias*/
+  .logo{
+    display: none;
+  }
+
+  .infoD{
+    display: none;
+  }
+
+  /*Fondos*/
+  .fondo1 {
+    height: 20vmax;
+  }
+  .fondo2 {
+    height: 20vmax;
+  }
+
+  .tend-grid {
+    grid-template-rows: 16vmax 7vmax 12vmax 25vmax 25vmax;
   }
 
   .fondo3 {
     height: 25vmax;
   }
-}
 
-/*Galeria*/
+  /*Quienes somos*/
 
-.Galeria{
-  padding:50px;
+  .QuienesSomos{
+    border-bottom: white solid 1px;
+  }
+   .QuienesNav > button{
+     font-size: 8px;
+   }
+
+  /*Podemos ayudar*/
+  .filt {
+    height: 45vmax;
+  }
+
+  .filt-text1 {
+    display: none;
+  }
+
+  .filt-text2 {
+    display: none;
+  }
+
+  .filt-text3 {
+    display: none;
+  }
+
+  .contAg {
+    display: none;
+  }
+
+  /*Testimonio*/
+
+  .frase {
+    font-family: Helvetica;
+    font-size: 2vmax;
+    text-align: center;
+    width: 26vmax;
+    margin: 0% 22%;
+  }
+  .autor {
+    margin-left: 24%;
+  }
+
+  /*Blog*/
+  .Blog {
+    height: 75vmin;
+  }
+
+  .EntradaBlog2 {
+    display: none;
+  }
+
+  /*Nuestras Redes*/
+  .ContenedorIsotipo {
+    display: none;
+  }
+
+  .mail {
+    display: none;
+  }
 }
