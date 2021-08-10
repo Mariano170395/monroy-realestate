@@ -1281,6 +1281,180 @@
   filter: grayscale(0%);
 }
 
+/*Fer*/
+
+/* Estilos generales
+=======================*/
+#envolvente {
+  max-width: 1920px;
+  min-width: 320px;
+  background-size: 100%;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Estilos alineaciones
+=======================*/
+.centro {
+  text-align: center;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+
+/* Estilos figures
+=======================*/
+figure {
+  display: block;
+  margin: 0;
+  width: 100%;
+  overflow: auto;
+  float: left;
+  padding-top: 60px;
+  padding-left: 295px;
+  padding-bottom: 60px;
+}
+
+/* Estilos sections
+=======================*/
+/*SECTION SUBMENU*/
+.SUBMENU {
+  position: relative;
+  height: 50vmin;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./fondo/city.png);
+}
+.SubmenuFlex {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 35vmin;
+}
+
+.SubmenuFlex > a{
+  color: white;
+  font-size: 1.5vmax;
+  text-decoration: none;
+}
+
+
+/*SECTION MONROY*/
+
+.MONROY {
+  position: relative;
+  display: inline-table;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(./fondo/marble_white.jpg);
+}
+
+
+.MONROY {
+  text-align: center;
+  color: white;
+}
+.MONROY h2 {
+  margin-top: 80px;
+  width: 1110px;
+  text-align: left;
+  font-size: 62px;
+  font-weight: normal;
+  text-shadow: 5px 5px 10px #333;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding-left: 64px;
+  margin-bottom: 120px;
+}
+.light {
+  font-weight: normal;
+  font-size: 40px;
+}
+.MONROY h3 {
+  font-weight: normal;
+  margin: 0px;
+  text-align: left;
+  font-size: 40px;
+  text-shadow: 3px 3px 5px white;
+  padding-left: 164px;
+  float: left;
+}
+.MONROY p {
+  font-size: 20px;
+  width: 573px;
+  padding-left: 164px;
+  float: left;
+}
+
+/* Estilos figcaption
+=======================*/
+.MONROY div {
+  background-image: url(./fondo/marble_black.jpg);
+  color: white;
+  font-size: 62px;
+}
+
+/* Estilos figure
+=======================*/
+.MONROY img {
+  float: left;
+  width: 650px;
+}
+
+/*SECTION EXCELENTE*/
+
+.EXCELENTE {
+  position: relative;
+  display: inline-table;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(./fondo/marble_white.jpg);
+}
+.EXCELENTE h3 {
+  font-weight: normal;
+  margin: 0px;
+  text-align: left;
+  font-size: 40px;
+  text-shadow: 3px 3px 5px black;
+  float: left;
+}
+.EXCELENTE p {
+  font-size: 20px;
+  width: 573px;
+  float: right;
+  padding-right: 124px;
+}
+
+/* Estilos figure
+=======================*/
+.EXCELENTE img {
+  float: right;
+  width: 650px;
+  padding-right: 573px;
+}
+
 /*Media Queries*/
 
 /*Ipad Pro*/
@@ -1665,11 +1839,11 @@
   }
 
   /*Tendencias*/
-  .logo{
+  .logo {
     display: none;
   }
 
-  .infoD{
+  .infoD {
     display: none;
   }
 
@@ -1691,12 +1865,12 @@
 
   /*Quienes somos*/
 
-  .QuienesSomos{
+  .QuienesSomos {
     border-bottom: white solid 1px;
   }
-   .QuienesNav > button{
-     font-size: 8px;
-   }
+  .QuienesNav > button {
+    font-size: 8px;
+  }
 
   /*Podemos ayudar*/
   .filt {
@@ -1749,4 +1923,130 @@
   .mail {
     display: none;
   }
+
+  /*Footer*/
+  .iconos {
+    display: flex;
+    height: 10%;
+    width: 88%;
+  }
+}
+
+/*celulares pequenos*/
+
+@media only screen and (max-width: 700px) and (orientation: portrait) {
+  /*Home*/
+  .Isotipo {
+    display: none;
+  }
+
+  .LandingBody {
+    height: 67vmax;
+  }
+  .TextoLanding {
+    margin-top: 21.5vmax;
+  }
+  .TextoLandingAbajo {
+    margin-top: 37vmax;
+  }
+
+  /*Tendencias*/
+  .logo {
+    display: none;
+  }
+
+  .infoD {
+    display: none;
+  }
+
+  /*Fondos*/
+  .fondo1 {
+    height: 20vmax;
+  }
+  .fondo2 {
+    height: 20vmax;
+  }
+
+  .tend-grid {
+    grid-template-rows: 16vmax 7vmax 12vmax 25vmax 35vmax;
+  }
+
+  .fondo3 {
+    height: 35vmax;
+  }
+
+  /*Quienes somos*/
+
+  .QuienesSomos {
+    border-bottom: white solid 1px;
+  }
+  .QuienesNav > button {
+    font-size: 8px;
+  }
+
+  /*Podemos ayudar*/
+  .filt {
+    height: 45vmax;
+  }
+
+  .filt-text1 {
+    display: none;
+  }
+
+  .filt-text2 {
+    display: none;
+  }
+
+  .filt-text3 {
+    display: none;
+  }
+
+  .contAg {
+    display: none;
+  }
+
+  /*Testimonio*/
+
+  .frase {
+    font-family: Helvetica;
+    font-size: 2vmax;
+    text-align: center;
+    width: 26vmax;
+    margin: 0% 22%;
+  }
+  .autor {
+    margin-left: 24%;
+  }
+
+  /*Blog*/
+  .Blog {
+    height: 75vmin;
+  }
+
+  .EntradaBlog2 {
+    display: none;
+  }
+
+  /*Nuestras Redes*/
+  .ContenedorIsotipo {
+    display: none;
+  }
+
+  .mail {
+    display: none;
+  }
+
+  /*Footer*/
+  .iconos {
+    display: flex;
+    height: 10%;
+    width: 88%;
+  }
+
+  /*Conocenos*/
+  .SubmenuFlex > a {
+    color: white;
+    font-size: 2.4vmin;
+    text-decoration: none;
+}
 }

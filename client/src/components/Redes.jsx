@@ -26,27 +26,6 @@ const Redes = () => {
           <div className="RedesCont"><img src={tiktok} className='tiktoklogo' alt=''></img><a href="#" className="RedesSociales">Monroy Real Estate</a></div>
         </div>
       </div>
-      {/* <div className="TextRedContainer">
-        <h6 className="NumRed">07</h6>
-        <h2 className="Redes">Nuestras Redes</h2>
-      </div> */}
-      {/* <div className='RedesIsoCont'>
-        <img src={isotipoblanco} className='RedesIso'></img>
-      </div>
-      <div className='RedesContainer'>
-        <div className='RedesCont'><img src={facebook} className='facebooklogo' alt='facebook'></img>
-        <h5>Monroy Real Estate</h5>
-        </div>
-        <div className='RedesCont'><img src={instagram} className='instagramlogo' alt=''></img>
-        <h5>Monroy Real Estate</h5>
-        </div>
-        <div className='RedesCont'><img src={youtube} className='youtubelogo' alt=''></img>
-        <h5>Monroy Real Estate</h5>
-        </div>
-        <div className='RedesCont'><img src={tiktok} className='tiktoklogo' alt=''></img>
-        <h5>Monroy Real Estate</h5>
-        </div>
-      </div> */}
     </div>
   );
 };

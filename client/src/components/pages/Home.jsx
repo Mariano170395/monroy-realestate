@@ -14,6 +14,7 @@ import QuienesText from "../QuienesText";
 import Blog from "../Blog";
 import Redes from "../Redes";
 import Galeria from "../Galeria.jsx";
+import Conocenos from "./Conocenos.jsx";
 
 const Home = () => {
   return (
@@ -39,6 +40,7 @@ const Home = () => {
       {/*Tony*/}
        <Contacto /> 
        <EndBar />
+       <Conocenos/>
       
     </div>
   );
