@@ -41,7 +41,7 @@ const Home = () => {
       {/*Tony*/}
        <Contacto /> 
        
-       {/* <Conocenos/> */}
+        <Conocenos/> 
 
       
     </div>
