@@ -1455,6 +1455,34 @@ figure {
   padding-right: 573px;
 }
 
+/*Galeria*/
+
+.Galeria{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Item{
+  width: 32vw;
+}
+
+.BackCatBlanco1{
+  width: 100%;
+  height: 10vw;
+  background: url(./images/marmolblanco.jpg);
+}
+
+.BackCatNegro1{
+  width: 100%;
+  height: 10vw;
+  background: url(./images/marmolnegro.jpg);
+}
+
+
 /*Media Queries*/
 
 /*Ipad Pro*/

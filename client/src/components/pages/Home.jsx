@@ -15,6 +15,7 @@ import Blog from "../Blog";
 import Redes from "../Redes";
 import Galeria from "../Galeria.jsx";
 import Conocenos from "./Conocenos.jsx";
+import Catalogo from "./Catalogo.jsx";
 
 const Home = () => {
   return (
@@ -40,7 +41,8 @@ const Home = () => {
       {/*Tony*/}
        <Contacto /> 
        <EndBar />
-       <Conocenos/>
+       {/* <Conocenos/> */}
+       <Catalogo/>
       
     </div>
   );
