@@ -21,6 +21,7 @@
 }
 .endBar {
   background-image: url("./Fotos/Marmol.jpg");
+  background-position: center;
   height: 30vmax;
   color: white;
   text-align: center;
@@ -36,6 +37,12 @@
   background-position: center;
   z-index: 2;
 }
+
+.catalogocompleto{
+  text-decoration: none;
+  color: white;
+}
+
 .contact {
   color: black;
   height: 55vmax;
@@ -592,14 +599,7 @@
   border-bottom: 2px white solid;
 }
 
-/* .HamContainer{
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-color: royalblue;
-  left: 93%;
-  bottom: 90%;
-}  */
+
 
 /*Dropdown*/
 
@@ -616,6 +616,8 @@
 
 .DropProp {
   position: relative;
+  width:15%;
+  text-align: center;
   display: inline-block;
   z-index: 10;
 }
@@ -967,161 +969,6 @@
   border: black solid 1px;
 }
 
-/* 
-.BlogMarmol {
-  position: relative;
-  width: 100%;
-  height: 45vmin;
-}
-
-.BlogTextContainer {
-  position: absolute;
-  bottom: 80%;
-  left: 10%;
-  background-color: transparent;
-}
-
-.NumBlog {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.5vw;
-  color: white;
-}
-
-.TitleBlog {
-  color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 3.8vw;
-  border-bottom: white solid 2px;
-}
-
-.ContenedorGral {
-  position: relative;
-  width: 100%;
-  height: 100vmin;
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-}
-
-.ContenedorHrz1 {
-  width: 100%;
-  height: 50vmin;
-  display: flex;
-}
-
-.ContenedorHrz2 {
-  width: 100%;
-  height: 50vmin;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.CuadroBlog1 {
-  width: 70vmin;
-  height: 65vmin;
-  background-color: transparent;
-  position: absolute;
-  margin: 10vmin;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.CuadroBlog2 {
-  width: 70vmin;
-  height: 65vmin;
-  background-color: transparent;
-  position: absolute;
-  margin: 10vmin;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.leer1 {
-  width: 70vmin;
-  height: 5vmin;
-  background-color: transparent;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: black;
-}
-
-.leer2 {
-  width: 70vmin;
-  height: 5vmin;
-  background-color: transparent;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: black;
-}
-
-.ContenedorImg1 {
-  position: absolute;
-  width: 100%;
-  height: 60vmin;
-  margin-bottom: 5vmin;
-  border: 2px black solid;
-}
-
-.ContenedorImg2 {
-  position: absolute;
-  width: 100%;
-  height: 60vmin;
-  margin-bottom: 5vmin;
-  border: 2px black solid;
-}
-
-.leer1 {
-  position: absolute;
-  text-align: center;
-}
-
-.leer2 {
-  position: absolute;
-  text-align: center;
-}
-
-.TituloFlex {
-  padding-top: 5vmax;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: -moz-fit-content;
-  height: fit-content;
-  z-index: 2;
-}
-
-.Numero {
-  font-size: 1.5vw;
-  font-family: Arial;
-  font-weight: lighter;
-  margin: 0%;
-  padding-left: 4.2vw;
-  color: white;
-}
-
-.TituloBlog {
-  font-size: 3.8vw;
-  font-family: Calibri;
-  font-weight: 400;
-  margin: 0%;
-  padding-left: 4.2vw;
-  padding-right: 4vw;
-  color: white;
-}
-
-.LineaBlog {
-  color: white;
-  margin: 0%;
-  margin-top: 0.7vw;
-  margin-bottom: 3.8vw;
-}
-
-.BlogMarmol {
-  width: 100vw;
-  height: 50vmin;
-  background: url(./images/marmolnegro.jpg);
-} */
 
 /*Redes*/
 

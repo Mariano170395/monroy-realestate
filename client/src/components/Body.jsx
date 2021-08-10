@@ -1,6 +1,4 @@
 import React from "react";
-import marmolblanco from "../images/marmolblanco.jpg";
-import marmolnegro from "../images/marmolnegro.jpg";
 
 
 const Body = () => {

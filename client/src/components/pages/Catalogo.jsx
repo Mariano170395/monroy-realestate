@@ -63,7 +63,7 @@ const Catalogo = () => {
           {data.map((item, index) => {
             return (
               <div className="Pics" key={index}>
-                <img src={item.imgSrc} className="Item" />
+                <a href=''><img src={item.imgSrc} className="Item" ></img></a>
               </div>
             );
           })}

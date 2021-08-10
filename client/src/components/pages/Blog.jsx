@@ -4,7 +4,7 @@ import Body from "../Body"
 const Blog = () => {
     return (
         <div>
-          {/* <h1>tony no se wana</h1> */}
+          <div className="prueba">Esto es el Blog</div> 
           {/* <Body/>    */}
         </div>
     )

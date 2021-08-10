@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from "../Fotos/isotiponegro.png"
+import foto1 from '../Fotos/foto1.jpg'
 
 const Tendencias = () => {
     return (
