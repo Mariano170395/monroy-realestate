@@ -1,6 +1,17 @@
 import { Router } from "express";
+import AWS from 'aws-sdk'
+import config from '../config'
 
 const router = Router();
+
+
+/*Endpoint aws*/
+const spacesEndpoint = new AWS.Endpoint(config.Endpoint);
+const s3 = new AWS.S3({
+  endpoint: spacesEndpoint,
+});
+
+
 //Subir una imagen
 router.post('/api/images/upload', async(req, res)=>{
 
@@ -10,8 +21,25 @@ router.post('/api/images/upload', async(req, res)=>{
     const {file} = req.files;
     //Yo solo quiero la info de la imagen 
     console.log(file)
-    return res.json('recibido')
+
+     try {
+         const uploadObject = await s3.putObject({
+             ACL: 'public-read',
+             Bucket: config.BucketName,
+             Body: file.data,
+             Key: file.name,
+         }).promise()
+             console.log(uploadObject)
+
+     } catch (error) {
+           console.log(error)
+          res.send(error)
+     }
+
+    return res.json('Holi')
 })
+
+
 //Te muestra direccion de imagenes
 router.get('/api/images', async(req, res)=>{})
 //informacion de una imagen
