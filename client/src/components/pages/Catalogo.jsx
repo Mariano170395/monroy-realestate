@@ -1,73 +1,23 @@
-import React from "react";
-import img1 from "../../Galeria/img1.jpg";
-import img2 from "../../Galeria/img2.jpg";
-import img3 from "../../Galeria/img3.jpg";
-import img4 from "../../Galeria/img4.jpg";
-import img5 from "../../Galeria/img5.jpg";
-import img6 from "../../Galeria/img6.jpg";
-import img7 from "../../Galeria/img7.jpg";
-import img8 from "../../Galeria/img8.jpg";
-import img9 from "../../Galeria/img9.jpg";
-import img10 from "../../Galeria/img10.jpg";
+import React, {useState, useEffect} from "react";
+import axios from 'axios'
 
 const Catalogo = () => {
-  const data = [
-    {
-      id: 1,
-      imgSrc: img1,
-    },
 
-    {
-      id: 2,
-      imgSrc: img2,
-    },
-    {
-      id: 3,
-      imgSrc: img3,
-    },
-    {
-      id: 4,
-      imgSrc: img4,
-    },
-    {
-      id: 5,
-      imgSrc: img5,
-    },
+  const [images, setImages] = useState([])
 
-    {
-      id: 6,
-      imgSrc: img6,
-    },
-    {
-      id: 7,
-      imgSrc: img7,
-    },
-    {
-      id: 8,
-      imgSrc: img8,
-    },
-    {
-      id: 9,
-      imgSrc: img9,
-    },
-    {
-      id: 10,
-      imgSrc: img10,
-    },
-  ];
+  useEffect( async () => {
+    const res = await axios.get('/api/images')
+    console.log(res)
+    setImages(res.data)
+  }, []);
 
   return (
     <div>
-        <div className="Galeria">
-          {data.map((item, index) => {
-            return (
-              <div className="Pics" key={index}>
-                <img src={item.imgSrc} alt="Img-Alt" className="Item" />
-              </div>
-            );
-          })}
-        
-      </div>
+        {images.map(image =>(
+          <div>
+            <img src={image.url} alt=""/>
+          </div>
+        ))}
     </div>
   );
 };

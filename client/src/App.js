@@ -16,13 +16,14 @@ import Oportunidades from './components/pages/Oportunidades';
 import Whatsapp from './components/Whatsapp';
 import Propiedad from './components/pages/Propiedad';
 import Subir from './components/pages/Subir';
+import Catalogo from './components/pages/Catalogo';
 
 
 function App() {
   return (
     <Router>
     <div className="App">
-      <NavBar/>
+      {/* <NavBar/> */}
        <Whatsapp/>
       <Switch>
         <Route exact path="/oportunidades" component={Oportunidades}/>

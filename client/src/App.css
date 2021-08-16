@@ -1912,3 +1912,8 @@ p {
   border: none;
   font-size: 2vmax;
 }
+
+.Propiedades{
+  width: 100%;
+  height: 100vh;
+}
