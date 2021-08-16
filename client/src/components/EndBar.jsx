@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import logo from "../Fotos/logonegro.png"
 import Face from "../Fotos/IconoFacebook.png"
 import Inst from "../Fotos/IconoInstagram.png"
@@ -15,10 +16,12 @@ const EndBar = () => {
                 </div>
                 <div className="endCol2">
                     <ul className="menu">
-                        <li>Propiedades</li>
-                        <li>Conocenos</li>
-                        <li>Contacto</li>
-                        <li>Blog</li>
+                        <li><Link className="DropBtnProp" to="/comprar">PROPIEDADES</Link></li>
+                        <li><Link className="DropBtnProp" to="/conocenos">CONÓCENOS</Link></li>
+                        <li><Link className="DropBtnProp" to="/contacto">CONTACTO</Link></li>
+                        <li><Link className="DropBtnProp" to="/blog">BLOG</Link></li>
+                        
+                        
                     </ul>
                 </div>
                 <div className="endCol3">

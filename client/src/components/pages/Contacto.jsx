@@ -1,9 +1,11 @@
 import React from 'react'
+import Contact from "../Contacto.jsx";
 
 const Contacto = () => {
     return (
         <div>
-            <h1>Hola Fraggy</h1>
+            <div className="prueba"></div> 
+            <Contact /> 
         </div>
     )
 }

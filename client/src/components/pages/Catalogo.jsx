@@ -58,12 +58,11 @@ const Catalogo = () => {
 
   return (
     <div>
-      <div className="BackCatBlanco1"></div>
         <div className="Galeria">
           {data.map((item, index) => {
             return (
               <div className="Pics" key={index}>
-                <a href=''><img src={item.imgSrc} className="Item" ></img></a>
+                <img src={item.imgSrc} alt="Img-Alt" className="Item" />
               </div>
             );
           })}

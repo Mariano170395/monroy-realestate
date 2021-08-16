@@ -22,26 +22,26 @@ const Home = () => {
     <div>
       {/*Mariano*/}
       {/* <NavBar /> */}
-      <Body />
+      {/* <Body /> */}
       {/* <TextImg />
       {/*Tony*/}
       <div className="tend-grid">
-        <Fondo />
-        <Tendencias />
+        {/* <Fondo /> */}
+        {/* <Tendencias /> */}
       </div>
       {/*Mariano*/}
-       <BodyQuienes />  
-       <QuienesText />
+       {/* <BodyQuienes />   */}
+       {/* <QuienesText /> */}
       {/*Tony*/}
-      <Filtro />
-      {/* <Testimonios />
+      {/* <Filtro /> */}
+      {/* <Testimonios /> */}
       {/*Mariano*/}
-       <Blog /> 
-       <Redes /> 
+       {/* <Blog />  */}
+       {/* <Redes />  */}
       {/*Tony*/}
-       <Contacto /> 
+       {/* <Contacto />  */}
        
-        <Conocenos/> 
+        {/* <Conocenos/>  */}
 
       
     </div>

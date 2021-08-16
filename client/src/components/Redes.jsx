@@ -1,5 +1,4 @@
 import React from "react";
-import isotipoblanco from "../images/isotipoblanco.png";
 import facebook from "../images/facebook.png";
 import instagram from "../images/instagram.png";
 import youtube from "../images/youtube.png";
@@ -22,8 +21,8 @@ const Redes = () => {
         <div className="ContenedorRedes">
           <div className="RedesCont"><img src={facebook} className='facebooklogo' alt='facebook'></img><a href="https://www.facebook.com/monroyrealestate/" className="RedesSociales">Monroy Real Estate</a></div>
           <div className="RedesCont"><img src={instagram} className='instagramlogo' alt=''></img><a href="https://www.instagram.com/monroy.realestate/" className="RedesSociales">Monroy Real Estate</a></div>
-          <div className="RedesCont"><img src={youtube} className='youtubelogo' alt=''></img><a href="#" className="RedesSociales">Monroy Real Estate</a></div>
-          <div className="RedesCont"><img src={tiktok} className='tiktoklogo' alt=''></img><a href="#" className="RedesSociales">Monroy Real Estate</a></div>
+          <div className="RedesCont"><img src={youtube} className='youtubelogo' alt=''></img><a href="https://www.youtube.com/channel/UCtYt-1mMzGcOP_gH_0OgJMw" className="RedesSociales">Monroy Real Estate</a></div>
+          <div className="RedesCont"><img src={tiktok} className='tiktoklogo' alt=''></img><a href="https://www.tiktok.com/@monroyrealestate?lang=es" className="RedesSociales">Monroy Real Estate</a></div>
         </div>
       </div>
     </div>

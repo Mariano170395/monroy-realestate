@@ -1,11 +1,11 @@
 import React from 'react'
-import Body from "../Body"
+import Blogg from "../Blog";
 
 const Blog = () => {
     return (
         <div>
-          <div className="prueba">Esto es el Blog</div> 
-          {/* <Body/>    */}
+          <div className="prueba"></div> 
+          <Blogg /> 
         </div>
     )
 }

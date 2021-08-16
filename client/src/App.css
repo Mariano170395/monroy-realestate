@@ -21,7 +21,6 @@
 }
 .endBar {
   background-image: url("./Fotos/Marmol.jpg");
-  background-position: center;
   height: 30vmax;
   color: white;
   text-align: center;
@@ -37,12 +36,6 @@
   background-position: center;
   z-index: 2;
 }
-
-.catalogocompleto{
-  text-decoration: none;
-  color: white;
-}
-
 .contact {
   color: black;
   height: 55vmax;
@@ -59,7 +52,7 @@
   background-size: cover;
   background-position: center;
   z-index: -2;
-  width: 100vw;
+  width: 100%;
 }
 .fondo2 {
   height: 53vmax;
@@ -68,7 +61,7 @@
   background-size: cover;
   background-position: center;
   z-index: -2;
-  width: 100vw;
+  width: 100%;
 }
 .fondo3 {
   height: 40vmax;
@@ -77,7 +70,7 @@
   background-size: cover;
   background-position: center;
   z-index: -2;
-  width: 100vw;
+  width: 100%;
 }
 .titulo-flex {
   padding-top: 5vmax;
@@ -113,31 +106,31 @@
   flex-direction: row;
   flex-wrap: wrap;
   height: fit-content;
+  width:99%;
 }
 .fototendencias1 {
   filter: grayscale();
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
-  width: 78vw;
+  width: 78.5vw;
   height: 43vw;
-  margin-left: 22vw;
+  margin-left: 21vw;
   background-image: url("./Fotos/foto1.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  justify-content: center;
   transition-property: background-size;
   transition-duration: 1s;
 }
 .fototendencias2 {
   filter: grayscale();
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
-  width: 78vw;
+  width: 78.5vw;
   height: 43vw;
-  margin-right: 22vw;
+  margin-right: 21vw;
   background-image: url("./Fotos/foto2.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -150,7 +143,7 @@
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  width: 78.5vw;
+  width: 77vw;
   height: 43vw;
   margin-left: 21vw;
   background-image: url("./Fotos/foto3.jpg");
@@ -576,6 +569,7 @@
   width: 100%;
   position: fixed;
   z-index: 10;
+  width: 100%;
   /* margin-top: -100px; */
 }
 
@@ -584,21 +578,25 @@
   display: flex;
   background-color: black;
   height: 70px;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
+}
+
+.Logo-1{
+  height: 70px;
+  width: auto;
 }
 
 .Navi-FlexBtn {
   display: flex;
   background-color: black;
   width: 100%;
-  height: 30px;
+  height: 45px;
   position: absolute;
   top: 70px;
   justify-content: space-evenly;
   border-bottom: 2px white solid;
 }
-
 
 
 /*Dropdown*/
@@ -616,7 +614,7 @@
 
 .DropProp {
   position: relative;
-  width:15%;
+  width:12%;
   text-align: center;
   display: inline-block;
   z-index: 10;
@@ -724,11 +722,11 @@
 
 .BackgroundQuienes {
   position: relative;
-  width: 98vw;
+  width: 100%;
 }
 
 .TranspQuienes {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background-color: #011f35;
   position: absolute;
@@ -737,7 +735,7 @@
 }
 
 .ImgQuienes {
-  width: 100vw;
+  width: 100%;
   height: 100%;
 }
 
@@ -766,24 +764,13 @@
   position: absolute;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 100vw;
+  width: 100%;
   height: 15%;
   bottom: 0.1vmin;
   background-color: black;
   opacity: 70%;
+  font-size: 1.7vmax;
   z-index: 4;
-}
-
-.QuienesNav > button {
-  background-color: transparent;
-  color: white;
-  border: transparent;
-  font-size: 1.5vmax;
-}
-
-.QuienesNav > button:hover {
-  text-decoration: underline;
 }
 
 /*Quienes parte2*/
@@ -945,7 +932,7 @@
 
 .BlogWrapper {
   width: 100vw;
-  height: 60vmin;
+  height: 70vmin;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -956,25 +943,44 @@
 }
 
 .EntradaBlog {
-  width: 60vmin;
-  height: 50vmin;
-  background-color: blue;
+  width: 70vmin;
+  height: 45vmin;
+  margin-top: 3%;
+  background-color: red;
   border: black solid 1px;
+  align-self:flex-start;
+  content: inherit;
+  z-index: 2;
 }
 
 .EntradaBlog2 {
-  width: 60vmin;
-  height: 50vmin;
+  width: 70vmin;
+  height: 45vmin;
   background-color: blue;
   border: black solid 1px;
+  margin-bottom:4%;
+  align-self: flex-end;
+  z-index: 2;
+}
+.BolgIm{
+  width:100%;
+  height:100%;
 }
 
+.BlogBox{
+  height:fit-content;
+  padding-left:3%;
+  background-color: black;
+  opacity: 0.6;
+  font-size:2.3vmax;
+  color:white;
+}
 
 /*Redes*/
 
 .RedesBackground {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vmin;
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -1128,181 +1134,12 @@
   filter: grayscale(0%);
 }
 
-/*Fer*/
-
-/* Estilos generales
-=======================*/
-#envolvente {
-  max-width: 1920px;
-  min-width: 320px;
-  background-size: 100%;
-  padding: 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* Estilos alineaciones
-=======================*/
-.centro {
-  text-align: center;
-}
-.clearfix:before,
-.clearfix:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-.clearfix:after {
-  clear: both;
-}
-.clearfix {
-  zoom: 1;
-}
 
 p {
   font-family: "Montserrat", sans-serif;
   text-align: justify;
 }
 
-/* Estilos figures
-=======================*/
-figure {
-  display: block;
-  margin: 0;
-  width: 100%;
-  overflow: auto;
-  float: left;
-  padding-top: 60px;
-  padding-left: 295px;
-  padding-bottom: 60px;
-}
-
-/* Estilos sections
-=======================*/
-/*SECTION SUBMENU*/
-.SUBMENU {
-  position: relative;
-  height: 50vmin;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(./fondo/city.png);
-}
-.SubmenuFlex {
-  position: absolute;
-  width: 100%;
-  height: 15%;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 35vmin;
-}
-
-.SubmenuFlex > a{
-  color: white;
-  font-size: 1.5vmax;
-  text-decoration: none;
-}
-
-
-/*SECTION MONROY*/
-
-.MONROY {
-  position: relative;
-  display: inline-table;
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
-  background-image: url(./fondo/marble_white.jpg);
-}
-
-
-.MONROY {
-  text-align: center;
-  color: white;
-}
-.MONROY h2 {
-  margin-top: 80px;
-  width: 1110px;
-  text-align: left;
-  font-size: 62px;
-  font-weight: normal;
-  text-shadow: 5px 5px 10px #333;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  padding-left: 64px;
-  margin-bottom: 120px;
-}
-.light {
-  font-weight: normal;
-  font-size: 40px;
-}
-.MONROY h3 {
-  font-weight: normal;
-  margin: 0px;
-  text-align: left;
-  font-size: 40px;
-  text-shadow: 3px 3px 5px white;
-  padding-left: 164px;
-  float: left;
-}
-.MONROY p {
-  font-size: 20px;
-  width: 573px;
-  padding-left: 164px;
-  float: left;
-}
-
-/* Estilos figcaption
-=======================*/
-.MONROY div {
-  background-image: url(./fondo/marble_black.jpg);
-  color: white;
-  font-size: 62px;
-}
-
-/* Estilos figure
-=======================*/
-.MONROY img {
-  float: left;
-  width: 650px;
-}
-
-/*SECTION EXCELENTE*/
-
-.EXCELENTE {
-  position: relative;
-  display: inline-table;
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
-  background-image: url(./fondo/marble_white.jpg);
-}
-.EXCELENTE h3 {
-  font-weight: normal;
-  margin: 0px;
-  text-align: left;
-  font-size: 40px;
-  text-shadow: 3px 3px 5px black;
-  float: left;
-}
-.EXCELENTE p {
-  font-size: 20px;
-  width: 573px;
-  float: right;
-  padding-right: 124px;
-}
-
-/* Estilos figure
-=======================*/
-.EXCELENTE img {
-  float: right;
-  width: 650px;
-  padding-right: 573px;
-}
-
-/*Galeria*/
 
 .Galeria{
   width: 100%;
@@ -1321,6 +1158,9 @@ figure {
   width: 100%;
   height: 10vw;
   background: url(./images/marmolblanco.jpg);
+  font-size: 4.7vmax;
+  text-align: center;
+  padding-top: 2%;
 }
 
 .BackCatNegro1{
@@ -1746,20 +1586,8 @@ figure {
     display: none;
   }
 
-  /*Fondos*/
-  .fondo1 {
-    height: 20vmax;
-  }
-  .fondo2 {
-    height: 20vmax;
-  }
-
   .tend-grid {
     grid-template-rows: 16vmax 7vmax 12vmax 25vmax 25vmax;
-  }
-
-  .fondo3 {
-    height: 25vmax;
   }
 
   /*Quienes somos*/
@@ -1858,20 +1686,8 @@ figure {
     display: none;
   }
 
-  /*Fondos*/
-  .fondo1 {
-    height: 20vmax;
-  }
-  .fondo2 {
-    height: 20vmax;
-  }
-
   .tend-grid {
     grid-template-rows: 16vmax 7vmax 12vmax 25vmax 35vmax;
-  }
-
-  .fondo3 {
-    height: 35vmax;
   }
 
   /*Quienes somos*/
@@ -1942,10 +1758,157 @@ figure {
     width: 88%;
   }
 
-  /*Conocenos*/
-  .SubmenuFlex > a {
-    color: white;
-    font-size: 2.4vmin;
-    text-decoration: none;
 }
+
+.Top{
+  display:flex;
+  flex-direction: column;
+
+}
+.TopBack{
+  height: 20vmax;
+  background-image: url("./fondo/Paisaje2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.TopMenu{
+  height:4.5vmax;
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color:black;
+  font-size: 1.7vmax;
+}
+.Conoce{
+  color:white;
+  width:24vmax;
+  text-align: center;
+  align-self: center;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+.espacio{
+  width:2vmax;
+}
+.ConTitle{
+  font-size: 5vmax;
+  background-image: url("./Fotos/MarmolNegativo.jpg");
+  padding:5%;
+  text-decoration: underline;
+}
+.ConGrid{
+  display: grid;
+  grid-template-rows: 35vmax 35vmax 35vmax 35vmax;
+}
+.Izquierda{
+  background-image: url(./images/marmolnegro.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display:flex;
+  flex-direction: row;
+  color:white;
+}
+.Derecha{
+  background-image: url("./Fotos/MarmolNegativo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display:flex;
+  flex-direction: row-reverse;
+  color:black;
+}
+.conImg{
+  width:40vmax;
+  height:25vmax;
+  margin-top:5vmax;
+  margin-left:7.5vmax;
+  margin-right:7.5vmax;
+}
+.conText{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  height:100%;
+}
+.contitu{
+  font-size: 3vmax;
+}
+.concont{
+  font-size:1.5vmax;
+}
+
+/*Subir*/
+
+.cont-grid {
+  display: grid;
+  grid-template-columns: 44% 12% 44%;
+  grid-template-rows: 10vmax 10vmax 10vmax 5vmax;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+.Titulo {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 2.3vmax;
+  margin-bottom: 2vmax;
+}
+.apellidos {
+  grid-column: 3;
+  grid-row: 1;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 2.3vmax;
+  margin-bottom: 2vmax;
+}
+.correo {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 2.3vmax;
+  margin-bottom: 2vmax;
+}
+.telefono {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 2.3vmax;
+  margin-bottom: 2vmax;
+}
+.mensaje {
+  grid-column: 1/4;
+  grid-row: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 2vmax;
+  box-sizing: border-box;
+  resize: none;
+}
+.mensaje:focus,
+.telefono:focus,
+.Titulo:focus,
+.apellidos:focus,
+.correo:focus {
+  outline: none;
+}
+.enviar {
+  grid-column: 2;
+  grid-row: 4;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 2vmax;
 }

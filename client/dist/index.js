@@ -18,7 +18,7 @@ require("./database");
 var app = (0, _express.default)(); //Colocar en un puerto
 //si hay una variable, que la use, si hay una variable port que la use, si no el 4000
 
-app.set('port', process.env.PORT || 4000); //postea en el server
+app.set('port', process.env.PORT || 5000); //postea en el server
 // app.get('/', (req, res)=>res.send('hola'))
 //Interpretar el archivo y luego subirlos
 

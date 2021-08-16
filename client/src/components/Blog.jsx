@@ -1,5 +1,6 @@
 import React from "react";
-import marmolnegro from "../images/marmolnegro.jpg";
+import image1 from "../Galeria/img1.jpg";
+import image2 from "../Galeria/img2.jpg";
 
 const Blog = () => {
   return (
@@ -13,8 +14,18 @@ const Blog = () => {
           </div>
         </div>
         <div className="BlogWrapper">
-          <div className="EntradaBlog"></div>
-          <div className="EntradaBlog2"></div>
+          <div className="EntradaBlog">
+            <img src={image1} alt="alt1" className="BolgIm"></img>
+            <div className="BlogBox">
+              Título del artículo 1
+            </div>
+          </div>
+          <div className="EntradaBlog2">
+            <img src={image2} alt="alt2" className="BolgIm"></img>
+            <div className="BlogBox">
+              Título del artículo 2
+            </div>
+          </div>
         </div>
       </div>
     </div>

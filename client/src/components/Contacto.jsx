@@ -11,7 +11,7 @@ const Contacto = () => {
             'template_n7jledn', 
             e.target, 
             'user_tvSW5gG9Gc432QuyoBnyx'
-        ) .then(res=>{
+        ).then(res=>{
             console.log(res);
         }).catch(err=>console.log(err)) 
     }
@@ -22,7 +22,7 @@ const Contacto = () => {
                 <div>
                     <h2 className="numero">08</h2>
                     <h1 className="title">CONTACTO</h1>
-                    <hr class="linea"/>
+                    <hr className="linea"/>
                 </div>
             </div>
             <form onSubmit={sendEmail}>

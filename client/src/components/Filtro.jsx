@@ -7,7 +7,7 @@ const Filtro = () => {
                 <div>
                     <h2 className="numero">03</h2>
                     <h1 className="title">¿EN QUE TE PODEMOS AYUDAR?</h1>
-                    <hr class="linea"/>
+                    <hr className="linea"/>
                 </div>
             </div>
             <div className="filt-flex">
@@ -29,7 +29,7 @@ const Filtro = () => {
                         </select>
                         <input type="text" className="busc" name="buscador" placeholder="Ubicación, Asesor, Oficina, ID"></input>
                         <div className="advSer">Búsqueda Avanzada</div>
-                        <div className="catConsul"><a className='catalogocompleto' href='/comprar'>Consultar catálogo completo</a></div>
+                        <div className="catConsul">Consultar catálogo completo</div>
                     </div>
                 </div>
             </div>
