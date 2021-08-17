@@ -23,12 +23,12 @@ function App() {
   return (
     <Router>
     <div className="App">
-      {/* <NavBar/> */}
+      <NavBar/>
        <Whatsapp/>
       <Switch>
         <Route exact path="/oportunidades" component={Oportunidades}/>
         <Route exact path="/rentar" component={Rentar}/>
-        <Route exact path="/comprar" component={Comprar}/>
+        <Route exact path="/comprar" component={Catalogo}/>
         <Route exact path="/comprar/:id" component={Propiedad}/>
         <Route exact path="/subir" component={Subir}/>
         <Route exact path="/vender" component={Vender}/>

@@ -1667,6 +1667,12 @@ p {
     display: none;
   }
 
+  .Text3 {
+
+    font-size: 5.2vmax;
+    
+}
+
   .LandingBody {
     height: 67vmax;
   }
@@ -1913,7 +1919,3 @@ p {
   font-size: 2vmax;
 }
 
-.Propiedades{
-  width: 100%;
-  height: 100vh;
-}
