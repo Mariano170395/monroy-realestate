@@ -10,6 +10,7 @@ import BodyQuienes from "../BodyQuienes";
 import QuienesText from "../QuienesText";
 import Blog from "../Blog";
 import Redes from "../Redes";
+import TestimoniosCarr from "../TestimoniosCarr.jsx";
 
 const Home = () => {
   return (
@@ -26,7 +27,7 @@ const Home = () => {
        <QuienesText />
       {/*Tony*/}
       <Filtro />
-      {/* <Testimonios /> */}
+      <TestimoniosCarr />
       {/*Mariano*/}
        <Blog />
        <Redes /> 

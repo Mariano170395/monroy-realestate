@@ -14,24 +14,6 @@ const QuienesText = () => {
         <div className="Box4"></div>
       </div>
     </div>
-
-
-
-
-
-    // <div className="QuienesTextBackground">
-    //   <div>
-    //       <img src={isotipoblanco} className='IsotipoQuienes' alt="isotipoblanco"></img>
-    //   </div>
-    //   <div className='QuienesWrapper'>
-    //   <div className='QuienesContainer'>
-    //       <p className='TextQuienes'>Texto1</p>
-    //   </div>
-    //   <div className='QuienesContainer'></div>
-    //   <div className='QuienesContainer'></div>
-    //   <div className='QuienesContainer'></div>
-    //   </div>
-    // </div>
   );
 };
 

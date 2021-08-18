@@ -13,11 +13,12 @@
 }
 .testim {
   z-index: 0;
-  height: 35vmax;
+  height: 30vmax;
   background-image: url("./Fotos/MarmolNegativo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  width: 100%;
 }
 .endBar {
   background-image: url("./Fotos/Marmol.jpg");
@@ -412,19 +413,19 @@
 }
 .frase {
   font-family: Helvetica;
-  font-size: 2vmax;
+  font-size: 5vmin;
   text-align: center;
-  width: 50vmax;
-  margin-left: 25%;
+  color: white;
+
 }
 .autor {
   font-family: Helvetica;
-  font-size: 2vmax;
+  font-size: 3.5vmin;
   text-align: center;
-  width: 50vmax;
-  margin-left: 25%;
-  margin-top: 4.5vmax;
+  margin-top: 3vmin;
+  color: white;
 }
+
 .cont-grid {
   display: grid;
   grid-template-columns: 44% 12% 44%;
@@ -1266,9 +1267,6 @@ p {
   .frase {
     font-family: Helvetica;
     font-size: 2vmax;
-    text-align: center;
-    width: 50vmax;
-    margin: 0% 25%;
   }
 
   /*Blog*/
@@ -1348,16 +1346,6 @@ p {
 
   /*Testimonio*/
 
-  .frase {
-    font-family: Helvetica;
-    font-size: 2vmax;
-    text-align: center;
-    width: 50vmax;
-    margin: 2% 17%;
-  }
-  .autor {
-    margin-left: 17%;
-  }
 
   /*Blog*/
   .Blog {
@@ -1441,17 +1429,7 @@ p {
 
   /*Testimonio*/
 
-  .frase {
-    font-family: Helvetica;
-    font-size: 2vmax;
-    text-align: center;
-    width: 50vmax;
-    margin: 0% 17%;
-  }
-  .autor {
-    margin-left: 17%;
-  }
-
+ 
   /*Blog*/
   .Blog {
     height: 75vmin;
@@ -1533,16 +1511,7 @@ p {
 
   /*Testimonio*/
 
-  .frase {
-    font-family: Helvetica;
-    font-size: 2vmax;
-    text-align: center;
-    width: 50vmax;
-    margin: 0% 24%;
-  }
-  .autor {
-    margin-left: 24%;
-  }
+ 
 
   /*Blog*/
   .Blog {
@@ -1622,16 +1591,7 @@ p {
 
   /*Testimonio*/
 
-  .frase {
-    font-family: Helvetica;
-    font-size: 2vmax;
-    text-align: center;
-    width: 26vmax;
-    margin: 0% 22%;
-  }
-  .autor {
-    margin-left: 24%;
-  }
+
 
   /*Blog*/
   .Blog {
@@ -1728,16 +1688,6 @@ p {
 
   /*Testimonio*/
 
-  .frase {
-    font-family: Helvetica;
-    font-size: 2vmax;
-    text-align: center;
-    width: 26vmax;
-    margin: 0% 22%;
-  }
-  .autor {
-    margin-left: 24%;
-  }
 
   /*Blog*/
   .Blog {
@@ -1919,3 +1869,56 @@ p {
   font-size: 2vmax;
 }
 
+.Testimonios{
+  width: 100%;
+  height: 70vmin;
+  background: url(./Fotos/MarmolNegativo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.TestimoniosFlex{
+  width: 100%;
+  height: 30vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  opacity: 60%;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.left-arrow{
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.right-arrow{
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.BotonesFlex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
