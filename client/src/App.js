@@ -6,7 +6,6 @@ import NavBar from './components/NavBar';
 import EndBar from "./components/EndBar.jsx";
 import Contacto from './components/pages/Contacto';
 import Vender from './components/pages/Vender';
-import Comprar from './components/pages/Comprar';
 import Rentar from './components/pages/Rentar';
 import Conocenos from './components/pages/Conocenos';
 import Conocenos2 from './components/pages/Conocenos2';
@@ -42,7 +41,7 @@ function App() {
         
       </Switch>
       
-      {/* <EndBar /> */}
+      <EndBar />
     </div>
     </Router>
   );

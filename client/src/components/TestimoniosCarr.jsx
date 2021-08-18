@@ -75,6 +75,5 @@ const TestimoniosCarr = () => {
 };
 
 
-{/*  */}
 
 export default TestimoniosCarr;

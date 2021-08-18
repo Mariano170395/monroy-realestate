@@ -22,7 +22,10 @@
 }
 .endBar {
   background-image: url("./Fotos/Marmol.jpg");
-  height: 30vmax;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 33vmax;
   color: white;
   text-align: center;
   font-size: 1.3vmax;
@@ -35,7 +38,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: 2;
+  z-index: 5;
 }
 .contact {
   color: black;
@@ -1199,6 +1202,15 @@ p {
 
 /*Ipad Pro*/
 @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  
+  /*Nav*/
+  .Navi-FlexBtn{
+    height: 20px;
+  }
+  .Navi-FlexWrap{
+    height: 90px;
+  }
+
   /*Tendencias*/
   .colonia {
     font-size: 20px;
@@ -1285,6 +1297,15 @@ p {
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    /*Nav*/
+    .Navi-FlexBtn{
+      height: 20px;
+    }
+  
+    .Navi-FlexWrap{
+      height: 90px;
+    }
+
   /*Tendencias*/
   .colonia {
     font-size: 20px;
@@ -1364,6 +1385,16 @@ p {
 
 /*Ipad*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  
+    /*Nav*/
+    .Navi-FlexBtn{
+      height: 20px;
+    }
+
+    .Navi-FlexWrap{
+      height: 90px;
+    }
+  
   /*Tendencias*/
   .colonia {
     font-size: 20px;
@@ -1446,6 +1477,16 @@ p {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  
+    /*Nav*/
+    .Navi-FlexBtn{
+      height: 20px;
+    }
+
+    .Navi-FlexWrap{
+      height: 90px;
+    }
+  
   /*Tendencias*/
   .colonia {
     font-size: 20px;
@@ -1531,6 +1572,16 @@ p {
 /*Iphone X*/
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  
+    /*Nav*/
+    .Navi-FlexBtn{
+      height: 20px;
+    }
+
+    .Navi-FlexWrap{
+      height: 90px;
+    }
+  
   /*Home*/
   .Isotipo {
     display: none;
@@ -1622,6 +1673,16 @@ p {
 /*celulares pequenos*/
 
 @media only screen and (max-width: 700px) and (orientation: portrait) {
+ 
+   /*Nav*/
+   .Navi-FlexBtn{
+    height: 20px;
+  }
+
+  .Navi-FlexWrap{
+    height: 90px;
+  }
+ 
   /*Home*/
   .Isotipo {
     display: none;

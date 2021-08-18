@@ -2,7 +2,6 @@ import React from "react";
 import Tendencias from "../Tendencias.jsx";
 import Filtro from "../Filtro.jsx";
 import Fondo from "../Fondo.jsx";
-import Testimonios from "../Testimonios.jsx";
 import Contacto from "../Contacto.jsx";
 /*Mariano*/
 import Body from "../Body";
@@ -24,7 +23,7 @@ const Home = () => {
       </div>
       {/*Mariano*/}
        <BodyQuienes />  
-       <QuienesText />
+       {/* <QuienesText /> */}
       {/*Tony*/}
       <Filtro />
       <TestimoniosCarr />
