@@ -1930,6 +1930,7 @@ p {
   font-size: 2vmax;
 }
 
+/*Testimonios*/
 .Testimonios{
   width: 100%;
   height: 70vmin;
@@ -1983,3 +1984,66 @@ p {
   align-items: center;
   justify-content: space-evenly;
 }
+
+/*Quienes Texto*/
+
+.QuienesTextWrap{
+  width: 100%;
+  height: 70vmin;
+}
+
+.QuienesFlex{
+  width: 80%;
+  height: 60vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  opacity: 40%;
+  margin: 10vmin 10% 0px 10%
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.left-arrow{
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.right-arrow{
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.BotonesFlex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.FraseQuienes{
+  font-family: Helvetica;
+  font-size: 4.5vmin;
+  text-align: center;
+  color: white;
+  padding: 10vmin;
+
+}
+
