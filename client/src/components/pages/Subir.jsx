@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios'
+import { useHistory } from 'react-router-dom'
 
 
 
@@ -15,6 +16,8 @@ const Subir = () => {
         setFile(e.target.files[0])
     }
 
+    const history = useHistory()
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -27,6 +30,7 @@ const Subir = () => {
         //Peticion Post con axios
        const res = await axios.post('/api/images/upload', formData)
        console.log(res)
+       history.push('/comprar')
     }
 
     return (

@@ -16,6 +16,7 @@ import Whatsapp from './components/Whatsapp';
 import Propiedad from './components/pages/Propiedad';
 import Subir from './components/pages/Subir';
 import Catalogo from './components/pages/Catalogo';
+import Borrar from './components/pages/Borrar'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/rentar" component={Rentar}/>
         <Route exact path="/comprar" component={Catalogo}/>
         <Route exact path="/comprar/:id" component={Propiedad}/>
+        <Route exact path="/comprar/:id/borrar" component={Borrar}/>
         <Route exact path="/subir" component={Subir}/>
         <Route exact path="/vender" component={Vender}/>
         <Route exact path="/blog" component={Blog}/>
