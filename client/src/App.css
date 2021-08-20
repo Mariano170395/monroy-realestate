@@ -110,7 +110,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   height: fit-content;
-  width:99%;
+  width: 99%;
 }
 .fototendencias1 {
   filter: grayscale();
@@ -419,7 +419,6 @@
   font-size: 5vmin;
   text-align: center;
   color: white;
-
 }
 .autor {
   font-family: Helvetica;
@@ -586,7 +585,7 @@
   justify-content: center;
 }
 
-.Logo-1{
+.Logo-1 {
   height: 70px;
   width: auto;
 }
@@ -601,7 +600,6 @@
   justify-content: space-evenly;
   border-bottom: 2px white solid;
 }
-
 
 /*Dropdown*/
 
@@ -618,7 +616,7 @@
 
 .DropProp {
   position: relative;
-  width:12%;
+  width: 12%;
   text-align: center;
   display: inline-block;
   z-index: 10;
@@ -952,7 +950,7 @@
   margin-top: 3%;
   background-color: red;
   border: black solid 1px;
-  align-self:flex-start;
+  align-self: flex-start;
   content: inherit;
   z-index: 2;
 }
@@ -962,22 +960,22 @@
   height: 45vmin;
   background-color: blue;
   border: black solid 1px;
-  margin-bottom:4%;
+  margin-bottom: 4%;
   align-self: flex-end;
   z-index: 2;
 }
-.BolgIm{
-  width:100%;
-  height:100%;
+.BolgIm {
+  width: 100%;
+  height: 100%;
 }
 
-.BlogBox{
-  height:fit-content;
-  padding-left:3%;
+.BlogBox {
+  height: fit-content;
+  padding-left: 3%;
   background-color: black;
   opacity: 0.6;
-  font-size:2.3vmax;
-  color:white;
+  font-size: 2.3vmax;
+  color: white;
 }
 
 /*Redes*/
@@ -1138,14 +1136,12 @@
   filter: grayscale(0%);
 }
 
-
 p {
   font-family: "Montserrat", sans-serif;
   text-align: justify;
 }
 
-
-.Galeria{
+.Galeria {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -1154,11 +1150,11 @@ p {
   align-items: center;
 }
 
-.Item{
+.Item {
   width: 32vw;
 }
 
-.BackCatBlanco1{
+.BackCatBlanco1 {
   width: 100%;
   height: 10vw;
   background: url(./images/marmolblanco.jpg);
@@ -1167,47 +1163,46 @@ p {
   padding-top: 2%;
 }
 
-.BackCatNegro1{
+.BackCatNegro1 {
   width: 100%;
   height: 10vw;
   background: url(./images/marmolnegro.jpg);
 }
 
 /*Whatsapp*/
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
 }
 .float:hover {
-	text-decoration: none;
-	color: #25d366;
-  background-color:#fff;
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
 }
 
-.my-float{
-	margin-top:16px;
+.my-float {
+  margin-top: 16px;
 }
 
 /*Media Queries*/
 
 /*Ipad Pro*/
 @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  
   /*Nav*/
-  .Navi-FlexBtn{
+  .Navi-FlexBtn {
     height: 20px;
   }
-  .Navi-FlexWrap{
+  .Navi-FlexWrap {
     height: 90px;
   }
 
@@ -1297,14 +1292,14 @@ p {
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    /*Nav*/
-    .Navi-FlexBtn{
-      height: 20px;
-    }
-  
-    .Navi-FlexWrap{
-      height: 90px;
-    }
+  /*Nav*/
+  .Navi-FlexBtn {
+    height: 20px;
+  }
+
+  .Navi-FlexWrap {
+    height: 90px;
+  }
 
   /*Tendencias*/
   .colonia {
@@ -1367,7 +1362,6 @@ p {
 
   /*Testimonio*/
 
-
   /*Blog*/
   .Blog {
     height: 75vmin;
@@ -1385,16 +1379,15 @@ p {
 
 /*Ipad*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  
-    /*Nav*/
-    .Navi-FlexBtn{
-      height: 20px;
-    }
+  /*Nav*/
+  .Navi-FlexBtn {
+    height: 20px;
+  }
 
-    .Navi-FlexWrap{
-      height: 90px;
-    }
-  
+  .Navi-FlexWrap {
+    height: 90px;
+  }
+
   /*Tendencias*/
   .colonia {
     font-size: 20px;
@@ -1460,7 +1453,6 @@ p {
 
   /*Testimonio*/
 
- 
   /*Blog*/
   .Blog {
     height: 75vmin;
@@ -1477,16 +1469,15 @@ p {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  
-    /*Nav*/
-    .Navi-FlexBtn{
-      height: 20px;
-    }
+  /*Nav*/
+  .Navi-FlexBtn {
+    height: 20px;
+  }
 
-    .Navi-FlexWrap{
-      height: 90px;
-    }
-  
+  .Navi-FlexWrap {
+    height: 90px;
+  }
+
   /*Tendencias*/
   .colonia {
     font-size: 20px;
@@ -1552,8 +1543,6 @@ p {
 
   /*Testimonio*/
 
- 
-
   /*Blog*/
   .Blog {
     height: 75vmin;
@@ -1572,16 +1561,15 @@ p {
 /*Iphone X*/
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  
-    /*Nav*/
-    .Navi-FlexBtn{
-      height: 20px;
-    }
+  /*Nav*/
+  .Navi-FlexBtn {
+    height: 20px;
+  }
 
-    .Navi-FlexWrap{
-      height: 90px;
-    }
-  
+  .Navi-FlexWrap {
+    height: 90px;
+  }
+
   /*Home*/
   .Isotipo {
     display: none;
@@ -1642,8 +1630,6 @@ p {
 
   /*Testimonio*/
 
-
-
   /*Blog*/
   .Blog {
     height: 75vmin;
@@ -1673,26 +1659,23 @@ p {
 /*celulares pequenos*/
 
 @media only screen and (max-width: 700px) and (orientation: portrait) {
- 
-   /*Nav*/
-   .Navi-FlexBtn{
+  /*Nav*/
+  .Navi-FlexBtn {
     height: 20px;
   }
 
-  .Navi-FlexWrap{
+  .Navi-FlexWrap {
     height: 90px;
   }
- 
+
   /*Home*/
   .Isotipo {
     display: none;
   }
 
   .Text3 {
-
     font-size: 5.2vmax;
-    
-}
+  }
 
   .LandingBody {
     height: 67vmax;
@@ -1749,7 +1732,6 @@ p {
 
   /*Testimonio*/
 
-
   /*Blog*/
   .Blog {
     height: 75vmin;
@@ -1774,15 +1756,13 @@ p {
     height: 10%;
     width: 88%;
   }
-
 }
 
-.Top{
-  display:flex;
+.Top {
+  display: flex;
   flex-direction: column;
-
 }
-.TopBack{
+.TopBack {
   height: 20vmax;
   background-image: url("./fondo/Paisaje2.png");
   background-size: cover;
@@ -1790,72 +1770,72 @@ p {
   background-repeat: no-repeat;
 }
 
-.TopMenu{
-  height:4.5vmax;
-  width:100%;
+.TopMenu {
+  height: 4.5vmax;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
-  background-color:black;
+  background-color: black;
   font-size: 1.7vmax;
 }
-.Conoce{
-  color:white;
-  width:24vmax;
+.Conoce {
+  color: white;
+  width: 24vmax;
   text-align: center;
   align-self: center;
   border-left: 2px solid white;
   border-right: 2px solid white;
 }
-.espacio{
-  width:2vmax;
+.espacio {
+  width: 2vmax;
 }
-.ConTitle{
+.ConTitle {
   font-size: 5vmax;
   background-image: url("./Fotos/MarmolNegativo.jpg");
-  padding:5%;
+  padding: 5%;
   text-decoration: underline;
 }
-.ConGrid{
+.ConGrid {
   display: grid;
   grid-template-rows: 35vmax 35vmax 35vmax 35vmax;
 }
-.Izquierda{
+.Izquierda {
   background-image: url(./images/marmolnegro.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display:flex;
+  display: flex;
   flex-direction: row;
-  color:white;
+  color: white;
 }
-.Derecha{
+.Derecha {
   background-image: url("./Fotos/MarmolNegativo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display:flex;
+  display: flex;
   flex-direction: row-reverse;
-  color:black;
+  color: black;
 }
-.conImg{
-  width:40vmax;
-  height:25vmax;
-  margin-top:5vmax;
-  margin-left:7.5vmax;
-  margin-right:7.5vmax;
+.conImg {
+  width: 40vmax;
+  height: 25vmax;
+  margin-top: 5vmax;
+  margin-left: 7.5vmax;
+  margin-right: 7.5vmax;
 }
-.conText{
-  display:flex;
+.conText {
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 40%;
-  height:100%;
+  height: 100%;
 }
-.contitu{
+.contitu {
   font-size: 3vmax;
 }
-.concont{
-  font-size:1.5vmax;
+.concont {
+  font-size: 1.5vmax;
 }
 
 /*Subir*/
@@ -1931,7 +1911,7 @@ p {
 }
 
 /*Testimonios*/
-.Testimonios{
+.Testimonios {
   width: 100%;
   height: 70vmin;
   background: url(./Fotos/MarmolNegativo.png);
@@ -1940,7 +1920,7 @@ p {
   background-repeat: no-repeat;
 }
 
-.TestimoniosFlex{
+.TestimoniosFlex {
   width: 100%;
   height: 30vmin;
   display: flex;
@@ -1961,7 +1941,7 @@ p {
   transform: scale(1.08);
 }
 
-.left-arrow{
+.left-arrow {
   font-size: 3rem;
   color: #000;
   z-index: 10;
@@ -1969,7 +1949,7 @@ p {
   user-select: none;
 }
 
-.right-arrow{
+.right-arrow {
   font-size: 3rem;
   color: #000;
   z-index: 10;
@@ -1977,7 +1957,7 @@ p {
   user-select: none;
 }
 
-.BotonesFlex{
+.BotonesFlex {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1987,12 +1967,12 @@ p {
 
 /*Quienes Texto*/
 
-.QuienesTextWrap{
+.QuienesTextWrap {
   width: 100%;
   height: 70vmin;
 }
 
-.QuienesFlex{
+.QuienesFlex {
   width: 80%;
   height: 60vmin;
   display: flex;
@@ -2000,7 +1980,7 @@ p {
   align-items: center;
   background-color: black;
   opacity: 40%;
-  margin: 10vmin 10% 0px 10%
+  margin: 10vmin 10% 0px 10%;
 }
 
 .slide {
@@ -2014,7 +1994,7 @@ p {
   transform: scale(1.08);
 }
 
-.left-arrow{
+.left-arrow {
   font-size: 3rem;
   color: #000;
   z-index: 10;
@@ -2022,7 +2002,7 @@ p {
   user-select: none;
 }
 
-.right-arrow{
+.right-arrow {
   font-size: 3rem;
   color: #000;
   z-index: 10;
@@ -2030,7 +2010,7 @@ p {
   user-select: none;
 }
 
-.BotonesFlex{
+.BotonesFlex {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -2038,27 +2018,92 @@ p {
   justify-content: space-evenly;
 }
 
-.FraseQuienes{
+.FraseQuienes {
   font-family: Helvetica;
   font-size: 4.5vmin;
   text-align: center;
   color: white;
   padding: 25vmin;
-
 }
 
-.Separador{
+.Separador {
   width: 100%;
   height: 15vmin;
 }
 
 /*Catalogo*/
 
-.WrapperCatalogo{
+.WrapperCatalogo {
   column-count: 3;
 }
 
-.Item{
+.Item {
   border-radius: 7%;
-  margin: 0vmin 0 3vmin 0 ;
+  margin: 0vmin 0 3vmin 0;
+}
+
+/*Propiedad*/
+
+.Casa {
+  width: 100vmin;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7%;
+}
+
+.InformacionProp {
+  width: 100vmin;
+  height: 10vmin;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  opacity: 70%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.InfoGrande{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.5vmin;
+}
+
+.InfoChica{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.TituloProp {
+  color: white;
+  font-family: Helvetica;
+  font-size: 3vmin;
+}
+
+.BanosProp {
+  color: white;
+  font-family: Helvetica;
+  font-size: 1.5vmin;
+  margin-left: 11.5vmin;
+  margin-top: 1.5vmin;
+}
+
+.HabitacionesProp {
+  color: white;
+  font-family: Helvetica;
+  font-size: 1.5vmin;
+  margin-left: 10vmin;
+  margin-top: 1.5vmin;
+}
+
+.PrecioProp {
+  color: white;
+  font-family: Helvetica;
+  font-size: 3vmin;
 }
