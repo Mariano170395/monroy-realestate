@@ -2043,7 +2043,22 @@ p {
   font-size: 4.5vmin;
   text-align: center;
   color: white;
-  padding: 10vmin;
+  padding: 25vmin;
 
 }
 
+.Separador{
+  width: 100%;
+  height: 15vmin;
+}
+
+/*Catalogo*/
+
+.WrapperCatalogo{
+  column-count: 3;
+}
+
+.Item{
+  border-radius: 7%;
+  margin: 0vmin 0 3vmin 0 ;
+}

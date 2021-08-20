@@ -43,8 +43,13 @@ router.post('/api/images/upload', async(req, res)=>{
             const image = new Image ({
                 url: urlImage,
                 key: file.name,
-                title: req.body.title
-                /*descripcion a futuro*/
+                title: req.body.title,
+                prioridad: req.body.prioridad,
+                descripcion: req.body.descripcion,
+                banos: req.body.banos,
+                habitaciones: req.body.habitaciones,
+                precio: req.body.precio,
+                colonia: req.body.colonia,
              })
 
              await image.save();

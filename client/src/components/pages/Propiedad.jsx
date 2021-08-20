@@ -22,6 +22,12 @@ const Propiedad = () => {
         <div>
             <img src={image.url} alt={image.title}></img>
             <h1>{image.title}</h1>
+            <h1>{image.prioridad}</h1>
+            <h1>{image.descripcion}</h1>
+            <h1>{image.banos}</h1>
+            <h1>{image.habitaciones}</h1>
+            <h1>{image.precio}</h1>
+            <h1>{image.colonia}</h1>
         </div>
     )
 }

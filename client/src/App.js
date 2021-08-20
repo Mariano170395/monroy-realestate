@@ -17,16 +17,19 @@ import Propiedad from './components/pages/Propiedad';
 import Subir from './components/pages/Subir';
 import Catalogo from './components/pages/Catalogo';
 import Borrar from './components/pages/Borrar'
+import PruebaTendencias from './components/pages/PruebaTendencias'
+
 
 
 function App() {
   return (
     <Router>
-    <div className="App">
+    <div className="App"> 
+      <Whatsapp/>
       <NavBar/>
-       <Whatsapp/>
       <Switch>
         <Route exact path="/oportunidades" component={Oportunidades}/>
+        <Route exact path="/prueba" component={PruebaTendencias}/>
         <Route exact path="/rentar" component={Rentar}/>
         <Route exact path="/comprar" component={Catalogo}/>
         <Route exact path="/comprar/:id" component={Propiedad}/>
@@ -43,7 +46,7 @@ function App() {
         
       </Switch>
       
-      <EndBar />
+       <EndBar />
     </div>
     </Router>
   );

@@ -12,6 +12,24 @@ const Subir = () => {
     //Para el titulo
     const [ title, setTitle ] = useState()
 
+    //Para prioridad
+    const [ prioridad, setPrioridad ] = useState()
+
+    //Para descripcion
+    const [ descripcion, setDescripcion ] = useState()
+
+    //Para Banos
+    const [ banos, setBanos ] = useState()
+
+    //Para habitaciones
+    const [ habitaciones, setHabitaciones ] = useState()
+
+    //Para precio
+    const [ precio, setPrecio ] = useState()
+
+    //Para colonia
+    const [ colonia, setColonia ] = useState()
+
     const handleChange = (e) =>{
         setFile(e.target.files[0])
     }
@@ -20,18 +38,27 @@ const Subir = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log(e)
 
         //Envia los datos de mis variables aqui
         const formData = new FormData()
 
         formData.append('file', file)
         formData.append('title', title)
+        formData.append('prioridad', prioridad)
+        formData.append('descripcion', descripcion)
+        formData.append('banos', banos)
+        formData.append('habitaciones', habitaciones)
+        formData.append('precio', precio)
+        formData.append('colonia', colonia)
 
         //Peticion Post con axios
        const res = await axios.post('/api/images/upload', formData)
        console.log(res)
        history.push('/comprar')
+       
     }
+
 
     return (
         <div>
@@ -42,14 +69,16 @@ const Subir = () => {
                 </div>
             </div>
             <form onSubmit ={handleSubmit}>
-            <div className="cont-grid">
-                    <input type="text" className="Titulo"  placeholder="Titulo" onChange={e => setTitle(e.target.value)}></input>
-                    {/* <input type="text" name="apellidos" className="apellidos"  placeholder=""></input>
-                    <input type="email" name="emailUsuario" className="correo"  placeholder=""></input>
-                    <input type="number" name="numTelefono" className="telefono"  placeholder=""></input>
-                    <textarea type="text" name="mensaje" className="mensaje"  placeholder=""></textarea> */}
+            <div>
+                    <input type="text"   placeholder="Titulo" onChange={e => setTitle(e.target.value)}></input>
+                    <input type="text" name="Prioridad"  placeholder="Prioridad" onChange={e => setPrioridad(e.target.value)}></input>
+                    <input type="text" name="Descripcion"   placeholder="Descripcion" onChange={e => setDescripcion(e.target.value)}></input>
+                    <input type="number" name="Banos"  placeholder="Baños" onChange={e => setBanos(e.target.value)}></input>
+                    <input type="number" name="Habitaciones" placeholder="Habitaciones" onChange={e => setHabitaciones(e.target.value)}></input>
+                    <input type="number" name="Precio" placeholder="Precio" onChange={e => setPrecio(e.target.value)}></input>
+                    <input type="text" name="Colonia" placeholder="Colonia" onChange={e => setColonia(e.target.value)}></input>
                     <input type="file" onChange={handleChange}></input>
-                    <button className="enviar" type="submit">Subir</button>
+                    <button  type="submit">Subir</button>
             </div>
             </form>
         </div>
