@@ -21,15 +21,21 @@ const Catalogo = () => {
         <hr className="LineaRedes"></hr>
       </div>
       <div className="WrapperCatalogo">
-        {images.map((image) => (
-          <div
-            className=""
-            onClick={() => history.push(`/comprar/${image._id}`)}
-            key={image._id}
-          >
-            <img src={image.url} alt="" className="Item" />
+      {
+        
+        images.map(image =>(
+
+          image.estatus === 'Compra' ? (
+
+          <div  onClick={()=>history.push(`/comprar/${image._id}`)} key={image._id}>
+            <img src={image.url} alt="" className="Item"/>
+            
           </div>
-        ))}
+        )
+        : <></>
+        ))
+      
+      }
       </div>
     </div>
   );

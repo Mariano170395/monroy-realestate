@@ -50,6 +50,7 @@ router.post('/api/images/upload', async(req, res)=>{
                 habitaciones: req.body.habitaciones,
                 precio: req.body.precio,
                 colonia: req.body.colonia,
+                estatus: req.body.estatus,
              })
 
              await image.save();

@@ -16,7 +16,7 @@ const Catalogo = () => {
 
 
   return (
-    <div className="DivGaleria">
+    <div className="DivGaleria">            
         {
         
         images.map(image =>(

@@ -41,7 +41,7 @@ const Propiedad = () => {
       </div>
       <h1>{image.prioridad}</h1>
       <h1>{image.descripcion}</h1>
-      
+      <h1>{image.estatus}</h1>
       
       <h1>{image.precio}</h1>
       <h1>{image.colonia}</h1>

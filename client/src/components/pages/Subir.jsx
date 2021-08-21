@@ -30,6 +30,9 @@ const Subir = () => {
     //Para colonia
     const [ colonia, setColonia ] = useState()
 
+    //Para el estatus
+    const [ estatus, setEstatus ] = useState()
+
     const handleChange = (e) =>{
         setFile(e.target.files[0])
     }
@@ -51,6 +54,7 @@ const Subir = () => {
         formData.append('habitaciones', habitaciones)
         formData.append('precio', precio)
         formData.append('colonia', colonia)
+        formData.append('estatus', estatus)
 
         //Peticion Post con axios
        const res = await axios.post('/api/images/upload', formData)
@@ -72,11 +76,12 @@ const Subir = () => {
             <div>
                     <input type="text"   placeholder="Titulo" onChange={e => setTitle(e.target.value)}></input>
                     <input type="text" name="Prioridad"  placeholder="Prioridad" onChange={e => setPrioridad(e.target.value)}></input>
-                    <input type="text" name="Descripcion"   placeholder="Descripcion" onChange={e => setDescripcion(e.target.value)}></input>
                     <input type="number" name="Banos"  placeholder="Baños" onChange={e => setBanos(e.target.value)}></input>
                     <input type="number" name="Habitaciones" placeholder="Habitaciones" onChange={e => setHabitaciones(e.target.value)}></input>
                     <input type="number" name="Precio" placeholder="Precio" onChange={e => setPrecio(e.target.value)}></input>
                     <input type="text" name="Colonia" placeholder="Colonia" onChange={e => setColonia(e.target.value)}></input>
+                    <input type="text" name="Compra/Venta/Oportunidades" placeholder="Compra/Renta/Oportunidades" onChange={e => setEstatus(e.target.value)}></input>
+                    <input type="text" name="Descripcion"   placeholder="Descripcion" onChange={e => setDescripcion(e.target.value)}></input>
                     <input type="file" onChange={handleChange}></input>
                     <button  type="submit">Subir</button>
             </div>

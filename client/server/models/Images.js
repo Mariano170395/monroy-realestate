@@ -8,6 +8,7 @@ import {Schema, model} from 'mongoose'
     habitaciones: Number,
     precio: Number,
     colonia: String,
+    estatus: String,
     key: String,
     url: {
         type: String,
