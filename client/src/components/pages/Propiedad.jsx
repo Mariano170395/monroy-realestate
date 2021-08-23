@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Propiedad = () => {
   const [image, setImage] = useState({
@@ -9,6 +10,7 @@ const Propiedad = () => {
     _id: "",
   });
   const params = useParams();
+  const history = useHistory();
 
   useEffect(() => {
     (async () => {
@@ -17,6 +19,7 @@ const Propiedad = () => {
     })();
   });
 
+  
   return (
     <div>
       <div className="Separador"></div>
@@ -35,8 +38,8 @@ const Propiedad = () => {
         </div>
         </div>
         <div className="Separador"></div>
-        <div>
-
+        <div className='Galeria'>
+          <button onClick={()=>history.push(`/comprar/${image._id}/ver-mas`)}>Ver mas</button>
         </div>
       </div>
       <h1>{image.prioridad}</h1>

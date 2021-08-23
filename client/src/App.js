@@ -18,6 +18,7 @@ import Subir from './components/pages/Subir';
 import Catalogo from './components/pages/Catalogo';
 import Borrar from './components/pages/Borrar'
 import PruebaTendencias from './components/pages/PruebaTendencias'
+import VerMas from './components/pages/VerMas';
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <Route exact path="/comprar" component={Catalogo}/>
         <Route exact path="/comprar/:id" component={Propiedad}/>
         <Route exact path="/comprar/:id/borrar" component={Borrar}/>
+        <Route exact path="/comprar/:id/ver-mas" component={VerMas}/>
         <Route exact path="/subir" component={Subir}/>
         <Route exact path="/vender" component={Vender}/>
         <Route exact path="/blog" component={Blog}/>
@@ -44,6 +46,8 @@ function App() {
         <Route exact path="/conocenos4" component={Conocenos4}/>
         <Route exact path="/" component={Home}/>
         
+
+    
       </Switch>
       
        <EndBar />

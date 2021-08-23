@@ -22,7 +22,7 @@ const Borrar = () => {
     const handleDelete = async() => {
         const res = await axios.delete('/api/images/' + params.id)
         console.log(res)
-        history.push('/comprar')
+        history.push('/')
     }
 
     return (

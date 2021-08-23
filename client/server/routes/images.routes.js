@@ -44,13 +44,14 @@ router.post('/api/images/upload', async(req, res)=>{
                 url: urlImage,
                 key: file.name,
                 title: req.body.title,
-                prioridad: req.body.prioridad,
                 descripcion: req.body.descripcion,
                 banos: req.body.banos,
                 habitaciones: req.body.habitaciones,
                 precio: req.body.precio,
                 colonia: req.body.colonia,
                 estatus: req.body.estatus,
+                tendencia: req.body.tendencia,
+                galeria: req.body.galeria
              })
 
              await image.save();

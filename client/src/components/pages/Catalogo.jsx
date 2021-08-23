@@ -13,6 +13,8 @@ const Catalogo = () => {
     })();
   }, []);
 
+  
+
   return (
     <div>
       <div className="Separador"></div>
