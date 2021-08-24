@@ -3,6 +3,7 @@ import React from 'react'
 const Filtro = () => {
     return (
         <div className="filt">
+            <div>
             <div className="titulo-flex">
                 <div>
                     <h2 className="numero">03</h2>
@@ -15,9 +16,9 @@ const Filtro = () => {
                     <div className="filt-text1">¿No encuentras la casa que buscas en nuestro catálogo?</div>
                     <div className="filt-text2">¡Dejanos saber!</div>
                     <div className="filt-text3">Nosotros te ayudamos a encontrarla</div>
-                    <button className="contAg">Contactar Agente</button>
                 </div>
-                <div className="filtBox">
+               
+                 <div className="filtBox">
                     <button className="bot-comp">COMPRA</button>
                     <button className="bot-rent">RENTA</button>
                     <button className="bot-vent">VENTA</button>
@@ -30,8 +31,10 @@ const Filtro = () => {
                         <input type="text" className="busc" name="buscador" placeholder="Ubicación, Asesor, Oficina, ID"></input>
                         <div className="advSer">Búsqueda Avanzada</div>
                         <div className="catConsul">Consultar catálogo completo</div>
-                    </div>
-                </div>
+                    </div> 
+                 </div> 
+            </div>
+           
             </div>
         </div>
     )

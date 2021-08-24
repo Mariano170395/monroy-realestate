@@ -13,6 +13,7 @@ const Catalogo = () => {
     })();
   }, []);
 
+  const [busqueda, setBusqueda] = useState('');
   
 
   return (
@@ -21,11 +22,22 @@ const Catalogo = () => {
       <div>
         <h1 className="TituloRedes">Propiedades en Venta</h1>
         <hr className="LineaRedes"></hr>
+        <div>
+          <input type='text' placeholder='Buscar' className="Buscador"
+          onChange={event=>{setBusqueda(event.target.value)}}
+          />
+        </div>
       </div>
       <div className="WrapperCatalogo">
       {
         
-        images.map(image =>(
+        images.filter((image)=>{
+          if (busqueda == ""){
+            return 
+          } else if (image.colonia.includes(setBusqueda)){
+            return 
+          }
+        }).map(image =>(
 
           image.estatus === 'Compra' ? (
 

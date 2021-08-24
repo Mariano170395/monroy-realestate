@@ -18,7 +18,7 @@ const Home = () => {
       <Body />
       {/*Tony*/}
       <div className="tend-grid">
-        <Fondo />
+        {/* <Fondo /> */}
         <Tendencias />
       </div>
       {/*Mariano*/}

@@ -40,6 +40,10 @@
   background-position: center;
   z-index: 5;
 }
+
+.BotonesFilt{
+  display: flex;
+}
 .contact {
   color: black;
   height: 55vmax;
@@ -271,8 +275,11 @@
   background-color: gray;
 }
 .filt-flex {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
 }
 .filtText {
   width: 60%;
@@ -496,6 +503,7 @@
   background-color: rgba(255, 255, 255, 0);
   border: none;
   font-size: 2vmax;
+  cursor:pointer;
 }
 .endFlex {
   display: flex;
@@ -1194,569 +1202,7 @@ p {
   margin-top: 16px;
 }
 
-/*Media Queries*/
 
-/*Ipad Pro*/
-@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  /*Nav*/
-  .Navi-FlexBtn {
-    height: 20px;
-  }
-  .Navi-FlexWrap {
-    height: 90px;
-  }
-
-  /*Tendencias*/
-  .colonia {
-    font-size: 20px;
-  }
-
-  .precio {
-    font-size: 20px;
-  }
-
-  .info {
-    font-size: 14.5px;
-  }
-
-  .boton {
-    font-size: 16px;
-  }
-
-  .boton {
-    width: 6vmax;
-    height: 5vh;
-  }
-
-  .tend-grid {
-    grid-template-rows: 16vmax 7vmax 53vmax 53vmax 35vmax;
-  }
-
-  .fondo3 {
-    height: 35vmax;
-  }
-
-  /*Podemos ayudar*/
-  .filt {
-    height: 50vmax;
-  }
-
-  .filt-text1 {
-    margin-top: 2vmax;
-    margin-left: 4vmax;
-    margin-right: 4vmax;
-    font-size: 2.5vw;
-  }
-
-  .filt-text2 {
-    margin-top: 1vmax;
-    font-size: 42px;
-  }
-
-  .filt-text3 {
-    margin-left: 5vmax;
-    margin-right: 5vmax;
-    font-size: 25px;
-    margin-top: 1vmin;
-  }
-
-  .contAg {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    font-size: 2vmax;
-    margin-top: 3vmax;
-    width: 15vmax;
-    height: 6vmax;
-  }
-
-  /*Testimonio*/
-
-  .frase {
-    font-family: Helvetica;
-    font-size: 2vmax;
-  }
-
-  /*Blog*/
-  .Blog {
-    height: 75vmin;
-  }
-
-  .EntradaBlog2 {
-    display: none;
-  }
-
-  /*Nuestras Redes*/
-  .ContenedorIsotipo {
-    display: none;
-  }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  /*Nav*/
-  .Navi-FlexBtn {
-    height: 20px;
-  }
-
-  .Navi-FlexWrap {
-    height: 90px;
-  }
-
-  /*Tendencias*/
-  .colonia {
-    font-size: 20px;
-  }
-
-  .precio {
-    font-size: 20px;
-  }
-
-  .info {
-    font-size: 14.5px;
-  }
-
-  .boton {
-    font-size: 16px;
-  }
-
-  .boton {
-    width: 6vmax;
-    height: 5vh;
-  }
-
-  .tend-grid {
-    grid-template-rows: 16vmax 7vmax 53vmax 53vmax 10vmax;
-  }
-
-  .fondo3 {
-    height: 10vmax;
-  }
-
-  /*Podemos ayudar*/
-  .filt {
-    height: 50vmax;
-  }
-
-  .filt-text1 {
-    margin-top: 2vmax;
-    margin-left: 4vmax;
-    margin-right: 4vmax;
-    font-size: 2.5vw;
-  }
-
-  .filt-text2 {
-    margin-top: 1vmax;
-    font-size: 42px;
-  }
-
-  .filt-text3 {
-    margin-left: 5vmax;
-    margin-right: 5vmax;
-    font-size: 25px;
-    margin-top: 1vmin;
-  }
-
-  .contAg {
-    width: 15vmax;
-    height: 6vmax;
-  }
-
-  /*Testimonio*/
-
-  /*Blog*/
-  .Blog {
-    height: 75vmin;
-  }
-
-  .EntradaBlog2 {
-    display: none;
-  }
-
-  /*Nuestras Redes*/
-  .ContenedorIsotipo {
-    display: none;
-  }
-}
-
-/*Ipad*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  /*Nav*/
-  .Navi-FlexBtn {
-    height: 20px;
-  }
-
-  .Navi-FlexWrap {
-    height: 90px;
-  }
-
-  /*Tendencias*/
-  .colonia {
-    font-size: 20px;
-  }
-
-  .precio {
-    font-size: 20px;
-  }
-
-  .info {
-    font-size: 14.5px;
-  }
-
-  .boton {
-    font-size: 16px;
-  }
-
-  .boton {
-    width: 6vmax;
-    height: 5vh;
-  }
-
-  .tend-grid {
-    grid-template-rows: 16vmax 7vmax 53vmax 53vmax 15vmax;
-  }
-
-  .fondo3 {
-    height: 15vmax;
-  }
-
-  /*Podemos ayudar*/
-  .filt {
-    height: 50vmax;
-  }
-
-  .filt-text1 {
-    margin-top: 2vmax;
-    margin-left: 4vmax;
-    margin-right: 4vmax;
-    font-size: 2.5vw;
-  }
-
-  .filt-text2 {
-    margin-top: 1vmax;
-    font-size: 42px;
-  }
-
-  .filt-text3 {
-    margin-left: 5vmax;
-    margin-right: 5vmax;
-    font-size: 25px;
-    margin-top: 1vmin;
-  }
-
-  .contAg {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    font-size: 2vmax;
-    margin-top: 3vmax;
-    width: 15vmax;
-    height: 6vmax;
-  }
-
-  /*Testimonio*/
-
-  /*Blog*/
-  .Blog {
-    height: 75vmin;
-  }
-
-  .EntradaBlog2 {
-    display: none;
-  }
-
-  /*Nuestras Redes*/
-  .ContenedorIsotipo {
-    display: none;
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  /*Nav*/
-  .Navi-FlexBtn {
-    height: 20px;
-  }
-
-  .Navi-FlexWrap {
-    height: 90px;
-  }
-
-  /*Tendencias*/
-  .colonia {
-    font-size: 20px;
-  }
-
-  .precio {
-    font-size: 20px;
-  }
-
-  .info {
-    font-size: 14.5px;
-  }
-
-  .boton {
-    font-size: 16px;
-  }
-
-  .boton {
-    width: 6vmax;
-    height: 5vh;
-  }
-
-  .tend-grid {
-    grid-template-rows: 16vmax 7vmax 53vmax 53vmax 35vmax;
-  }
-
-  .fondo3 {
-    height: 35vmax;
-  }
-
-  /*Podemos ayudar*/
-  .filt {
-    height: 50vmax;
-  }
-
-  .filt-text1 {
-    margin-top: 2vmax;
-    margin-left: 4vmax;
-    margin-right: 4vmax;
-    font-size: 2.5vw;
-  }
-
-  .filt-text2 {
-    margin-top: 1vmax;
-    font-size: 42px;
-  }
-
-  .filt-text3 {
-    margin-left: 5vmax;
-    margin-right: 5vmax;
-    font-size: 25px;
-    margin-top: 1vmin;
-  }
-
-  .contAg {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    font-size: 2vmax;
-    margin-top: 3vmax;
-    width: 15vmax;
-    height: 6vmax;
-  }
-
-  /*Testimonio*/
-
-  /*Blog*/
-  .Blog {
-    height: 75vmin;
-  }
-
-  .EntradaBlog2 {
-    display: none;
-  }
-
-  /*Nuestras Redes*/
-  .ContenedorIsotipo {
-    display: none;
-  }
-}
-
-/*Iphone X*/
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  /*Nav*/
-  .Navi-FlexBtn {
-    height: 20px;
-  }
-
-  .Navi-FlexWrap {
-    height: 90px;
-  }
-
-  /*Home*/
-  .Isotipo {
-    display: none;
-  }
-
-  .LandingBody {
-    height: 67vmax;
-  }
-  .TextoLanding {
-    margin-top: 21.5vmax;
-  }
-  .TextoLandingAbajo {
-    margin-top: 37vmax;
-  }
-
-  /*Tendencias*/
-  .logo {
-    display: none;
-  }
-
-  .infoD {
-    display: none;
-  }
-
-  .tend-grid {
-    grid-template-rows: 16vmax 7vmax 12vmax 25vmax 25vmax;
-  }
-
-  /*Quienes somos*/
-
-  .QuienesSomos {
-    border-bottom: white solid 1px;
-  }
-  .QuienesNav > button {
-    font-size: 8px;
-  }
-
-  /*Podemos ayudar*/
-  .filt {
-    height: 45vmax;
-  }
-
-  .filt-text1 {
-    display: none;
-  }
-
-  .filt-text2 {
-    display: none;
-  }
-
-  .filt-text3 {
-    display: none;
-  }
-
-  .contAg {
-    display: none;
-  }
-
-  /*Testimonio*/
-
-  /*Blog*/
-  .Blog {
-    height: 75vmin;
-  }
-
-  .EntradaBlog2 {
-    display: none;
-  }
-
-  /*Nuestras Redes*/
-  .ContenedorIsotipo {
-    display: none;
-  }
-
-  .mail {
-    display: none;
-  }
-
-  /*Footer*/
-  .iconos {
-    display: flex;
-    height: 10%;
-    width: 88%;
-  }
-}
-
-/*celulares pequenos*/
-
-@media only screen and (max-width: 700px) and (orientation: portrait) {
-  /*Nav*/
-  .Navi-FlexBtn {
-    height: 20px;
-  }
-
-  .Navi-FlexWrap {
-    height: 90px;
-  }
-
-  /*Home*/
-  .Isotipo {
-    display: none;
-  }
-
-  .Text3 {
-    font-size: 5.2vmax;
-  }
-
-  .LandingBody {
-    height: 67vmax;
-  }
-  .TextoLanding {
-    margin-top: 21.5vmax;
-  }
-  .TextoLandingAbajo {
-    margin-top: 37vmax;
-  }
-
-  /*Tendencias*/
-  .logo {
-    display: none;
-  }
-
-  .infoD {
-    display: none;
-  }
-
-  .tend-grid {
-    grid-template-rows: 16vmax 7vmax 12vmax 25vmax 35vmax;
-  }
-
-  /*Quienes somos*/
-
-  .QuienesSomos {
-    border-bottom: white solid 1px;
-  }
-  .QuienesNav > button {
-    font-size: 8px;
-  }
-
-  /*Podemos ayudar*/
-  .filt {
-    height: 45vmax;
-  }
-
-  .filt-text1 {
-    display: none;
-  }
-
-  .filt-text2 {
-    display: none;
-  }
-
-  .filt-text3 {
-    display: none;
-  }
-
-  .contAg {
-    display: none;
-  }
-
-  /*Testimonio*/
-
-  /*Blog*/
-  .Blog {
-    height: 75vmin;
-  }
-
-  .EntradaBlog2 {
-    display: none;
-  }
-
-  /*Nuestras Redes*/
-  .ContenedorIsotipo {
-    display: none;
-  }
-
-  .mail {
-    display: none;
-  }
-
-  /*Footer*/
-  .iconos {
-    display: flex;
-    height: 10%;
-    width: 88%;
-  }
-}
 
 .Top {
   display: flex;
@@ -1783,8 +1229,8 @@ p {
   width: 24vmax;
   text-align: center;
   align-self: center;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
+  border-left: 0.1vmin solid white;
+  border-right: 0.1vmin solid white;
 }
 .espacio {
   width: 2vmax;
@@ -1979,8 +1425,16 @@ p {
   justify-content: center;
   align-items: center;
   background-color: black;
-  opacity: 40%;
+  opacity: 60%;
   margin: 10vmin 10% 0px 10%;
+}
+
+.FraseQuienes {
+  font-family: Helvetica;
+  font-size: 4.5vmin;
+  text-align: center;
+  color: white;
+  padding: 25vmin;
 }
 
 .slide {
@@ -2018,13 +1472,7 @@ p {
   justify-content: space-evenly;
 }
 
-.FraseQuienes {
-  font-family: Helvetica;
-  font-size: 4.5vmin;
-  text-align: center;
-  color: white;
-  padding: 25vmin;
-}
+
 
 .Separador {
   width: 100%;
@@ -2106,4 +1554,641 @@ p {
   color: white;
   font-family: Helvetica;
   font-size: 3vmin;
+}
+
+/*Media Queries*/
+
+/*Ipad Pro*/
+@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  /*Nav*/
+  .Navi-FlexBtn {
+    height: 20px;
+  }
+  .Navi-FlexWrap {
+    height: 90px;
+  }
+
+  /*Tendencias*/
+  .colonia {
+    font-size: 20px;
+  }
+
+  .precio {
+    font-size: 20px;
+  }
+
+  .info {
+    font-size: 14.5px;
+  }
+
+  .boton {
+    font-size: 16px;
+  }
+
+  .boton {
+    width: 6vmax;
+    height: 5vh;
+  }
+
+  .tend-grid {
+    grid-template-rows: 16vmax 7vmax 53vmax 53vmax 35vmax;
+  }
+
+  .fondo3 {
+    height: 35vmax;
+  }
+
+  /*Podemos ayudar*/
+  .filt {
+    height: 50vmax;
+  }
+
+  .filt-text1 {
+    margin-top: 2vmax;
+    margin-left: 4vmax;
+    margin-right: 4vmax;
+    font-size: 2.5vw;
+  }
+
+  .filt-text2 {
+    margin-top: 1vmax;
+    font-size: 42px;
+  }
+
+  .filt-text3 {
+    margin-left: 5vmax;
+    margin-right: 5vmax;
+    font-size: 25px;
+    margin-top: 1vmin;
+  }
+
+  .contAg {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 2vmax;
+    margin-top: 3vmax;
+    width: 15vmax;
+    height: 6vmax;
+  }
+
+  /*Testimonio*/
+
+  .frase {
+    font-family: Helvetica;
+    font-size: 5vmin;
+  }
+
+  /*Blog*/
+  .Blog {
+    height: 75vmin;
+  }
+
+  .EntradaBlog2 {
+    display: none;
+  }
+
+  /*Nuestras Redes*/
+  .ContenedorIsotipo {
+    display: none;
+  }
+
+  /*Quienes Somos*/
+
+  .FraseQuienes{
+    font-family: Helvetica;
+    font-size: 4vmin;
+    text-align: center;
+    color: white;
+    padding: 6vmin;
+  }
+
+  .QuienesFlex {
+    width: 80%;
+    height: 45vmin;
+  }
+
+  .QuienesTextWrap {
+    width: 100%;
+    height: 55vmin;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  /*Nav*/
+  .Navi-FlexBtn {
+    height: 20px;
+  }
+
+  .Navi-FlexWrap {
+    height: 90px;
+  }
+
+  /*Tendencias*/
+  .colonia {
+    font-size: 20px;
+  }
+
+  .precio {
+    font-size: 20px;
+  }
+
+  .info {
+    font-size: 14.5px;
+  }
+
+  .boton {
+    font-size: 16px;
+  }
+
+  .boton {
+    width: 6vmax;
+    height: 5vh;
+  }
+
+  .tend-grid {
+    grid-template-rows: 16vmax 7vmax 53vmax 53vmax 10vmax;
+  }
+
+  .fondo3 {
+    height: 10vmax;
+  }
+
+  /*Podemos ayudar*/
+  .filt {
+    height: 50vmax;
+  }
+
+  .filt-text1 {
+    margin-top: 2vmax;
+    margin-left: 4vmax;
+    margin-right: 4vmax;
+    font-size: 2.5vw;
+  }
+
+  .filt-text2 {
+    margin-top: 1vmax;
+    font-size: 42px;
+  }
+
+  .filt-text3 {
+    margin-left: 5vmax;
+    margin-right: 5vmax;
+    font-size: 25px;
+    margin-top: 1vmin;
+  }
+
+  .contAg {
+    width: 15vmax;
+    height: 6vmax;
+  }
+
+  /*Testimonio*/
+
+  /*Blog*/
+  .Blog {
+    height: 75vmin;
+  }
+
+  .EntradaBlog2 {
+    display: none;
+  }
+
+  /*Nuestras Redes*/
+  .ContenedorIsotipo {
+    display: none;
+  }
+
+  .FraseQuienes{
+    font-family: Helvetica;
+    font-size: 4vmin;
+    text-align: center;
+    color: white;
+    padding: 10vmin;
+}
+  
+
+  .QuienesFlex {
+    width: 80%;
+    height: 45vmin;
+  }
+
+  .QuienesTextWrap {
+    width: 100%;
+    height: 55vmin;
+  }
+}
+
+/*Ipad*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  /*Nav*/
+  .Navi-FlexBtn {
+    height: 20px;
+  }
+
+  .Navi-FlexWrap {
+    height: 90px;
+  }
+
+  /*Tendencias*/
+  .colonia {
+    font-size: 20px;
+  }
+
+  .precio {
+    font-size: 20px;
+  }
+
+  .info {
+    font-size: 14.5px;
+  }
+
+  .boton {
+    font-size: 16px;
+  }
+
+  .boton {
+    width: 6vmax;
+    height: 5vh;
+  }
+
+  .tend-grid {
+    grid-template-rows: 16vmax 7vmax 53vmax 53vmax 15vmax;
+  }
+
+  .fondo3 {
+    height: 15vmax;
+  }
+
+  /*Podemos ayudar*/
+  .filt {
+    height: 50vmax;
+  }
+
+  .filt-text1 {
+    margin-top: 2vmax;
+    margin-left: 4vmax;
+    margin-right: 4vmax;
+    font-size: 2.5vw;
+  }
+
+  .filt-text2 {
+    margin-top: 1vmax;
+    font-size: 42px;
+  }
+
+  .filt-text3 {
+    margin-left: 5vmax;
+    margin-right: 5vmax;
+    font-size: 25px;
+    margin-top: 1vmin;
+  }
+
+  .contAg {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 2vmax;
+    margin-top: 3vmax;
+    width: 15vmax;
+    height: 6vmax;
+  }
+
+  /*Testimonio*/
+
+  /*Blog*/
+  .Blog {
+    height: 75vmin;
+  }
+
+  .EntradaBlog2 {
+    display: none;
+  }
+
+  /*Nuestras Redes*/
+  .ContenedorIsotipo {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  /*Nav*/
+  .Navi-FlexBtn {
+    height: 20px;
+  }
+
+  .Navi-FlexWrap {
+    height: 90px;
+  }
+
+  /*Tendencias*/
+  .colonia {
+    font-size: 20px;
+  }
+
+  .precio {
+    font-size: 20px;
+  }
+
+  .info {
+    font-size: 14.5px;
+  }
+
+  .boton {
+    font-size: 16px;
+  }
+
+  .boton {
+    width: 6vmax;
+    height: 5vh;
+  }
+
+  .tend-grid {
+    grid-template-rows: 16vmax 7vmax 53vmax 53vmax 35vmax;
+  }
+
+  .fondo3 {
+    height: 35vmax;
+  }
+
+  /*Podemos ayudar*/
+  .filt {
+    height: 50vmax;
+  }
+
+  .filt-text1 {
+    margin-top: 2vmax;
+    margin-left: 4vmax;
+    margin-right: 4vmax;
+    font-size: 2.5vw;
+  }
+
+  .filt-text2 {
+    margin-top: 1vmax;
+    font-size: 42px;
+  }
+
+  .filt-text3 {
+    margin-left: 5vmax;
+    margin-right: 5vmax;
+    font-size: 25px;
+    margin-top: 1vmin;
+  }
+
+  .contAg {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 2vmax;
+    margin-top: 3vmax;
+    width: 15vmax;
+    height: 6vmax;
+  }
+
+  /*Testimonio*/
+
+  /*Blog*/
+  .Blog {
+    height: 75vmin;
+  }
+
+  .EntradaBlog2 {
+    display: none;
+  }
+
+  /*Nuestras Redes*/
+  .ContenedorIsotipo {
+    display: none;
+  }
+}
+
+/*Iphone X*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  /*Nav*/
+  .Navi-FlexBtn {
+    height: 20px;
+  }
+
+  .Navi-FlexWrap {
+    height: 90px;
+  }
+
+  /*Home*/
+  .Isotipo {
+    display: none;
+  }
+
+  .LandingBody {
+    height: 67vmax;
+  }
+  .TextoLanding {
+    margin-top: 21.5vmax;
+  }
+  .TextoLandingAbajo {
+    margin-top: 37vmax;
+  }
+
+  /*Tendencias*/
+  .logo {
+    display: none;
+  }
+
+  .infoD {
+    display: none;
+  }
+
+  .tend-grid {
+    grid-template-rows: 16vmax 7vmax 12vmax 25vmax 25vmax;
+  }
+
+  /*Quienes somos*/
+
+  .QuienesSomos {
+    border-bottom: white solid 1px;
+  }
+  .QuienesNav > button {
+    font-size: 8px;
+  }
+
+  /*Podemos ayudar*/
+  .filt {
+    height: 45vmax;
+  }
+
+  .filt-text1 {
+    display: none;
+  }
+
+  .filt-text2 {
+    display: none;
+  }
+
+  .filt-text3 {
+    display: none;
+  }
+
+  .contAg {
+    display: none;
+  }
+
+  /*Testimonio*/
+
+  /*Blog*/
+  .Blog {
+    height: 75vmin;
+  }
+
+  .EntradaBlog2 {
+    display: none;
+  }
+
+  /*Nuestras Redes*/
+  .ContenedorIsotipo {
+    display: none;
+  }
+
+  .mail {
+    display: none;
+  }
+
+  /*Footer*/
+  .iconos {
+    display: flex;
+    height: 10%;
+    width: 88%;
+  }
+
+  .left-arrow {
+    font-size: 2rem;
+  }
+
+  .right-arrow {
+    font-size: 2rem;
+  }
+
+  .FraseQuienes{
+    font-family: Helvetica;
+    font-size: 4vmin;
+    text-align: center;
+    color: white;
+    padding: 7vmin;
+  }
+}
+
+/*celulares pequenos*/
+
+@media only screen and (max-width: 700px) and (orientation: portrait) {
+  /*Nav*/
+  .Navi-FlexBtn {
+    height: 20px;
+  }
+
+  .Navi-FlexWrap {
+    height: 90px;
+  }
+
+  /*Home*/
+  .Isotipo {
+    display: none;
+  }
+
+  .Text3 {
+    font-size: 5.2vmax;
+  }
+
+  .LandingBody {
+    height: 67vmax;
+  }
+  .TextoLanding {
+    margin-top: 21.5vmax;
+  }
+  .TextoLandingAbajo {
+    margin-top: 37vmax;
+  }
+
+  /*Tendencias*/
+  .logo {
+    display: none;
+  }
+
+  .infoD {
+    display: none;
+  }
+
+  .tend-grid {
+    grid-template-rows: 16vmax 7vmax 12vmax 25vmax 35vmax;
+  }
+
+  /*Quienes somos*/
+
+  .QuienesSomos {
+    border-bottom: white solid 1px;
+  }
+  .QuienesNav > button {
+    font-size: 8px;
+  }
+
+  /*Podemos ayudar*/
+  .filt {
+    height: 45vmax;
+  }
+
+  .filt-text1 {
+    display: none;
+  }
+
+  .filt-text2 {
+    display: none;
+  }
+
+  .filt-text3 {
+    display: none;
+  }
+
+  .contAg {
+    display: none;
+  }
+
+  /*Testimonio*/
+
+  /*Blog*/
+  .Blog {
+    height: 75vmin;
+  }
+
+  .EntradaBlog2 {
+    display: none;
+  }
+
+  /*Nuestras Redes*/
+  .ContenedorIsotipo {
+    display: none;
+  }
+
+  .mail {
+    display: none;
+  }
+
+  /*Footer*/
+  .iconos {
+    display: flex;
+    height: 10%;
+    width: 88%;
+  }
+
+  .FraseQuienes{
+    font-size: 4vmin;
+    text-align: center;
+    color: white;
+    padding: 7vmin;
+  }
+  .left-arrow{
+    font-size: 2rem;
+  }
+  .right-arrow{
+    font-size: 2rem;
+  }
+}
+
+.RedesFooter{
+  width: 6.5vmin;
 }
