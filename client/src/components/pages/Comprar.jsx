@@ -1,0 +1,15 @@
+import React from 'react'
+import Catalogo from "./Catalogo.jsx";
+
+const Comprar = () => {
+    return (
+        <div>
+            <div className="prueba"></div> 
+            <div className="BackCatBlanco1">Propiedades en ventas</div>
+            <Catalogo/>
+            <div>holiwiris</div>
+        </div>
+    )
+}
+
+export default Comprar

@@ -1,6 +1,7 @@
 import React from "react";
 import image1 from "../Galeria/img1.jpg";
 import image2 from "../Galeria/img2.jpg";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
@@ -14,12 +15,12 @@ const Blog = () => {
           </div>
         </div>
         <div className="BlogWrapper">
-          <div className="EntradaBlog">
+          <Link className="EntradaBlog" to="/articulo1">
             <img src={image1} alt="alt1" className="BolgIm"></img>
             <div className="BlogBox">
               Título del artículo 1
             </div>
-          </div>
+          </Link>
           <div className="EntradaBlog2">
             <img src={image2} alt="alt2" className="BolgIm"></img>
             <div className="BlogBox">

@@ -1,7 +1,19 @@
-import React from 'react';
-import logo from "../Fotos/isotiponegro.png"
+import React, {useState, useEffect} from "react";
+import axios from 'axios'
+import {useHistory} from 'react-router-dom'
 
 const Tendencias = () => {
+
+    const [images, setImages] = useState([])
+    const history = useHistory()
+  
+    useEffect(  () => {
+      (async () => {
+      const res = await axios.get('/api/images');
+      setImages(res.data);
+      })()
+    }, []);
+
     return (
         <div className="tend">
             <div className="titulo-flex">
@@ -11,7 +23,26 @@ const Tendencias = () => {
                     <hr className="linea"/>
                 </div>
             </div>
-            <div className="tendencias-flex">
+            <div className="Tendencias">
+                <div className="FondoTendencias">
+                {
+        
+        images.map(image =>(
+
+          image.prioridad === 'alta' ? (
+
+          <div className='GaleriaTend' onClick={()=>history.push(`/comprar/${image._id}`)} key={image._id}>
+            <img src={image.url} alt="" className="ItemTendencias"/>
+            {/* <div>{image.prioridad}</div> */}
+          </div>
+        )
+        : <></>
+        ))
+      
+      }
+                </div>
+            </div>
+            {/* <div className="tendencias-flex">
                 <div className="fototendencias1">
                     <div className="infoD">
                         <div className="colonia">Colonia del Sol</div>
@@ -59,7 +90,7 @@ const Tendencias = () => {
                         <img className="logo" src={logo} alt="Logo"></img>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -19,6 +19,7 @@ import Catalogo from './components/pages/Catalogo';
 import Borrar from './components/pages/Borrar'
 import PruebaTendencias from './components/pages/PruebaTendencias'
 import VerMas from './components/pages/VerMas';
+import Articulo1 from './components/pages/Articulo1';
 
 
 
@@ -44,6 +45,7 @@ function App() {
         <Route exact path="/conocenos2" component={Conocenos2}/>
         <Route exact path="/conocenos3" component={Conocenos3}/>
         <Route exact path="/conocenos4" component={Conocenos4}/>
+        <Route exact path="/Articulo1" component={Articulo1}/>
         <Route exact path="/" component={Home}/>
         
 

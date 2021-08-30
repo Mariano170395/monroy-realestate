@@ -11,24 +11,22 @@ import Blog from "../Blog";
 import Redes from "../Redes";
 import TestimoniosCarr from "../TestimoniosCarr.jsx";
 
+
 const Home = () => {
   return (
     <div>
       {/*Mariano*/}
       <Body />
       {/*Tony*/}
-      <div className="tend-grid">
-        {/* <Fondo /> */}
-        <Tendencias />
-      </div>
+      <Tendencias />
       {/*Mariano*/}
        <BodyQuienes />  
-      <QuienesText />
+       <QuienesText />
       {/*Tony*/}
       <Filtro />
       <TestimoniosCarr />
       {/*Mariano*/}
-       <Blog />
+       <Blog /> 
        <Redes /> 
       {/*Tony*/}
        <Contacto /> 

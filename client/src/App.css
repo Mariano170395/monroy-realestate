@@ -1,8 +1,8 @@
-.tend-grid {
+/* .tend-grid {
   display: grid;
   grid-template-rows: 16vmax 7vmax 53vmax 53vmax 40vmax;
   grid-gap: 0vw;
-}
+} */
 .fond {
   grid-row: 3;
   width: 98vw;
@@ -13,7 +13,7 @@
 }
 .testim {
   z-index: 0;
-  height: 30vmax;
+  height: 35vmax;
   background-image: url("./Fotos/MarmolNegativo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,12 +33,12 @@
 }
 .filt {
   color: white;
-  height: 58vmax;
-  background-image: url("./Fotos/FondoBonito.jpg");
+  height: 50vmax;
+  background-image: url("./Fotos/FondoAyudar.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: 5;
+  z-index: 2;
 }
 
 .BotonesFilt{
@@ -114,7 +114,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   height: fit-content;
-  width: 99%;
+  width:100%;
 }
 .fototendencias1 {
   filter: grayscale();
@@ -275,11 +275,11 @@
   background-color: gray;
 }
 .filt-flex {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
 }
 .filtText {
   width: 60%;
@@ -305,17 +305,14 @@
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   font-size: 2vmax;
-  margin-top: 3vmax;
   width: 15vmax;
   height: 6vmax;
 }
 .filtBox {
-  height: 24.5vmax;
-  z-index: 2;
-  display: grid;
-  grid-template-columns: 14vmax 14vmax 14vmax 1.79vmax;
-  grid-template-rows: 5vmax 19.5vmax;
-  grid-gap: 0vw;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
 }
 .bot-comp {
   grid-column: 1;
@@ -593,7 +590,7 @@
   justify-content: center;
 }
 
-.Logo-1 {
+.Logo-1{
   height: 70px;
   width: auto;
 }
@@ -624,7 +621,7 @@
 
 .DropProp {
   position: relative;
-  width: 12%;
+  width:12%;
   text-align: center;
   display: inline-block;
   z-index: 10;
@@ -634,7 +631,7 @@
   display: none;
   position: relative;
   background-color: black;
-  min-width: 1vmin;
+  width: min-content;
   z-index: 10;
 }
 
@@ -779,8 +776,9 @@
   bottom: 0.1vmin;
   background-color: black;
   opacity: 70%;
-  font-size: 1.7vmax;
+  font-size: 2.5vmin;
   z-index: 4;
+  justify-content: space-around;
 }
 
 /*Quienes parte2*/
@@ -958,7 +956,7 @@
   margin-top: 3%;
   background-color: red;
   border: black solid 1px;
-  align-self: flex-start;
+  align-self:flex-start;
   content: inherit;
   z-index: 2;
 }
@@ -968,22 +966,22 @@
   height: 45vmin;
   background-color: blue;
   border: black solid 1px;
-  margin-bottom: 4%;
+  margin-bottom:4%;
   align-self: flex-end;
   z-index: 2;
 }
-.BolgIm {
-  width: 100%;
-  height: 100%;
+.BolgIm{
+  width:100%;
+  height:100%;
 }
 
-.BlogBox {
-  height: fit-content;
-  padding-left: 3%;
+.BlogBox{
+  height:fit-content;
+  padding-left:3%;
   background-color: black;
   opacity: 0.6;
-  font-size: 2.3vmax;
-  color: white;
+  font-size:2.3vmax;
+  color:white;
 }
 
 /*Redes*/
@@ -1149,7 +1147,7 @@ p {
   text-align: justify;
 }
 
-.Galeria {
+.Galeria{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -1158,11 +1156,11 @@ p {
   align-items: center;
 }
 
-.Item {
+.Item{
   width: 32vw;
 }
 
-.BackCatBlanco1 {
+.BackCatBlanco1{
   width: 100%;
   height: 10vw;
   background: url(./images/marmolblanco.jpg);
@@ -1171,38 +1169,36 @@ p {
   padding-top: 2%;
 }
 
-.BackCatNegro1 {
+.BackCatNegro1{
   width: 100%;
   height: 10vw;
   background: url(./images/marmolnegro.jpg);
 }
 
 /*Whatsapp*/
-.float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
 }
 .float:hover {
-  text-decoration: none;
-  color: #25d366;
-  background-color: #fff;
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
 }
 
-.my-float {
-  margin-top: 16px;
+.my-float{
+	margin-top:16px;
 }
-
-
 
 .Top {
   display: flex;
@@ -1226,11 +1222,13 @@ p {
 }
 .Conoce {
   color: white;
-  width: 24vmax;
+  width: 24vmin;
   text-align: center;
   align-self: center;
-  border-left: 0.1vmin solid white;
-  border-right: 0.1vmin solid white;
+}
+
+.Conoce:hover {
+  font-size: 4vmin;
 }
 .espacio {
   width: 2vmax;
@@ -1556,6 +1554,527 @@ p {
   font-size: 3vmin;
 }
 
+.RedesFooter{
+  width: 6.5vmin;
+}
+
+.Top{
+  display:flex;
+  flex-direction: column;
+}
+.TopBack{
+  height: 20vmax;
+  background-image: url("./fondo/Paisaje2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.TopMenu{
+  height:4.5vmax;
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color:black;
+  font-size: 1.7vmax;
+}
+.Conoce{
+  text-decoration: none;
+}
+.espacio{
+  width:2vmax;
+}
+.ConTitle{
+  font-size: 5vmax;
+  background-image: url("./Fotos/MarmolNegativo.jpg");
+  padding:5%;
+  text-decoration: underline;
+}
+.ConGrid{
+  display: grid;
+  grid-template-rows: 35vmax 35vmax 35vmax 35vmax;
+}
+.Izquierda{
+  background-image: url(./images/marmolnegro.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display:flex;
+  flex-direction: row;
+  color:white;
+}
+.Derecha{
+  background-image: url("./Fotos/MarmolNegativo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display:flex;
+  flex-direction: row-reverse;
+  color:black;
+}
+.conImg{
+  width:40vmax;
+  height:25vmax;
+  margin-top:5vmax;
+  margin-left:7.5vmax;
+  margin-right:7.5vmax;
+}
+.conText{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  height:100%;
+}
+.contitu{
+  font-size: 3vmax;
+}
+.concont{
+  font-size:1.5vmax;
+}
+
+.prueba{
+  height:100px;
+
+}
+
+
+/*Subir*/
+
+.cont-grid {
+  display: grid;
+  grid-template-columns: 44% 12% 44%;
+  grid-template-rows: 10vmax 10vmax 10vmax 5vmax;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+.Titulo {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 2.3vmax;
+  margin-bottom: 2vmax;
+}
+.apellidos {
+  grid-column: 3;
+  grid-row: 1;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 2.3vmax;
+  margin-bottom: 2vmax;
+}
+.correo {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 2.3vmax;
+  margin-bottom: 2vmax;
+}
+.telefono {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 2.3vmax;
+  margin-bottom: 2vmax;
+}
+.mensaje {
+  grid-column: 1/4;
+  grid-row: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 2vmax;
+  box-sizing: border-box;
+  resize: none;
+}
+.mensaje:focus,
+.telefono:focus,
+.Titulo:focus,
+.apellidos:focus,
+.correo:focus {
+  outline: none;
+}
+.enviar {
+  grid-column: 2;
+  grid-row: 4;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 2vmax;
+}
+
+/*Testimonios*/
+.Testimonios {
+  width: 100%;
+  height: 70vmin;
+  background: url(./Fotos/MarmolNegativo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.TestimoniosFlex {
+  width: 100%;
+  height: 30vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  opacity: 60%;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.left-arrow {
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.right-arrow {
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.BotonesFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*Quienes Texto*/
+
+.QuienesTextWrap {
+  width: 100%;
+  height: 70vmin;
+}
+
+.QuienesFlex {
+  width: 80%;
+  height: 60vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  opacity: 40%;
+  margin: 10vmin 10% 0px 10%;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.left-arrow {
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.right-arrow {
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.BotonesFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.FraseQuienes {
+  font-family: Helvetica;
+  font-size: 4.5vmin;
+  text-align: center;
+  color: white;
+  padding: 25vmin;
+}
+
+.Separador {
+  width: 100%;
+  height: 15vmin;
+}
+
+/*Catalogo*/
+
+.WrapperCatalogo {
+  column-count: 3;
+}
+
+.Item {
+  border-radius: 7%;
+  margin: 0vmin 0 3vmin 0;
+  width: 30vmin;
+  height: 25vmin;
+}
+
+/*Propiedad*/
+
+.Casa {
+  width: 100vmin;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7%;
+}
+
+.InformacionProp {
+  width: 100vmin;
+  height: 10vmin;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  opacity: 70%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.InfoGrande{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.5vmin;
+}
+
+.InfoChica{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.TituloProp {
+  color: white;
+  font-family: Helvetica;
+  font-size: 3vmin;
+}
+
+.BanosProp {
+  color: white;
+  font-family: Helvetica;
+  font-size: 1.5vmin;
+  margin-left: 11.5vmin;
+  margin-top: 1.5vmin;
+}
+
+.HabitacionesProp {
+  color: white;
+  font-family: Helvetica;
+  font-size: 1.5vmin;
+  margin-left: 10vmin;
+  margin-top: 1.5vmin;
+}
+
+.PrecioProp {
+  color: white;
+  font-family: Helvetica;
+  font-size: 3vmin;
+}
+
+/*Articulos*/
+.im1Art{
+  width:100%;
+  height: 40vmax;
+  background-image: url("./Galeria/img8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.pieDeImg1{
+  padding-top:30vmax;
+  font-size: 2vmax;
+  margin-left:5%;
+  width:50%;
+}
+.contArt{
+  display: flex;
+}
+.infoArt{
+  width:50%;
+  margin-left:3%;
+  margin-right: 0%;
+  margin-top:3%;
+}
+.nota{
+  width:40%;
+  margin:5%;
+  font-size:1.6vmax;
+}
+.tituloArt{
+  font-size: 3.7vmax;
+  font-family: Helvetica;
+  margin-top:3%;
+}
+.espArt{
+  height:12vmax;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-image: url("./Fotos/MarmolNegativo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.im2Art{
+  height:30vmax;
+  width:auto;
+  background-image: url("./Galeria/img8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.pieIm2{
+  font-size: 2vmax;
+  text-align: right;
+}
+.secArt{
+  font-size: 1.5vmax;
+  margin-left: 5%;
+  font-weight: bolder;
+  width:100%;
+  border-bottom: 2px solid black;
+}
+.masArt{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.linkArt{
+  width:30%;
+  height:20vmax;
+  margin-bottom: 10%;
+  margin-top: 2%;
+}
+.imart{
+  margin-top:8%;
+  width:100%;
+  height:17vmax;
+}
+.titArt{
+  display:flex;
+  flex-direction: row;
+}
+.titArt1{
+  width:5vmax;
+  height: 5vmax;
+  background-image: url("./Fotos/MarmolNegativo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.titArt2{
+  width:60%;
+  margin-left:10%;
+  text-decoration: none;
+  color:black;
+  font-family: Helvetica;
+  font-size:1.2vmax;
+}
+
+/*Tendencias*/
+
+.Tendencias{
+  width: 100%;
+}
+
+.FondoTendencias{
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100% );
+}
+
+.ItemTendencias{
+  width: 80%;
+  margin: 2% 10% ;
+  filter: grayscale();
+  transition-duration: 0.33s;
+}
+
+.ItemTendencias:hover{
+  filter: none;
+  background-size: 110%;
+}
+
+/*Ayudar*/
+
+.filtWrapper{
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.FiltText1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5vmin;
+}
+
+
+.FiltText2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 6vmin;
+}
+
+
+.FiltText3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5vmin;
+}
+
+.TextWrap{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.BtnWrap{
+  display: flex;
+  margin-top: 5%;
+}
+
 /*Media Queries*/
 
 /*Ipad Pro*/
@@ -1567,7 +2086,7 @@ p {
   .Navi-FlexWrap {
     height: 90px;
   }
-
+  
   /*Tendencias*/
   .colonia {
     font-size: 20px;
@@ -1603,25 +2122,6 @@ p {
     height: 50vmax;
   }
 
-  .filt-text1 {
-    margin-top: 2vmax;
-    margin-left: 4vmax;
-    margin-right: 4vmax;
-    font-size: 2.5vw;
-  }
-
-  .filt-text2 {
-    margin-top: 1vmax;
-    font-size: 42px;
-  }
-
-  .filt-text3 {
-    margin-left: 5vmax;
-    margin-right: 5vmax;
-    font-size: 25px;
-    margin-top: 1vmin;
-  }
-
   .contAg {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -1635,7 +2135,7 @@ p {
 
   .frase {
     font-family: Helvetica;
-    font-size: 5vmin;
+    font-size: 2vmax;
   }
 
   /*Blog*/
@@ -1656,10 +2156,10 @@ p {
 
   .FraseQuienes{
     font-family: Helvetica;
-    font-size: 4vmin;
+    font-size: 3vmin;
     text-align: center;
     color: white;
-    padding: 6vmin;
+    padding: 5vmin;
   }
 
   .QuienesFlex {
@@ -1760,10 +2260,10 @@ p {
 
   .FraseQuienes{
     font-family: Helvetica;
-    font-size: 4vmin;
+    font-size: 3vmin;
     text-align: center;
     color: white;
-    padding: 10vmin;
+    padding: 5vmin;
 }
   
 
@@ -1821,28 +2321,10 @@ p {
 
   /*Podemos ayudar*/
   .filt {
-    height: 50vmax;
+    height: 45vmax;
   }
 
-  .filt-text1 {
-    margin-top: 2vmax;
-    margin-left: 4vmax;
-    margin-right: 4vmax;
-    font-size: 2.5vw;
-  }
-
-  .filt-text2 {
-    margin-top: 1vmax;
-    font-size: 42px;
-  }
-
-  .filt-text3 {
-    margin-left: 5vmax;
-    margin-right: 5vmax;
-    font-size: 25px;
-    margin-top: 1vmin;
-  }
-
+  
   .contAg {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -1868,6 +2350,31 @@ p {
     display: none;
   }
 
+  /*Quienes*/
+
+  .QuienesFlex{
+    width: 80%;
+    height: 35vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 40%;
+    margin: 10vmin 10% 0px 10%;
+  }
+
+  .QuienesTextWrap {
+    width: 100%;
+    height: 50vmin;
+  }
+
+  .FraseQuienes{
+    font-family: Helvetica;
+    font-size: 3vmin;
+    text-align: center;
+    color: white;
+    padding: 5vmin;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
@@ -1902,13 +2409,6 @@ p {
     height: 5vh;
   }
 
-  .tend-grid {
-    grid-template-rows: 16vmax 7vmax 53vmax 53vmax 35vmax;
-  }
-
-  .fondo3 {
-    height: 35vmax;
-  }
 
   /*Podemos ayudar*/
   .filt {
@@ -1958,6 +2458,32 @@ p {
   .ContenedorIsotipo {
     display: none;
   }
+
+    /*Quienes*/
+
+    .QuienesFlex{
+      width: 80%;
+      height: 35vmin;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      opacity: 40%;
+      margin: 10vmin 10% 0px 10%;
+    }
+  
+    .QuienesTextWrap {
+      width: 100%;
+      height: 50vmin;
+    }
+  
+    .FraseQuienes{
+      font-family: Helvetica;
+      font-size: 3vmin;
+      text-align: center;
+      color: white;
+      padding: 5vmin;
+    }
 }
 
 /*Iphone X*/
@@ -1996,9 +2522,22 @@ p {
     display: none;
   }
 
-  .tend-grid {
-    grid-template-rows: 16vmax 7vmax 12vmax 25vmax 25vmax;
+   .tend-grid {
+    grid-template-rows: 16vmax 7vmax 12vmax 25vmax 23vmax;
   }
+
+  .fondo1{
+    height: 20vmax;
+  }
+
+  .fondo2{
+    height: 20vmax;
+  }
+
+  .fondo3{
+    height: 20vmax;
+  } 
+
 
   /*Quienes somos*/
 
@@ -2009,26 +2548,6 @@ p {
     font-size: 8px;
   }
 
-  /*Podemos ayudar*/
-  .filt {
-    height: 45vmax;
-  }
-
-  .filt-text1 {
-    display: none;
-  }
-
-  .filt-text2 {
-    display: none;
-  }
-
-  .filt-text3 {
-    display: none;
-  }
-
-  .contAg {
-    display: none;
-  }
 
   /*Testimonio*/
 
@@ -2072,6 +2591,32 @@ p {
     color: white;
     padding: 7vmin;
   }
+
+     /*Quienes*/
+
+    .QuienesFlex{
+      width: 80%;
+      height: 35vmin;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      opacity: 40%;
+      margin: 10vmin 10% 0px 10%;
+    }
+  
+    .QuienesTextWrap {
+      width: 100%;
+      height: 50vmin;
+    }
+  
+    .FraseQuienes{
+      font-family: Helvetica;
+      font-size: 3vmin;
+      text-align: center;
+      color: white;
+      padding: 5vmin;
+    }
 }
 
 /*celulares pequenos*/
@@ -2104,6 +2649,11 @@ p {
   .TextoLandingAbajo {
     margin-top: 37vmax;
   }
+  /*Ayuda*/
+  .filt {
+    color: white;
+    height: 40vmax;
+  }
 
   /*Tendencias*/
   .logo {
@@ -2115,9 +2665,23 @@ p {
   }
 
   .tend-grid {
-    grid-template-rows: 16vmax 7vmax 12vmax 25vmax 35vmax;
+    grid-template-rows: 16vmax 7vmax 12vmax 25vmax 45vmax;
   }
 
+  .fondo1{
+    height: 25vmax;
+    width: 100%;
+  }
+
+  .fondo2{
+    height: 25vmax;
+    width: 100%;
+  }
+
+  .fondo3{
+    height: 35vmax;
+    width: 100%;
+  }
   /*Quienes somos*/
 
   .QuienesSomos {
@@ -2127,26 +2691,7 @@ p {
     font-size: 8px;
   }
 
-  /*Podemos ayudar*/
-  .filt {
-    height: 45vmax;
-  }
-
-  .filt-text1 {
-    display: none;
-  }
-
-  .filt-text2 {
-    display: none;
-  }
-
-  .filt-text3 {
-    display: none;
-  }
-
-  .contAg {
-    display: none;
-  }
+ 
 
   /*Testimonio*/
 
@@ -2187,8 +2732,4 @@ p {
   .right-arrow{
     font-size: 2rem;
   }
-}
-
-.RedesFooter{
-  width: 6.5vmin;
 }

@@ -9,9 +9,9 @@ const Conocen = () => {
         <div className="TopBack"></div>
         <div className="TopMenu">
           <div className="espacio"></div>
-          <Link to="/conocenos" className="Conoce">¿Porque MONROY real estate?</Link>
-          <Link to="/conocenos2" className="Conoce">Asesores Inmobiliarios</Link>
-          <Link to="/conocenos3" className="Conoce">Mision</Link>
+          <Link to="/conocenos" className="Conoce">¿Por que MONROY real estate?</Link>
+          <Link to="/conocenos2" className="Conoce">Unete al Equipo</Link>
+          <Link to="/conocenos3" className="Conoce">Misión y Vision</Link>
           <Link to="/conocenos4" className="Conoce">Nuestros Servicios</Link>
           <div className="espacio"></div>
         </div>

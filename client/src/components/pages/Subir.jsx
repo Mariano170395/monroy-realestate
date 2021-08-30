@@ -96,7 +96,7 @@ const Subir = () => {
             <div>
             <form onSubmit ={handleSubmit}>
             <div>
-                <h1>Subir a galeria</h1>
+                <h1>subir galeria</h1>
                     <input type="text"   placeholder="Titulo" onChange={e => setTitle(e.target.value)} required></input>
                     <input type="number" name="Banos"  placeholder="Baños" onChange={e => setBanos(e.target.value)} required></input>
                     <input type="number" name="Habitaciones" placeholder="Habitaciones" onChange={e => setHabitaciones(e.target.value)} required></input>

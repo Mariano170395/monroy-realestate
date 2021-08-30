@@ -29,10 +29,10 @@ const EndBar = () => {
                     <div className="mail">monroyrealestate@realestate.com</div>
                     <div className="endTitle">Nuestras Redes</div>
                     <div className="iconos">
-                        <a href="https://www.facebook.com/monroyrealestate/" ><img src={Face} alt="Face" className='RedesFooter'/></a>
-                        <a href="https://www.instagram.com/monroy.realestate/" ><img src={Inst} alt="Instagram" className='RedesFooter'/></a>
-                        <a href="https://www.tiktok.com/@monroyrealestate?lang=es" ><img src={TikTok} alt="TikTok" className='RedesFooter'/></a>
-                        <a href="https://www.youtube.com/channel/UCtYt-1mMzGcOP_gH_0OgJMw" ><img src={YouTube} alt="YouTube" className='RedesFooter'/></a>
+                        <img src={Face} alt="Face"/>
+                        <img src={Inst} alt="Instagram"/>
+                        <img src={TikTok} alt="TikTok"/>
+                        <img src={YouTube} alt="YouTube"/>
                     </div>
                 </div>
             </div>
