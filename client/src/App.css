@@ -554,11 +554,13 @@
 .endTitle {
   font-size: 2vmax;
   margin-top: 10%;
+  font-family: Helvetica;
 }
 .mail {
   font-size: 1.3vmax;
   text-decoration: underline white;
   margin-top: 3%;
+  font-family: Helvetica;
 }
 
 /*CSS Mariano*/
@@ -615,8 +617,9 @@
   margin: 0vmin;
   font-size: 1.45vmax;
   border: none;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Helvetica;
   position: relative;
+  text-decoration: none;
 }
 
 .DropProp {
@@ -954,8 +957,6 @@
   width: 70vmin;
   height: 45vmin;
   margin-top: 3%;
-  background-color: red;
-  border: black solid 1px;
   align-self:flex-start;
   content: inherit;
   z-index: 2;
@@ -964,8 +965,6 @@
 .EntradaBlog2 {
   width: 70vmin;
   height: 45vmin;
-  background-color: blue;
-  border: black solid 1px;
   margin-bottom:4%;
   align-self: flex-end;
   z-index: 2;
@@ -982,6 +981,7 @@
   opacity: 0.6;
   font-size:2.3vmax;
   color:white;
+  font-family: Helvetica;
 }
 
 /*Redes*/
@@ -1225,6 +1225,7 @@ p {
   width: 24vmin;
   text-align: center;
   align-self: center;
+  font-family: Helvetica;
 }
 
 .Conoce:hover {
@@ -1352,6 +1353,7 @@ p {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   font-size: 2vmax;
+  font-family: Helvetica;
 }
 
 /*Testimonios*/

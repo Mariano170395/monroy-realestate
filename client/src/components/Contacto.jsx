@@ -16,6 +16,8 @@ const Contacto = () => {
         }).catch(err=>console.log(err)) 
     }
 
+
+
     return (
         <div className="contact">
             <div className="titulo-flex">
@@ -29,10 +31,10 @@ const Contacto = () => {
             <div className="cont-grid">
                     <input type="text" name="nombre" className="nombre"  placeholder="Nombre *"></input>
                     <input type="text" name="apellidos" className="apellidos"  placeholder="Apellidos *"></input>
-                    <input type="email" name="emailUsuario" className="correo"  placeholder="e-mail *"></input>
+                    <input type="email" name="emailUsuario" className="correo"  placeholder="E-mail *"></input>
                     <input type="number" name="numTelefono" className="telefono"  placeholder="Telefono *"></input>
                     <textarea type="text" name="mensaje" className="mensaje"  placeholder="Mensaje"></textarea>
-                    <button className="enviar" type="submit">Enviar</button>
+                    <button className="enviar" type="submit" onClick={()=>{ alert('Gracias, se ha enviado tu mensaje. Nos contactaremos contigo pronto'); }}>Enviar</button>
             </div>
             </form>
         </div>
