@@ -307,6 +307,7 @@
   font-size: 2vmax;
   width: 15vmax;
   height: 6vmax;
+  margin: 0 3%;
 }
 .filtBox {
   display: flex;
@@ -544,7 +545,7 @@
 }
 .iconos {
   display: flex;
-  height: 15%;
+  height: 20%;
   width: 70%;
   justify-content: space-around;
   margin-top: 5%;
@@ -1071,8 +1072,8 @@
 }
 
 .RedesCont {
-  height: 30vmin;
-  width: 35vmin;
+  height: 28vmin;
+  width: 28vmin;
   background-color: black;
   display: flex;
   flex-wrap: nowrap;
@@ -1418,23 +1419,12 @@ p {
   height: 70vmin;
 }
 
-.QuienesFlex {
-  width: 80%;
-  height: 60vmin;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  opacity: 60%;
-  margin: 10vmin 10% 0px 10%;
-}
-
 .FraseQuienes {
   font-family: Helvetica;
   font-size: 4.5vmin;
   text-align: center;
   color: white;
-  padding: 25vmin;
+  padding: 10vmin;
 }
 
 .slide {
@@ -1782,7 +1772,7 @@ p {
   justify-content: center;
   align-items: center;
   background-color: black;
-  opacity: 40%;
+  opacity: 60%;
   margin: 10vmin 10% 0px 10%;
 }
 
@@ -1821,13 +1811,6 @@ p {
   justify-content: space-evenly;
 }
 
-.FraseQuienes {
-  font-family: Helvetica;
-  font-size: 4.5vmin;
-  text-align: center;
-  color: white;
-  padding: 25vmin;
-}
 
 .Separador {
   width: 100%;
@@ -1843,8 +1826,8 @@ p {
 .Item {
   border-radius: 7%;
   margin: 0vmin 0 3vmin 0;
-  width: 30vmin;
-  height: 25vmin;
+  width: 45vmin;
+  height: 35vmin;
 }
 
 /*Propiedad*/
@@ -2173,6 +2156,19 @@ p {
     width: 100%;
     height: 55vmin;
   }
+
+    /*Catalogo*/
+    .Item {
+      border-radius: 7%;
+      margin: 0vmin 0 3vmin 0;
+      width: 40vmin;
+      height: 30vmin;
+    }
+
+    .RedesCont{
+      height: 30vmin;
+      width: 30vmin;
+    }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -2278,6 +2274,11 @@ p {
     width: 100%;
     height: 55vmin;
   }
+
+  .RedesCont{
+    height: 30vmin;
+    width: 30vmin;
+  }
 }
 
 /*Ipad*/
@@ -2376,6 +2377,23 @@ p {
     text-align: center;
     color: white;
     padding: 5vmin;
+  }
+
+  /*Catalogo*/
+  .WrapperCatalogo {
+    column-count: 2;
+  }
+  
+  .Item {
+    border-radius: 7%;
+    margin: 0vmin 0 3vmin 0;
+    width: 45vmin;
+    height: 35vmin;
+  }
+
+  .RedesCont{
+    height: 30vmin;
+    width: 30vmin;
   }
 }
 
@@ -2486,6 +2504,11 @@ p {
       color: white;
       padding: 5vmin;
     }
+
+    .RedesCont{
+      height: 30vmin;
+      width: 30vmin;
+    }
 }
 
 /*Iphone X*/
@@ -2571,6 +2594,11 @@ p {
     display: none;
   }
 
+  .RedesCont{
+    height: 30vmin;
+    width: 30vmin;
+  }
+    
   /*Footer*/
   .iconos {
     display: flex;
@@ -2619,6 +2647,18 @@ p {
       color: white;
       padding: 5vmin;
     }
+
+      /*Catalogo*/
+  .WrapperCatalogo {
+    column-count: 2;
+  }
+  
+  .Item {
+    border-radius: 7%;
+    margin: 0vmin 0 3vmin 0;
+    width: 45vmin;
+    height: 35vmin;
+  }
 }
 
 /*celulares pequenos*/
@@ -2715,6 +2755,11 @@ p {
     display: none;
   }
 
+  .RedesCont{
+    height: 30vmin;
+    width: 30vmin;
+  }
+
   /*Footer*/
   .iconos {
     display: flex;
@@ -2734,4 +2779,16 @@ p {
   .right-arrow{
     font-size: 2rem;
   }
+
+    /*Catalogo*/
+    .WrapperCatalogo {
+      column-count: 2;
+    }
+    
+    .Item {
+      border-radius: 7%;
+      margin: 0vmin 0 3vmin 0;
+      width: 45vmin;
+      height: 35vmin;
+    }
 }

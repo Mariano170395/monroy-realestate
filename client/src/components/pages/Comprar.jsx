@@ -5,7 +5,7 @@ const Comprar = () => {
     return (
         <div>
             <div className="prueba"></div> 
-            <div className="BackCatBlanco1">Propiedades en ventas</div>
+            <div className="BackCatBlanco1">Propiedades en venta</div>
             <Catalogo/>
             <div>holiwiris</div>
         </div>

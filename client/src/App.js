@@ -37,6 +37,12 @@ function App() {
         <Route exact path="/comprar/:id" component={Propiedad}/>
         <Route exact path="/comprar/:id/borrar" component={Borrar}/>
         <Route exact path="/comprar/:id/ver-mas" component={VerMas}/>
+        <Route exact path="/rentar/:id" component={Propiedad}/>
+        <Route exact path="/rentar/:id/borrar" component={Borrar}/>
+        <Route exact path="/rentar/:id/ver-mas" component={VerMas}/>
+        <Route exact path="/oportunidades/:id" component={Propiedad}/>
+        <Route exact path="/oportunidades/:id/borrar" component={Borrar}/>
+        <Route exact path="/oportunidades/:id/ver-mas" component={VerMas}/>
         <Route exact path="/subir" component={Subir}/>
         <Route exact path="/vender" component={Vender}/>
         <Route exact path="/blog" component={Blog}/>
