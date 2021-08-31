@@ -27,13 +27,13 @@ const EndBar = () => {
                 <div className="endCol3">
                     <div className="endTitle">Contacto</div>
                     <div className="mail">monroyrealestate@realestate.com</div>
-                    {/* <div className="endTitle">Nuestras Redes</div> */}
-                    {/* <div className="iconos">
-                        <a  href="https://www.facebook.com/monroyrealestate/"><img src={Face} alt="Face"/></a>
-                        <a href="https://www.instagram.com/monroy.realestate/"><img src={Inst} alt="Instagram"/></a>
-                        <a href="https://www.tiktok.com/@monroyrealestate?lang=es"> <img src={TikTok} alt="TikTok"/></a>
-                        <a href="https://www.youtube.com/channel/UCtYt-1mMzGcOP_gH_0OgJMw"><img src={YouTube} alt="YouTube"/></a>
-                    </div> */}
+                    <div className="endTitle">Nuestras Redes</div>
+                    <div className="iconos">
+                        <img src={Face} alt="Face"/>
+                        <img src={Inst} alt="Instagram"/>
+                        <img src={TikTok} alt="TikTok"/>
+                        <img src={YouTube} alt="YouTube"/>
+                    </div>
                 </div>
             </div>
             <div>Sitio web diseñado por &#8918;Insert Name&#8919; </div>

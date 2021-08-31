@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const Filtro = () => {
     return (
@@ -17,10 +18,10 @@ const Filtro = () => {
                     <div className="FiltText3">Nosotros te ayudamos</div>
                 </div>
                 <div className='BtnWrap'>
-                    <button className="contAg">Contactar Agente</button>
-                    <button className="contAg">Contactar Agente</button>
-                    <button className="contAg">Contactar Agente</button>
-                    
+                    <button className="contAg"><Link className="DropBtnProp" to="/comprar">Comprar</Link></button>
+                    <button className="contAg"><Link className="DropBtnProp" to="/rentar">Rentar</Link></button>
+                    <button className="contAg"><Link className="DropBtnProp" to="/oportunidaes">Oportunidades</Link></button>
+                    <button className="contAg"><Link className="DropBtnProp" to="/contacto">Contactar Agente</Link></button>
                 </div>
             </div>
         </div>
