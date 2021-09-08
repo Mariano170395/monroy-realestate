@@ -93,22 +93,6 @@ const Subir = () => {
                     <button  type="submit">Subir</button>
             </div>
             </form>
-            <div>
-            <form onSubmit ={handleSubmit}>
-            <div>
-                <h1>subir galeria</h1>
-                    <input type="text"   placeholder="Titulo" onChange={e => setTitle(e.target.value)} required></input>
-                    <input type="number" name="Banos"  placeholder="Baños" onChange={e => setBanos(e.target.value)} required></input>
-                    <input type="number" name="Habitaciones" placeholder="Habitaciones" onChange={e => setHabitaciones(e.target.value)} required></input>
-                    <input type="number" name="Precio" placeholder="Precio" onChange={e => setPrecio(e.target.value)} required></input>
-                    <input type="text" name="Colonia" placeholder="Colonia" onChange={e => setColonia(e.target.value)} required></input>
-                    <h1>Escribe el titulo de la propiedad y la palabra galeria </h1>
-                    <input type="text" name="Galeria"   placeholder="Galeria" onChange={e => setGaleria(e.target.value)} required></input>
-                    <input type="file" onChange={handleChange}></input>
-                    <button  type="submit">Subir</button>
-            </div>
-            </form>
-            </div>
         </div>
     )
 }

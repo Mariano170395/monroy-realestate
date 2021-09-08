@@ -18,7 +18,6 @@ import Subir from './components/pages/Subir';
 import Catalogo from './components/pages/Catalogo';
 import Borrar from './components/pages/Borrar'
 import PruebaTendencias from './components/pages/PruebaTendencias'
-import VerMas from './components/pages/VerMas';
 import Articulo1 from './components/pages/Articulo1';
 
 
@@ -36,13 +35,10 @@ function App() {
         <Route exact path="/comprar" component={Catalogo}/>
         <Route exact path="/comprar/:id" component={Propiedad}/>
         <Route exact path="/comprar/:id/borrar" component={Borrar}/>
-        <Route exact path="/comprar/:id/ver-mas" component={VerMas}/>
         <Route exact path="/rentar/:id" component={Propiedad}/>
         <Route exact path="/rentar/:id/borrar" component={Borrar}/>
-        <Route exact path="/rentar/:id/ver-mas" component={VerMas}/>
         <Route exact path="/oportunidades/:id" component={Propiedad}/>
         <Route exact path="/oportunidades/:id/borrar" component={Borrar}/>
-        <Route exact path="/oportunidades/:id/ver-mas" component={VerMas}/>
         <Route exact path="/subir" component={Subir}/>
         <Route exact path="/vender" component={Vender}/>
         <Route exact path="/blog" component={Blog}/>
