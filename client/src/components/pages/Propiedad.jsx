@@ -75,11 +75,6 @@ const Propiedad = () => {
           <h2>{`Número de baños: ${image.banos}`}</h2>
           <h2>{`Tamaño de la propiedad: ${image.banos} m2`}</h2>
         </div>
-      {/* <h1>{image.descripcion}</h1>
-      <h1>{image.estatus}</h1>
-      
-      <h1>{image.precio}</h1>
-      <h1>{image.colonia}</h1> */}
       </div>
       <div className="ContactoProp">
         <div className='TextoPropInfo'>

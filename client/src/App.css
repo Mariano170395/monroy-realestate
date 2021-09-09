@@ -1236,12 +1236,148 @@ p {
   width: 2vmax;
 }
 .ConTitle {
-  font-size: 5vmax;
+  font-size: 4vmax;
   background-image: url("./Fotos/MarmolNegativo.jpg");
   padding: 5%;
   text-decoration: underline;
+  font-family: Helvetica;
 }
-.ConGrid {
+
+.Izquierda{
+  width: 100%;
+  height: 45vmin;
+  background-image: url(./images/marmolnegro.jpg);
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.IzquierdaImg{
+  width: 40%;
+  height: 45vmin;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.izqImg{
+  width: 80%;
+  height: 32vmin;
+  background-image: url(./Fotos/foto1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.IzquierdaText{
+  width: 60%;
+  height: 45vmin;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.InfoArribaText{
+  width: 100%;
+  height: 10vmin;
+  display: flex;
+  flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.InfoArribaText{
+  color: white;
+  font-size: 2.5vmin;
+  font-family: Helvetica;
+  padding: 3vmin;
+}
+
+.InfoAbajoText{
+  width: 100%;
+  height: 45vmin;
+  display: flex;
+  flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.InfoAbajoText h1 {
+  color: white;
+  font-size: 5vmin;
+  padding: 2vmin;
+  font-family: Helvetica;
+}
+
+.InfoAbajoText h2 {
+  color: white;
+  font-size: 2.5vmin;
+  padding: 2vmin;
+  font-family: Helvetica;
+  text-align: justify;
+}
+
+.Derecha{
+  width: 100%;
+  height: 45vmin;
+  background-image: url(./images/marmolblanco.jpg);
+  display: flex;
+  flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+}
+
+.DerechaImg{
+  width: 40%;
+  height: 45vmin;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.InfoAbajoTextA{
+  width: 100%;
+  height: 45vmin;
+  display: flex;
+  flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.InfoAbajoTextA h1 {
+  color: black;
+  font-size: 5vmin;
+  padding: 2vmin;
+  font-family: Helvetica;
+}
+
+.InfoAbajoTextA h2 {
+  color: black;
+  font-size: 2.5vmin;
+  padding: 2vmin;
+  font-family: Helvetica;
+  text-align: justify;
+}
+
+/* .ConGrid {
   display: grid;
   grid-template-rows: 35vmax 35vmax 35vmax 35vmax;
 }
@@ -1282,7 +1418,7 @@ p {
 }
 .concont {
   font-size: 1.5vmax;
-}
+} */
 
 /*Subir*/
 
@@ -1471,14 +1607,61 @@ p {
 
 /*Catalogo*/
 
-.WrapperCatalogo {
-  column-count: 3;
-}
+ .WrapperCatalogo {
+   margin-top: 5vmin;
+  width: 100%;
+  height: max-content;
+  background-image: url(./fondo/marble_white.jpg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+ }
 
 .Item {
   border-radius: 7%;
-  margin: 0vmin 0 3vmin 0;
+  margin: 1vmin  1vmin 1vmin 0;
+}  
+
+/* Filtro Catalogo*/
+
+.TituloFiltroCatalogo{
+  width: 100%;
+  height: 3vmin;
+  background-color: black;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
+
+.TituloFiltroCatalogo h1{
+  font-family: Helvetica;
+  color: white;
+  font-size: 2vmin;  
+}
+
+.FiltroCatalgo{
+  width: 100%;
+  height: 10vmin;
+  background-image: url(./images/marmolnegro.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+ .FiltroCatalgo input{
+  width: 50vmin;
+} 
 
 
 /*Espacio*/
@@ -1744,7 +1927,7 @@ p {
 }
 
 .TopMenu{
-  height:4.5vmax;
+  height:6.5vmax;
   width:100%;
   display: flex;
   justify-content: space-evenly;
@@ -1757,59 +1940,7 @@ p {
 .espacio{
   width:2vmax;
 }
-.ConTitle{
-  font-size: 5vmax;
-  background-image: url("./Fotos/MarmolNegativo.jpg");
-  padding:5%;
-  text-decoration: underline;
-}
-.ConGrid{
-  display: grid;
-  grid-template-rows: 35vmax 35vmax 35vmax 35vmax;
-}
-.Izquierda{
-  background-image: url(./images/marmolnegro.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display:flex;
-  flex-direction: row;
-  color:white;
-}
-.Derecha{
-  background-image: url("./Fotos/MarmolNegativo.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display:flex;
-  flex-direction: row-reverse;
-  color:black;
-}
-.conImg{
-  width:40vmax;
-  height:25vmax;
-  margin-top:5vmax;
-  margin-left:7.5vmax;
-  margin-right:7.5vmax;
-}
-.conText{
-  display:flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 40%;
-  height:100%;
-}
-.contitu{
-  font-size: 3vmax;
-}
-.concont{
-  font-size:1.5vmax;
-}
 
-.prueba{
-  height:100px;
-
-}
 
 
 /*Subir*/
@@ -2000,16 +2131,16 @@ p {
 
 /*Catalogo*/
 
-.WrapperCatalogo {
+/* .WrapperCatalogo {
   column-count: 3;
-}
+} */
 
-.Item {
+/* .Item {
   border-radius: 7%;
   margin: 0vmin 0 3vmin 0;
   width: 45vmin;
   height: 35vmin;
-}
+} */
 
 
 /*Articulos*/
@@ -2516,7 +2647,7 @@ p {
   }
 
   /*Catalogo*/
-  .WrapperCatalogo {
+  /* .WrapperCatalogo {
     column-count: 2;
   }
   
@@ -2525,7 +2656,7 @@ p {
     margin: 0vmin 0 3vmin 0;
     width: 45vmin;
     height: 35vmin;
-  }
+  } */
 
   .RedesCont{
     height: 30vmin;
@@ -2658,6 +2789,13 @@ p {
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   
+  /*Separador*/
+
+  .Separador {
+    width: 100%;
+    height: 25vmin;
+  }
+
     /*espaciador*/
     .espaciador{
       width: 100%;
@@ -2803,16 +2941,17 @@ p {
     }
 
       /*Catalogo*/
-  .WrapperCatalogo {
-    column-count: 2;
-  }
-  
-  .Item {
-    border-radius: 7%;
-    margin: 0vmin 0 3vmin 0;
-    width: 45vmin;
-    height: 35vmin;
-  }
+      .FiltroCatalgo{
+        height: 15vmin;
+      }
+    
+      .TituloFiltroCatalogo{
+        height: 5vmin;
+      }
+    
+      .TituloFiltroCatalogo h1{
+        font-size: 3vmin;
+      }
 }
 
 
@@ -2821,6 +2960,11 @@ p {
 
 @media only screen and (max-width: 700px) and (orientation: portrait) {
   
+  .Separador {
+    width: 100%;
+    height: 30vmin;
+  }
+
      /*espaciador*/
      .espaciador{
       width: 100%;
@@ -2944,14 +3088,15 @@ p {
   }
 
     /*Catalogo*/
-    .WrapperCatalogo {
-      column-count: 2;
-    }
-    
-    .Item {
-      border-radius: 7%;
-      margin: 0vmin 0 3vmin 0;
-      width: 45vmin;
-      height: 35vmin;
-    }
+  .FiltroCatalgo{
+    height: 15vmin;
+  }
+
+  .TituloFiltroCatalogo{
+    height: 5vmin;
+  }
+
+  .TituloFiltroCatalogo h1{
+    font-size: 3vmin;
+  }
 }

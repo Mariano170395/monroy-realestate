@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import logo from "../Fotos/logonegro.png"
-import Face from "../Fotos/IconoFacebook.png"
-import Inst from "../Fotos/IconoInstagram.png"
-import TikTok from "../Fotos/IconoTikTok.png"
-import YouTube from "../Fotos/IconoYT2.png"
+// import Face from "../Fotos/IconoFacebook.png"
+// import Inst from "../Fotos/IconoInstagram.png"
+// import TikTok from "../Fotos/IconoTikTok.png"
+// import YouTube from "../Fotos/IconoYT2.png"
 
 const EndBar = () => {
     return (
@@ -27,13 +27,6 @@ const EndBar = () => {
                 <div className="endCol3">
                     <div className="endTitle">Contacto</div>
                     <div className="mail">monroyrealestate@realestate.com</div>
-                    <div className="endTitle">Nuestras Redes</div>
-                    <div className="iconos">
-                        <img src={Face} alt="Face"/>
-                        <img src={Inst} alt="Instagram"/>
-                        <img src={TikTok} alt="TikTok"/>
-                        <img src={YouTube} alt="YouTube"/>
-                    </div>
                 </div>
             </div>
             <div>Sitio web diseñado por &#8918;Insert Name&#8919; </div>

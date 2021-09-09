@@ -27,7 +27,10 @@ const Catalogo = () => {
       <div>
         <h1 className="TituloRedes">Propiedades en Venta</h1>
         <hr className="LineaRedes"></hr>
-        <div>
+        <div className="TituloFiltroCatalogo">
+          <h1>Filtros:</h1>
+        </div>
+        <div className='FiltroCatalgo'>
           <input type='text' placeholder='Colonia' className="Buscador"
           onChange={event=>{setBusqueda(event.target.value)}}/>
           

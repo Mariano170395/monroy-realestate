@@ -20,7 +20,7 @@ const Filtro = () => {
                 <div className='BtnWrap'>
                     <button className="contAg"><Link className="DropBtnProp" to="/comprar">Comprar</Link></button>
                     <button className="contAg"><Link className="DropBtnProp" to="/rentar">Rentar</Link></button>
-                    <button className="contAg"><Link className="DropBtnProp" to="/oportunidaes">Oportunidades</Link></button>
+                    <button className="contAg"><Link className="DropBtnProp" to="/oportunidades">Oportunidades</Link></button>
                     <button className="contAg"><Link className="DropBtnProp" to="/contacto">Contactar Agente</Link></button>
                 </div>
             </div>
